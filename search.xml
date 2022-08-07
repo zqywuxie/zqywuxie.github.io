@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>python模型建立</title>
+      <link href="/2022/08/07/python%E6%A8%A1%E5%9E%8B%E5%BB%BA%E7%AB%8B/"/>
+      <url>/2022/08/07/python%E6%A8%A1%E5%9E%8B%E5%BB%BA%E7%AB%8B/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>AI&#x2014;&#x623F;&#x4EF7;&#x9884;&#x6D4B;<br>@author: zqy</p></blockquote><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> colors</span><br><span class="line">&lt;!-- <span class="comment">#&#x5BFC;&#x5165;&#x4F5C;&#x56FE;&#x5E93;&#x51FD;&#x6570; --&gt;</span></span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt </span><br><span class="line">&lt;!-- <span class="comment">#&#x5BFC;&#x5165;&#x6570;&#x7EC4;&#x5904;&#x7406;&#x5E93;&#x51FD;&#x6570; --&gt;</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np </span><br><span class="line">&lt;!-- <span class="comment">#&#x5BFC;&#x5165;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x5E93;&#x51FD;&#x6570;--&#x7EBF;&#x6027;&#x89C4;&#x5212;&#x6A21;&#x578B; --&gt;</span></span><br><span class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> linear_model </span><br><span class="line">&lt;!-- <span class="comment">#&#x5BFC;&#x5165;&#x591A;&#x9879;&#x5F0F;&#x7279;&#x5F81;&#x8BA1;&#x7B97;&#x5E93;&#x51FD;&#x6570; --&gt;</span></span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> PolynomialFeatures </span><br><span class="line">&lt;!-- <span class="comment">#&#x8BFB;&#x53D6;&#x6570;&#x636E; --&gt;</span></span><br><span class="line">datasets_X=[<span class="number">150</span>,<span class="number">200</span>,<span class="number">250</span>,<span class="number">300</span>,<span class="number">350</span>,<span class="number">400</span>,<span class="number">600</span>]</span><br><span class="line">datasets_Y=[<span class="number">6450</span>,<span class="number">7450</span>,<span class="number">8450</span>,<span class="number">9450</span>,<span class="number">11450</span>,<span class="number">15450</span>,<span class="number">18450</span>]</span><br><span class="line">length=<span class="built_in">len</span>(datasets_X)</span><br><span class="line">&lt;!-- <span class="comment">#&#x5C06;&#x6570;&#x636E;&#x8F6C;&#x4E3A;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4; --&gt;</span></span><br><span class="line">datasets_X=np.array(datasets_X).reshape([length,<span class="number">1</span>])</span><br><span class="line">datasets_Y=np.array(datasets_Y)</span><br><span class="line">&lt;!-- &#x7F16;&#x8F91;&#x9884;&#x5904;&#x7406;&#xFF0C;&#x6570;&#x636E;&#x5F52;&#x4E00;&#x5316;&#x5904;&#x7406; --&gt;</span><br><span class="line">minX=<span class="built_in">min</span>(datasets_X)</span><br><span class="line">maxX=<span class="built_in">max</span>(datasets_X)</span><br><span class="line">X=np.arange(minX,maxX).reshape([-<span class="number">1</span>,<span class="number">1</span>])</span><br><span class="line">&lt;!-- <span class="comment">#&#x5EFA;&#x7ACB;&#x591A;&#x9879;&#x5F0F;&#x56DE;&#x5F52;&#x6A21;&#x578B; --&gt;</span></span><br><span class="line">&lt;!-- <span class="comment">#&#x4F7F;&#x7528;&#x4E8C;&#x9636;&#x591A;&#x9879;&#x5F0F;&#x56DE;&#x5F52;&#x6A21;&#x578B; --&gt;</span></span><br><span class="line">poly_reg=PolynomialFeatures(degree=<span class="number">2</span>) </span><br><span class="line">X_poly=poly_reg.fit_transform(datasets_X)</span><br><span class="line">&lt;!-- <span class="comment">#&#x5EFA;&#x7ACB;&#x56DE;&#x5F52;&#x6A21;&#x578B; --&gt;</span></span><br><span class="line">lin_reg=linear_model.LinearRegression()  </span><br><span class="line">&lt;!-- <span class="comment">#&#x6A21;&#x578B;&#x8BAD;&#x7EC3; --&gt;</span></span><br><span class="line">lin_reg.fit(X_poly,datasets_Y)   </span><br><span class="line"></span><br><span class="line">&lt;!-- <span class="comment">#&#x663E;&#x793A;&#x6A21;&#x578B;&#x7ED3;&#x679C; --&gt;</span></span><br><span class="line">plt.scatter(datasets_X,datasets_Y,color=<span class="string">&apos;red&apos;</span>)</span><br><span class="line">plt.plot(X,lin_reg.predict(poly_reg.fit_transform(X)),color=<span class="string">&apos;blue&apos;</span>)</span><br><span class="line">plt.xlabel(<span class="string">&apos;Area&apos;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&apos;Price&apos;</span>)</span><br><span class="line">plt.show()</span><br><span class="line"></span><br></pre></td></tr></table></figure><p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5339/202208072204312.png" alt="image-20220807220449238"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建模 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>React笔记</title>
       <link href="/2022/08/05/React/"/>
       <url>/2022/08/05/React/</url>
