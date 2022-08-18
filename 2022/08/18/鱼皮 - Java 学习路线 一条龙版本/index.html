@@ -1,0 +1,1777 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>鱼皮 - Java 学习路线 | 思无邪</title><meta name="keywords" content="Java"><meta name="author" content="wu xie"><meta name="copyright" content="wu xie"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="&amp;#x524D;&amp;#x8A00;&amp;#x9996;&amp;#x5148;&amp;#x5462;&amp;#xFF0C;&amp;#x6211;&amp;#x4EEC;&amp;#x8981;&amp;#x4E86;&amp;#x89E3; Java &amp;#x7684;&amp;#x5E94;&amp;#x7528;&amp;#x573A;&amp;#x666F;&amp;#x548C;&amp;#x5C31;&amp;#x4E1A;&amp;#x65B9;&amp;#x5411;&amp;#xFF0C;&amp;#x770B;&amp;#x770B;&amp;#">
+<meta property="og:type" content="article">
+<meta property="og:title" content="鱼皮 - Java 学习路线">
+<meta property="og:url" content="https://zqywuxie.github.io/2022/08/18/%E9%B1%BC%E7%9A%AE%20-%20Java%20%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%20%E4%B8%80%E6%9D%A1%E9%BE%99%E7%89%88%E6%9C%AC/index.html">
+<meta property="og:site_name" content="思无邪">
+<meta property="og:description" content="&amp;#x524D;&amp;#x8A00;&amp;#x9996;&amp;#x5148;&amp;#x5462;&amp;#xFF0C;&amp;#x6211;&amp;#x4EEC;&amp;#x8981;&amp;#x4E86;&amp;#x89E3; Java &amp;#x7684;&amp;#x5E94;&amp;#x7528;&amp;#x573A;&amp;#x666F;&amp;#x548C;&amp;#x5C31;&amp;#x4E1A;&amp;#x65B9;&amp;#x5411;&amp;#xFF0C;&amp;#x770B;&amp;#x770B;&amp;#">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/jerryc127/CDN/master/cover/default_bg.png">
+<meta property="article:published_time" content="2022-08-18T14:21:06.514Z">
+<meta property="article:modified_time" content="2022-08-18T14:23:12.722Z">
+<meta property="article:author" content="wu xie">
+<meta property="article:tag" content="Java">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/jerryc127/CDN/master/cover/default_bg.png"><link rel="shortcut icon" href="/img/cat.svg"><link rel="canonical" href="https://zqywuxie.github.io/2022/08/18/%E9%B1%BC%E7%9A%AE%20-%20Java%20%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%20%E4%B8%80%E6%9D%A1%E9%BE%99%E7%89%88%E6%9C%AC/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: wu xie","link":"链接: ","source":"来源: 思无邪","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '鱼皮 - Java 学习路线',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-08-18 22:23:12'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/rightMenu.css"><style>#article-container.post-content h1:before, h2:before, h3:before, h4:before, h5:before, h6:before { -webkit-animation: avatar_turn_around 1s linear infinite; -moz-animation: avatar_turn_around 1s linear infinite; -o-animation: avatar_turn_around 1s linear infinite; -ms-animation: avatar_turn_around 1s linear infinite; animation: avatar_turn_around 1s linear infinite; }</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zyoushuo/Blog@latest/hexo/css/loading_style_1.css" ><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zyoushuo/Blog@latest/hexo/css/loading_style_2.css" ><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@1.0.17/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.2.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5339/202208051055374.jpg" onerror="onerror=null;src='https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5339/202208041745213.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-solid fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-fw fa fa-bars"></i><span> 其他</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fa-fw fas fa-user"></i><span> 关于我</span></a></li><li><a class="site-page child" href="/otherTags/"><i class="fa-fw fa-solid fa-tags"></i><span> 外挂标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">思无邪</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首頁</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-solid fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa-fw fa fa-bars"></i><span> 其他</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fa-fw fas fa-user"></i><span> 关于我</span></a></li><li><a class="site-page child" href="/otherTags/"><i class="fa-fw fa-solid fa-tags"></i><span> 外挂标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">鱼皮 - Java 学习路线</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-08-18T14:21:06.514Z" title="发表于 2022-08-18 22:21:06">2022-08-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-08-18T14:23:12.722Z" title="更新于 2022-08-18 22:23:12">2022-08-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/">学习资料</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">11.9k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>74分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="鱼皮 - Java 学习路线"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><h2 id="&#x524D;&#x8A00;"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</h2><p>&#x9996;&#x5148;&#x5462;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x4E86;&#x89E3; Java &#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;&#x548C;&#x5C31;&#x4E1A;&#x65B9;&#x5411;&#xFF0C;&#x770B;&#x770B;&#x548C;&#x81EA;&#x5DF1;&#x7684;&#x5B66;&#x4E60;&#x76EE;&#x7684;&#x662F;&#x5426;&#x4E00;&#x81F4;&#xFF0C;&#x76EE;&#x524D;&#xFF0C;Java &#x7684;&#x5C97;&#x4F4D;&#x9700;&#x6C42;&#x591A;&#xFF0C;&#x662F;&#x540E;&#x53F0;&#x5F00;&#x53D1;&#x7684;&#x4E3B;&#x6D41;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF0C;&#x529F;&#x80FD;&#x5F3A;&#x5927;&#xFF0C;&#x8FD8;&#x662F;&#x5F88;&#x503C;&#x5F97;&#x5B66;&#x4E60;&#x7684;&#x3002;</p>
+<p>&#x90A3;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x770B;&#x6211;&#x7684;&#x89C6;&#x9891;&#x4E86;&#x89E3;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1y3411r7pX/">https://www.bilibili.com/video/BV1y3411r7pX/</a></p>
+<h2 id="&#x9636;&#x6BB5;-1&#xFF1A;Java-&#x5165;&#x95E8;"><a href="#&#x9636;&#x6BB5;-1&#xFF1A;Java-&#x5165;&#x95E8;" class="headerlink" title="&#x9636;&#x6BB5; 1&#xFF1A;Java &#x5165;&#x95E8;"></a>&#x9636;&#x6BB5; 1&#xFF1A;Java &#x5165;&#x95E8;</h2><h3 id="&#x76EE;&#x6807;"><a href="#&#x76EE;&#x6807;" class="headerlink" title="&#x76EE;&#x6807;"></a>&#x76EE;&#x6807;</h3><p>&#x57F9;&#x517B;&#x5174;&#x8DA3;&#x3001;&#x5FEB;&#x901F;&#x4E0A;&#x624B;</p>
+<h3 id="&#x524D;&#x671F;&#x51C6;&#x5907;"><a href="#&#x524D;&#x671F;&#x51C6;&#x5907;" class="headerlink" title="&#x524D;&#x671F;&#x51C6;&#x5907;"></a>&#x524D;&#x671F;&#x51C6;&#x5907;</h3><ul>
+<li><ol>
+<li><p>&#x51C6;&#x5907;&#x597D;&#x4E00;&#x6B3E;&#x5728;&#x7EBF;&#x3001;&#x968F;&#x65F6;&#x968F;&#x5730;&#x5199;&#x4EE3;&#x7801;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x4E0D;&#x7528;&#x5728;&#x672C;&#x5730;&#x53BB;&#x5B89;&#x88C5;&#x548C;&#x914D;&#x7F6E;&#xFF0C;&#x662F;&#x521D;&#x5B66;&#x8005;&#x7684;&#x597D;&#x5E2E;&#x624B;</p>
+<ul>
+<li>&#x63A8;&#x8350;&#x7F51;&#x7AD9; - &#x83DC;&#x9E1F;&#x5DE5;&#x5177;&#xFF1A;<a target="_blank" rel="noopener" href="https://c.runoob.com/compile/10">https://c.runoob.com/compile/10</a></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><ol>
+<li><p>&#x51C6;&#x5907;&#x4E00;&#x6B3E;&#x8BB0;&#x7B14;&#x8BB0;&#x7684;&#x8F6F;&#x4EF6;&#xFF0C;&#x5B66;&#x7F16;&#x7A0B;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x8001;&#x5E08;&#x7684;&#x601D;&#x8DEF;&#x3001;&#x81EA;&#x5DF1;&#x9047;&#x5230;&#x7684;&#x95EE;&#x9898;&#x3001;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x7684;&#x65B9;&#x6CD5;&#x3001;&#x5FC3;&#x5F97;&#x611F;&#x609F;&#x3001;&#x9047;&#x5230;&#x7684;&#x597D;&#x8D44;&#x6599;&#xFF0C;&#x90FD;&#x8981;&#x8BB0;&#x4E0B;&#x6765;&#x54E6;&#xFF0C;&#x597D;&#x8BB0;&#x6027;&#x4E0D;&#x5982;&#x70C2;&#x7B14;&#x5934;&#xFF0C;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x4F60;&#x4E8B;&#x534A;&#x529F;&#x500D;&#x3002;</p>
+<ul>
+<li>&#x63A8;&#x8350;&#x8F6F;&#x4EF6; Typora&#xFF1A;<a target="_blank" rel="noopener" href="https://www.typora.io/">https://www.typora.io/</a></li>
+<li>&#x63A8;&#x8350;&#x4F7F;&#x7528; Markdown &#x8BED;&#x6CD5;&#x7F16;&#x5199;&#xFF0C;&#x9C7C;&#x76AE;&#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1no4y1k7YT/">https://www.bilibili.com/video/BV1no4y1k7YT/</a></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x60F3;&#x5B66;&#x597D;&#x7F16;&#x7A0B;&#xFF0C;&#x522B;&#x80CC;&#x4EE3;&#x7801;&#xFF0C;&#x8981;&#x591A;&#x5199;&#xFF0C;&#x628A;&#x8FD9;&#x53E5;&#x8BDD;&#x523B;&#x5230;&#x8111;&#x5B50;&#x91CC;&#x3002;</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x9009;&#x89C6;&#x9891;&#x548C;&#x627E;&#x8D44;&#x6599;&#x7684;&#x5C0F;&#x6280;&#x5DE7;&#xFF1A;&#x591A;&#x770B;&#x8BC4;&#x8BBA;&#x533A;&#x3001;&#x591A;&#x770B;&#x9694;&#x58C1;&#x8BC4;&#x8BBA;&#x533A;&#xFF0C;&#x4E0D;&#x8981;&#x770B;&#x8FC7;&#x671F;&#x7684;&#x89C6;&#x9891;&#x3002;</li>
+</ol>
+</li>
+</ul>
+<h3 id="Java-&#x7F16;&#x7A0B;&#x57FA;&#x7840;&#xFF08;45-&#x5929;&#xFF09;"><a href="#Java-&#x7F16;&#x7A0B;&#x57FA;&#x7840;&#xFF08;45-&#x5929;&#xFF09;" class="headerlink" title="Java &#x7F16;&#x7A0B;&#x57FA;&#x7840;&#xFF08;45 &#x5929;&#xFF09;"></a>Java &#x7F16;&#x7A0B;&#x57FA;&#x7840;&#xFF08;45 &#x5929;&#xFF09;</h3><ul>
+<li><p>&#x77E5;&#x8BC6;</p>
+<ul>
+<li>Java &#x7279;&#x70B9;&#xFF08;&#x770B;&#x4E0D;&#x61C2;&#x6CA1;&#x4E8B;&#xFF0C;&#x522B;&#x80CC;&#xFF01;&#xFF09;</li>
+<li>&#x73AF;&#x5883;&#x642D;&#x5EFA;</li>
+<li><p><strong>Java &#x57FA;&#x7840;&#x8BED;&#x6CD5;</strong></p>
+<ul>
+<li>&#x6570;&#x636E;&#x7C7B;&#x578B;</li>
+<li>&#x6D41;&#x7A0B;&#x63A7;&#x5236;</li>
+</ul>
+</li>
+<li><p>&#x6570;&#x7EC4;</p>
+</li>
+<li><p><strong>&#x9762;&#x5411;&#x5BF9;&#x8C61;</strong></p>
+<ul>
+<li>&#x65B9;&#x6CD5;</li>
+<li>&#x91CD;&#x8F7D;</li>
+<li>&#x5C01;&#x88C5;</li>
+<li>&#x7EE7;&#x627F;</li>
+<li>&#x591A;&#x6001;</li>
+</ul>
+</li>
+<li><p>&#x62BD;&#x8C61;&#x7C7B;</p>
+</li>
+<li>&#x63A5;&#x53E3;</li>
+<li>&#x679A;&#x4E3E;</li>
+<li><p>&#x5E38;&#x7528;&#x7C7B;</p>
+<ul>
+<li>String</li>
+<li>&#x65E5;&#x671F;&#x65F6;&#x95F4;</li>
+</ul>
+</li>
+<li><p>&#x96C6;&#x5408;&#x7C7B;</p>
+</li>
+<li>&#x6CDB;&#x578B;</li>
+<li>&#x6CE8;&#x89E3;</li>
+<li>&#x5F02;&#x5E38;&#x5904;&#x7406;</li>
+<li>&#x591A;&#x7EBF;&#x7A0B;</li>
+<li>IO &#x6D41;</li>
+<li>&#x53CD;&#x5C04;</li>
+</ul>
+</li>
+<li><p>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</p>
+<p>&#x4E00;&#x5B9A;&#x8981;&#x6301;&#x7EED;&#x5B66;&#x4E60;&#xFF0C;&#x4E0D;&#x80FD;&#x65AD;&#xFF01;</p>
+<p>&#x8DDF;&#x7740;&#x4E66;&#x4E0A;&#x7684;&#x4F8B;&#x5B50;&#x6572;&#x4EE3;&#x7801;&#x540E;&#xFF0C;&#x81EA;&#x4E3B;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#xFF0C;&#x5E76;&#x5B8C;&#x6210;&#x8BFE;&#x540E;&#x7EC3;&#x4E60;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x8D44;&#x6E90;</p>
+<ul>
+<li><p>&#x89C6;&#x9891;</p>
+<ul>
+<li>&#x2B50; &#x97E9;&#x987A;&#x5E73; - &#x96F6;&#x57FA;&#x7840; 30 &#x5929;&#x5B66;&#x4F1A; Java&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1fh411y7R8&#xFF08;900">https://www.bilibili.com/video/BV1fh411y7R8&#xFF08;900</a> &#x591A;&#x96C6;&#xFF0C;&#x987A;&#x5E8F;&#x5B89;&#x6392;&#x5F88;&#x5408;&#x7406;&#xFF0C;&#x6BCF;&#x4E2A;&#x77E5;&#x8BC6;&#x771F;&#x6B63;&#x7684;&#x6253;&#x788E;&#x4E86;&#xFF0C;&#x901A;&#x4FD7;&#x3001;&#x6709;&#x793A;&#x4F8B;&#x3001;&#x6709;&#x5B9E;&#x6218;&#x3001;&#x6709;&#x601D;&#x60F3;&#xFF09;</li>
+</ul>
+</li>
+<li><p>&#x6587;&#x6863;</p>
+<ul>
+<li>&#x2B50; &#x83DC;&#x9E1F;&#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.runoob.com/java/java-tutorial.html&#xFF08;&#x53EF;&#x4EE5;&#x5728;&#x7EBF;&#x7EC3;&#x4E60;&#xFF09;">https://www.runoob.com/java/java-tutorial.html&#xFF08;&#x53EF;&#x4EE5;&#x5728;&#x7EBF;&#x7EC3;&#x4E60;&#xFF09;</a></li>
+<li>&#x5ED6;&#x96EA;&#x5CF0; Java &#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/1252599548343744">https://www.liaoxuefeng.com/wiki/1252599548343744</a></li>
+</ul>
+</li>
+<li><p>&#x4E66;&#x7C4D;</p>
+<ul>
+<li>&#x300A;Head First Java&#x300B;</li>
+</ul>
+</li>
+<li><p>&#x5728;&#x7EBF;&#x6E38;&#x620F;</p>
+<ul>
+<li>Codegym&#xFF1A;<a target="_blank" rel="noopener" href="https://codegym.cc/zh&#xFF08;&#x73A9;&#x73A9;&#x524D;&#x51E0;&#x5173;&#x57F9;&#x517B;&#x5174;&#x8DA3;&#x4E0D;&#x9519;&#xFF0C;&#x4F46;&#x540E;&#x9762;&#x6536;&#x8D39;&#x4E86;&#xFF09;">https://codegym.cc/zh&#xFF08;&#x73A9;&#x73A9;&#x524D;&#x51E0;&#x5173;&#x57F9;&#x517B;&#x5174;&#x8DA3;&#x4E0D;&#x9519;&#xFF0C;&#x4F46;&#x540E;&#x9762;&#x6536;&#x8D39;&#x4E86;&#xFF09;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Java-8&#xFF08;3-&#x5929;&#xFF09;"><a href="#Java-8&#xFF08;3-&#x5929;&#xFF09;" class="headerlink" title="Java 8&#xFF08;3 &#x5929;&#xFF09;"></a>Java 8&#xFF08;3 &#x5929;&#xFF09;</h3><ul>
+<li><p>&#x77E5;&#x8BC6;</p>
+<ul>
+<li>Stream API</li>
+<li>Lambda &#x8868;&#x8FBE;&#x5F0F;</li>
+<li>&#x65B0;&#x65E5;&#x671F;&#x65F6;&#x95F4; API</li>
+<li>&#x63A5;&#x53E3;&#x9ED8;&#x8BA4;&#x65B9;&#x6CD5;</li>
+</ul>
+</li>
+<li><p>&#x8D44;&#x6E90;</p>
+<ul>
+<li><p>&#x89C6;&#x9891;</p>
+<ul>
+<li>&#x2B50; &#x5B8B;&#x7EA2;&#x5EB7; - &#x5168;&#x7F51;&#x6700;&#x5168;Java&#x96F6;&#x57FA;&#x7840;&#x5165;&#x95E8;&#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Kb411W75N&#xFF08;&#x53EA;&#x770B;">https://www.bilibili.com/video/BV1Kb411W75N&#xFF08;&#x53EA;&#x770B;</a> Java 8 &#x90E8;&#x5206;&#x5373;&#x53EF;&#xFF09;</li>
+</ul>
+</li>
+<li><p>&#x6587;&#x6863;</p>
+<ul>
+<li>&#x2B50; &#x83DC;&#x9E1F;&#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.runoob.com/java/java8-new-features.html">https://www.runoob.com/java/java8-new-features.html</a></li>
+</ul>
+</li>
+<li><p>&#x4E66;&#x7C4D;</p>
+<ul>
+<li>&#x300A;Java 8 &#x5B9E;&#x6218;&#x300B;</li>
+</ul>
+</li>
+<li><p>&#x5DE5;&#x5177;</p>
+<ul>
+<li>&#x2B50; &#x5728;&#x7EBF;&#x7F16;&#x5199;&#x8FD0;&#x884C;  Java 8&#xFF1A;<a target="_blank" rel="noopener" href="https://www.tutorialspoint.com/compile_java8_online.php">https://www.tutorialspoint.com/compile_java8_online.php</a></li>
+</ul>
+</li>
+<li><p>&#x9879;&#x76EE;</p>
+<ul>
+<li>Java 8 &#x5C0F;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/biezhi/30-seconds-of-java8">https://github.com/biezhi/30-seconds-of-java8</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x5C3E;&#x58F0;"><a href="#&#x5C3E;&#x58F0;" class="headerlink" title="&#x5C3E;&#x58F0;"></a>&#x5C3E;&#x58F0;</h3><p>&#x5B66;&#x5B8C;&#x4E86; Java &#x57FA;&#x7840;&#x540E;&#xFF0C;&#x6709;&#x4E9B;&#x540C;&#x5B66;&#x4F1A;&#x611F;&#x5230;&#x8FF7;&#x832B;&#x4E86;&#x554A;&#xFF0C;&#x611F;&#x89C9;&#x597D;&#x50CF;&#x5565;&#x4E5F;&#x505A;&#x4E0D;&#x51FA;&#x6765;&#xFF0C;&#x4E0D;&#x77E5;&#x9053;&#x4E0B;&#x4E00;&#x6B65;&#x505A;&#x4EC0;&#x4E48;&#xFF0C;&#x6211;&#x8FD9;&#x4E00;&#x8EAB;&#x7684;&#x672C;&#x9886;&#x8BE5;&#x5982;&#x4F55;&#x65BD;&#x5C55;&#x554A;&#xFF1F;</p>
+<p>&#x4E0D;&#x8981;&#x614C;&#xFF0C;&#x4E5F;&#x4E0D;&#x8981;&#x6025;&#x7740;&#x53BB;&#x5B66;&#x65B0;&#x6280;&#x672F;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x8981;&#x591A;&#x7528; Java &#x6765;&#x5199;&#x4EE3;&#x7801;&#x4E86;&#xFF0C;&#x5DE9;&#x56FA;&#x57FA;&#x7840;&#xFF0C;&#x4F46;&#x662F;&#x5199;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;</p>
+<p>&#x5F53;&#x7136;&#x662F;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x548C;&#x7B97;&#x6CD5;&#xFF01;</p>
+<h2 id="&#x9636;&#x6BB5;-2&#xFF1A;&#x5DE9;&#x56FA;&#x57FA;&#x7840;"><a href="#&#x9636;&#x6BB5;-2&#xFF1A;&#x5DE9;&#x56FA;&#x57FA;&#x7840;" class="headerlink" title="&#x9636;&#x6BB5; 2&#xFF1A;&#x5DE9;&#x56FA;&#x57FA;&#x7840;"></a>&#x9636;&#x6BB5; 2&#xFF1A;&#x5DE9;&#x56FA;&#x57FA;&#x7840;</h2><h3 id="&#x76EE;&#x6807;-1"><a href="#&#x76EE;&#x6807;-1" class="headerlink" title="&#x76EE;&#x6807;"></a>&#x76EE;&#x6807;</h3><p>&#x60F3;&#x5B66;&#x597D;&#x7F16;&#x7A0B;&#xFF0C;&#x8BA1;&#x7B97;&#x673A;&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#x8981;&#x5B66;&#x597D;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#x7B97;&#x6CD5;&#xFF0C;&#x662F;&#x7A0B;&#x5E8F;&#x5458;&#x7684;&#x7075;&#x9B42;&#x3002;&#x5B66;&#x597D;&#x7B97;&#x6CD5;&#x6709;&#x52A9;&#x4E8E;&#x6211;&#x4EEC;&#x7406;&#x89E3;&#x7A0B;&#x5E8F;&#x3001;&#x5F00;&#x62D3;&#x601D;&#x8DEF;&#xFF0C;&#x56E0;&#x6B64;&#x4E5F;&#x662F;&#x5F88;&#x591A;&#x516C;&#x53F8;&#x9762;&#x8BD5;&#x65F6;&#x8003;&#x5BDF;&#x7684;&#x5173;&#x952E;&#xFF0C;&#x5728;&#x627E;&#x5DE5;&#x4F5C;&#x524D;&#xFF0C;&#x8FD8;&#x662F;&#x8981;&#x5237;&#x4E2A;&#x4E0A;&#x767E;&#x9053;&#x7B97;&#x6CD5;&#x9898;&#x76EE;&#x7684;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x8FD9;&#x4E2A;&#x9636;&#x6BB5;&#x7684;&#x76EE;&#x6807;&#x662F;&#xFF1A;&#x719F;&#x7EC3;&#x4F7F;&#x7528; Java &#x8BED;&#x8A00;&#x6765;&#x7F16;&#x5199;&#x7A0B;&#x5E8F;&#xFF0C;&#x5DE9;&#x56FA; Java &#x7684;&#x57FA;&#x7840;&#x3002;</p>
+<p>&#x90A3;&#x76F4;&#x63A5;&#x7528; Java &#x6765;&#x5199;&#x7B97;&#x6CD5;&#x9898;&#x76EE;&#xFF0C;&#x4E00;&#x4E3E;&#x4E24;&#x5F97;&#xFF0C;&#x5C82;&#x4E0D;&#x7F8E;&#x54C9;&#xFF1F;</p>
+<h3 id="Java-&#x57FA;&#x7840;&#xFF08;30-&#x5929;&#xFF09;"><a href="#Java-&#x57FA;&#x7840;&#xFF08;30-&#x5929;&#xFF09;" class="headerlink" title="Java &#x57FA;&#x7840;&#xFF08;30 &#x5929;&#xFF09;"></a>Java &#x57FA;&#x7840;&#xFF08;30 &#x5929;&#xFF09;</h3><ul>
+<li><p>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</p>
+<p>&#x5EFA;&#x8BAE;&#x5927;&#x5BB6;&#x53BB;&#x9605;&#x8BFB; &#x300A;Java &#x6838;&#x5FC3;&#x6280;&#x672F;&#x5377; 1&#x300B;&#xFF0C;&#x8FD9;&#x672C;&#x4E66;&#x582A;&#x79F0;&#x7ECF;&#x5178;&#xFF0C;&#x662F;&#x5E2E;&#x52A9;&#x4F60;&#x590D;&#x4E60;&#x5DE9;&#x56FA;  Java &#x7684;&#x4E0D;&#x4E8C;&#x4E4B;&#x9009;&#xFF0C;&#x5176;&#x4E2D;&#x56FE;&#x5F62;&#x754C;&#x9762;&#x7AE0;&#x8282;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x4E0D;&#x770B;&#x3002;</p>
+<p>&#x4E4B;&#x540E;&#x53EF;&#x4EE5;&#x5237;&#x725B;&#x5BA2;&#x7684; Java &#x7EC3;&#x4E60;&#x9898;&#xFF0C;&#x68C0;&#x9A8C;&#x81EA;&#x5DF1;&#x7684;&#x6C34;&#x5E73;&#xFF0C;&#x6211;&#x5F53;&#x65F6;&#x5237;&#x4E86;&#x4E24;&#x904D;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x8D44;&#x6E90;</p>
+<ul>
+<li><p>&#x4E66;&#x7C4D;</p>
+<ul>
+<li>&#x2B50;&#x300A;Java &#x6838;&#x5FC3;&#x6280;&#x672F;&#x5377; 1&#x300B;</li>
+</ul>
+</li>
+<li><p>&#x7EC3;&#x4E60;</p>
+<ul>
+<li>&#x2B50; &#x725B;&#x5BA2;&#x9898;&#x5E93;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.nowcoder.com/intelligentTest">https://www.nowcoder.com/intelligentTest</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E0E;&#x7B97;&#x6CD5;"><a href="#&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E0E;&#x7B97;&#x6CD5;" class="headerlink" title="&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E0E;&#x7B97;&#x6CD5;"></a>&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E0E;&#x7B97;&#x6CD5;</h3><ul>
+<li><p>&#x77E5;&#x8BC6;</p>
+<ul>
+<li><strong>&#x65F6;&#x95F4; / &#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x5206;&#x6790;</strong></li>
+<li><p>&#x6570;&#x636E;&#x7ED3;&#x6784;</p>
+<ul>
+<li>&#x6570;&#x7EC4;</li>
+<li>&#x5B57;&#x7B26;&#x4E32;</li>
+<li>&#x961F;&#x5217;</li>
+<li>&#x6808;</li>
+<li>&#x94FE;&#x8868;</li>
+<li>&#x96C6;&#x5408;</li>
+<li>&#x54C8;&#x5E0C;&#x8868;</li>
+<li>&#x4E8C;&#x53C9;&#x6811;</li>
+</ul>
+</li>
+<li><p>&#x7B97;&#x6CD5;</p>
+<ul>
+<li>&#x6392;&#x5E8F;</li>
+<li>&#x53CC;&#x6307;&#x9488;</li>
+<li>&#x67E5;&#x627E;</li>
+<li>&#x5206;&#x6CBB;</li>
+<li>&#x52A8;&#x6001;&#x89C4;&#x5212;</li>
+<li>&#x9012;&#x5F52;</li>
+<li>&#x56DE;&#x6EAF;</li>
+<li>&#x8D2A;&#x5FC3;</li>
+<li>&#x4F4D;&#x8FD0;&#x7B97;</li>
+<li>DFS</li>
+<li>BFS</li>
+<li>&#x56FE;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</p>
+<p>&#x5B66;&#x7B97;&#x6CD5;&#x4E00;&#x5B9A;&#x8981;&#x591A;&#x601D;&#x8003;&#x3001;&#x591A;&#x7EC3;&#x4E60;&#xFF01;&#xFF01;&#xFF01;</p>
+<p>&#x5728;&#x590D;&#x4E60; Java&#x3001;&#x5DE9;&#x56FA;&#x57FA;&#x7840;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6BCF;&#x5929;&#x53EF;&#x4EE5;&#x575A;&#x6301;&#x7528; Java &#x505A; 2 - 3 &#x9053;&#x7B97;&#x6CD5;&#x9898;&#x76EE;&#x3002;</p>
+<p>&#x4E0D;&#x7528;&#x62C5;&#x5FC3;&#x770B;&#x4E0D;&#x61C2;&#xFF0C;&#x76F4;&#x63A5;&#x8FDB;&#x5165; LeetCode &#x5B66;&#x4E60;&#x677F;&#x5757; LeetBook&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x514D;&#x8D39;&#x7684;&#x6559;&#x7A0B;&#xFF0C;&#x6587;&#x5B57;&#x3001;&#x56FE;&#x89E3;&#x3001;&#x52A8;&#x753B;&#x8BB2;&#x7B97;&#x6CD5;&#x3001;&#x5728;&#x7EBF;&#x7EC3;&#x4E60;&#x5E94;&#x6709;&#x5C3D;&#x6709;&#xFF0C;&#x4ECE; 0 &#x5F00;&#x59CB;&#xFF0C;&#x8DDF;&#x7740;&#x5B66;&#x4E60;&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#x3001;&#x8DDF;&#x7740;&#x6559;&#x7A0B;&#x5237;&#x4E00;&#x4E9B;&#x540C;&#x7C7B;&#x9898;&#x76EE;&#xFF0C;&#x57F9;&#x517B;&#x7B97;&#x6CD5;&#x601D;&#x8DEF;&#x3002;</p>
+<p>&#x4E4B;&#x540E;&#x518D;&#x7531;&#x7B80;&#x5355;&#x5230;&#x590D;&#x6742;&#x3001;&#x7531;&#x901A;&#x8FC7;&#x7387;&#x9AD8;&#x5230;&#x4F4E;&#xFF0C;&#x81EA;&#x4E3B;&#x5237;&#x9898;&#xFF0C;&#x591A;&#x770B;&#x9898;&#x89E3;&#xFF0C;&#x4E3E;&#x4E00;&#x53CD;&#x4E09;&#x3002;</p>
+<p>&#x6709;&#x6761;&#x4EF6;&#x7684;&#x670B;&#x53CB;&#x4E5F;&#x53EF;&#x4EE5;&#x8BD5;&#x7740;&#x53C2;&#x4E0E;&#x7ADE;&#x8D5B;&#xFF0C;&#x6CA1;&#x4EC0;&#x4E48;&#x95E8;&#x69DB;&#xFF0C;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x4F60;&#x96C6;&#x4E2D;&#x7CBE;&#x795E;&#xFF0C;&#x800C;&#x4E14;&#x5468;&#x8D5B;&#x7684;&#x9898;&#x76EE;&#x8FD8;&#x662F;&#x633A;&#x53CB;&#x597D;&#x7684;~</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x8D44;&#x6E90;</p>
+<ul>
+<li><p>&#x6587;&#x7AE0;</p>
+<ul>
+<li>&#x2B50; &#x5237;&#x4E86; 1000 &#x591A;&#x9053;&#x7B97;&#x6CD5;&#x9898;&#xFF0C;&#x4E00;&#x70B9;&#x5FC3;&#x5F97;&#xFF1A;<a target="_blank" rel="noopener" href="https://t.1yb.co/oT9q&#xFF08;&#x9C7C;&#x76AE;&#x539F;&#x521B;&#xFF09;">https://t.1yb.co/oT9q&#xFF08;&#x9C7C;&#x76AE;&#x539F;&#x521B;&#xFF09;</a></li>
+</ul>
+</li>
+<li><p>&#x5728;&#x7EBF;&#x6559;&#x7A0B;</p>
+<ul>
+<li>&#x2B50; LeetCode LeetBook&#xFF1A;<a target="_blank" rel="noopener" href="https://leetcode-cn.com/leetbook/">https://leetcode-cn.com/leetbook/</a></li>
+</ul>
+</li>
+<li><p>&#x5728;&#x7EBF;&#x5237;&#x9898;</p>
+<ul>
+<li>&#x2B50; LeetCode&#xFF1A;<a target="_blank" rel="noopener" href="https://leetcode-cn.com/">https://leetcode-cn.com/</a></li>
+</ul>
+</li>
+<li><p>&#x4E66;&#x7C4D;</p>
+<ul>
+<li>&#x2B50;&#x300A;&#x5C0F;&#x7070;&#x7684;&#x6F2B;&#x753B;&#x7B97;&#x6CD5;&#x300B;</li>
+<li>&#x2B50;&#x300A;&#x5251;&#x6307; Offer&#x300B;</li>
+<li>&#x300A;&#x7A0B;&#x5E8F;&#x5458;&#x4EE3;&#x7801;&#x9762;&#x8BD5;&#x6307;&#x5357;&#x300B;</li>
+<li>&#x56FE;&#x89E3;&#x7B97;&#x6CD5;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF1A;<a target="_blank" rel="noopener" href="https://leetcode-cn.com/leetbook/detail/illustration-of-algorithm/">https://leetcode-cn.com/leetbook/detail/illustration-of-algorithm/</a></li>
+<li>LeetCode 101&#xFF08;C++&#xFF09;&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/changgyhub/leetcode_101">https://github.com/changgyhub/leetcode_101</a></li>
+<li>LeetCode &#x9898;&#x89E3;&#xFF08;C++&#xFF09;&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/soulmachine/leetcode">https://github.com/soulmachine/leetcode</a></li>
+<li>LeetCode Cookbook&#xFF08;Go &#x8BED;&#x8A00;&#xFF09;&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/halfrost/LeetCode-Go">https://github.com/halfrost/LeetCode-Go</a></li>
+</ul>
+</li>
+<li><p>&#x89C6;&#x9891;</p>
+<ul>
+<li>&#x5C1A;&#x7845;&#x8C37; Java &#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E0E;&#x7B97;&#x6CD5;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1E4411H73v&#xFF08;&#x96BE;&#x5EA6;&#x6BD4;&#x9762;&#x8BD5;&#x7684;&#x8981;&#x6C42;&#x5927;&#x4E00;&#x4E9B;&#xFF0C;&#x9002;&#x5408;&#x5E0C;&#x671B;&#x66F4;&#x5168;&#x9762;&#x5B66;&#x4E60;&#x7684;&#x670B;&#x53CB;&#xFF09;">https://www.bilibili.com/video/BV1E4411H73v&#xFF08;&#x96BE;&#x5EA6;&#x6BD4;&#x9762;&#x8BD5;&#x7684;&#x8981;&#x6C42;&#x5927;&#x4E00;&#x4E9B;&#xFF0C;&#x9002;&#x5408;&#x5E0C;&#x671B;&#x66F4;&#x5168;&#x9762;&#x5B66;&#x4E60;&#x7684;&#x670B;&#x53CB;&#xFF09;</a></li>
+<li>Leetcode &#x771F;&#x9898;&#x89E3;&#x6790;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1a54y1b74k">https://www.bilibili.com/video/BV1a54y1b74k</a></li>
+</ul>
+</li>
+<li><p>&#x5DE5;&#x5177;</p>
+<ul>
+<li>VisuAlgo &#x6570;&#x636E;&#x7ED3;&#x6784;&#x548C;&#x7B97;&#x6CD5;&#x52A8;&#x6001;&#x53EF;&#x89C6;&#x5316;&#xFF1A;<a target="_blank" rel="noopener" href="https://visualgo.net/zh">https://visualgo.net/zh</a></li>
+<li>&#x6570;&#x636E;&#x7ED3;&#x6784;&#x53EF;&#x89C6;&#x5316;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html">https://www.cs.usfca.edu/~galles/visualization/Algorithms.html</a></li>
+</ul>
+</li>
+<li><p>&#x7F51;&#x7AD9;</p>
+<ul>
+<li><p>&#x4E94;&#x5206;&#x949F;&#x5B66;&#x7B97;&#x6CD5;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.cxyxiaowu.com/">https://www.cxyxiaowu.com/</a></p>
+<h3 id="&#x8BA1;&#x7B97;&#x673A;&#x57FA;&#x7840;"><a href="#&#x8BA1;&#x7B97;&#x673A;&#x57FA;&#x7840;" class="headerlink" title="&#x8BA1;&#x7B97;&#x673A;&#x57FA;&#x7840;"></a>&#x8BA1;&#x7B97;&#x673A;&#x57FA;&#x7840;</h3></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>&#x77E5;&#x8BC6;</p>
+<ul>
+<li><p>&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;</p>
+<ul>
+<li>HTTP / HTTPS &#x534F;&#x8BAE;</li>
+<li>&#x7F51;&#x7EDC;&#x6A21;&#x578B;</li>
+<li>UDP / TCP &#x534F;&#x8BAE;</li>
+<li>&#x7F51;&#x7EDC;&#x5B89;&#x5168;</li>
+<li>&#x57DF;&#x540D;&#x89E3;&#x6790;</li>
+</ul>
+</li>
+<li><p>&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</p>
+<ul>
+<li>&#x8FDB;&#x7A0B;&#x3001;&#x7EBF;&#x7A0B;</li>
+<li>&#x8FDB;&#x7A0B; / &#x7EBF;&#x7A0B;&#x95F4;&#x901A;&#x8BAF;&#x65B9;&#x5F0F;</li>
+<li>&#x8FDB;&#x7A0B;&#x8C03;&#x5EA6;&#x7B97;&#x6CD5;</li>
+<li>&#x8FDB;&#x7A0B; / &#x7EBF;&#x7A0B;&#x72B6;&#x6001;</li>
+<li>&#x6B7B;&#x9501;</li>
+<li>&#x5185;&#x5B58;&#x7BA1;&#x7406;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</p>
+<p>&#x5728;&#x5DE9;&#x56FA;&#x57FA;&#x7840;&#x671F;&#x95F4;&#xFF0C;&#x6211;&#x5EFA;&#x8BAE;&#x5927;&#x5BB6;&#x591A;&#x53BB;&#x4E86;&#x89E3;&#x8BA1;&#x7B97;&#x673A;&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#xFF0C;&#x6BD4;&#x5982;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3001;&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;&#x3002;</p>
+<p>&#x4F46;&#x8FD9;&#x4E00;&#x5757;&#x77E5;&#x8BC6;&#x8BF4;&#x5B9E;&#x8BDD;&#x633A;&#x67AF;&#x71E5;&#x7684;&#xFF0C;&#x5BF9;&#x5427;&#xFF0C;&#x4F60;&#x8BF4;&#x8BF4;&#x6211;&#x73B0;&#x5728;&#x9879;&#x76EE;&#x90FD;&#x4E0D;&#x4F1A;&#x505A;&#xFF0C;&#x4F60;&#x53C8;&#x8BA9;&#x6211;&#x770B;&#x8FD9;&#x4E9B;&#x7406;&#x8BBA;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x60F3;&#x8BA9;&#x6211;&#x5934;&#x79C3;&#x3002;</p>
+<p>&#x6211;&#x7684;&#x5EFA;&#x8BAE;&#x662F;&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x770B;&#x6709;&#x8DA3;&#x7684;&#x8BFE;&#x5916;&#x4E66;&#xFF0C;&#x6BD4;&#x5982;&#x300A;&#x56FE;&#x89E3; HTTP&#x300B;&#x7B49;&#x7B49;&#xFF0C;&#x5BF9;&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#x5148;&#x6709;&#x4E2A;&#x5927;&#x81F4;&#x7684;&#x5370;&#x8C61;&#xFF0C;&#x7B49;&#x540E;&#x9762;&#x6709;&#x65F6;&#x95F4;&#x4E86;&#x518D;&#x7CFB;&#x7EDF;&#x5B66;&#x4E60;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#x8FD8;&#x5728;&#x6821;&#x56ED;&#x5C31;&#x8DDF;&#x7740;&#x5B66;&#x6821;&#x7684;&#x8FDB;&#x5EA6;&#x5B66;&#x4E60;&#x5C31;&#x6210;&#xFF0C;&#x81EA;&#x5B66;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x770B;&#x4E0B; &#x300A;&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;&#x5FAE;&#x8BFE;&#x5802;&#x300B;&#x3001; &#x300A;&#x6E05;&#x534E;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x539F;&#x7406;&#x300B;&#x89C6;&#x9891;&#xFF0C;&#x6709;&#x5B9E;&#x529B;&#x7684;&#x5C0F;&#x4F19;&#x4F34;&#xFF0C;&#x80FD;&#x770B;&#x61C2;&#x5927;&#x9ED1;&#x4E66;&#x5C31;&#x66F4;&#x597D;&#x4E86;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x8D44;&#x6E90;</p>
+<ul>
+<li><p>&#x89C6;&#x9891;</p>
+<ul>
+<li>&#x300A;&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;&#x5FAE;&#x8BFE;&#x5802;&#x300B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1c4411d7jb">https://www.bilibili.com/video/BV1c4411d7jb</a></li>
+<li>&#x300A;&#x6E05;&#x534E;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x539F;&#x7406;&#x300B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1uW411f72n">https://www.bilibili.com/video/BV1uW411f72n</a></li>
+</ul>
+</li>
+<li><p>&#x4E66;&#x7C4D;</p>
+<ul>
+<li>&#x2B50;&#x300A;&#x56FE;&#x89E3; HTTP&#x300B;</li>
+<li>&#x300A;&#x7F51;&#x7EDC;&#x662F;&#x600E;&#x6837;&#x8FDE;&#x63A5;&#x7684;&#x300B;</li>
+<li>&#x2B50;&#x300A;&#x56FE;&#x89E3; TCP / IP&#x300B;</li>
+<li>&#x300A;&#x7F16;&#x7801;&#x300B;</li>
+<li>&#x300A;30&#x5929;&#x81EA;&#x5236;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x300B;</li>
+<li>&#x300A;&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;-&#x81EA;&#x9876;&#x5411;&#x4E0B;&#x65B9;&#x6CD5;&#x300B;&#xFF08;&#x96BE;&#x5EA6;&#x8F83;&#x5927;&#xFF0C;&#x4E0D;&#x63A8;&#x8350;&#x65B0;&#x624B;&#x770B;&#xFF09;</li>
+<li>&#x300A;&#x73B0;&#x4EE3;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x300B;&#xFF08;&#x96BE;&#x5EA6;&#x8F83;&#x5927;&#xFF0C;&#x4E0D;&#x63A8;&#x8350;&#x65B0;&#x624B;&#x770B;&#xFF09;</li>
+<li>&#x300A;&#x6DF1;&#x5165;&#x7406;&#x89E3;&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;&#x300B;&#xFF08;&#x96BE;&#x5EA6;&#x8F83;&#x5927;&#xFF0C;&#x4E0D;&#x63A8;&#x8350;&#x65B0;&#x624B;&#x770B;&#xFF09;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x5C3E;&#x58F0;-1"><a href="#&#x5C3E;&#x58F0;-1" class="headerlink" title="&#x5C3E;&#x58F0;"></a>&#x5C3E;&#x58F0;</h3><p>&#x5DE9;&#x56FA;&#x57FA;&#x7840;&#x8981;&#x82B1;&#x81F3;&#x5C11; 1 &#x4E2A;&#x6708;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x5F53;&#x4F60;&#x8BFB;&#x5B8C;&#x300A;Java &#x6838;&#x5FC3;&#x6280;&#x672F;&#x5377;1&#x300B;&#x5E76;&#x4E14;&#x4E0D;&#x7528;&#x67E5;&#x8BE2;&#x6587;&#x6863;&#x4E5F;&#x80FD;&#x719F;&#x7EC3;&#x5730;&#x7528; Java &#x505A;&#x9898;&#x65F6;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x63A5;&#x7740;&#x5F80;&#x4E0B;&#x4E86;&#x3002;</p>
+<h2 id="&#x9636;&#x6BB5;-3&#xFF1A;Java-&#x4F01;&#x4E1A;&#x5F00;&#x53D1;&#x57FA;&#x7840;"><a href="#&#x9636;&#x6BB5;-3&#xFF1A;Java-&#x4F01;&#x4E1A;&#x5F00;&#x53D1;&#x57FA;&#x7840;" class="headerlink" title="&#x9636;&#x6BB5; 3&#xFF1A;Java &#x4F01;&#x4E1A;&#x5F00;&#x53D1;&#x57FA;&#x7840;"></a>&#x9636;&#x6BB5; 3&#xFF1A;Java &#x4F01;&#x4E1A;&#x5F00;&#x53D1;&#x57FA;&#x7840;</h2><h3 id="&#x76EE;&#x6807;-2"><a href="#&#x76EE;&#x6807;-2" class="headerlink" title="&#x76EE;&#x6807;"></a>&#x76EE;&#x6807;</h3><p>&#x9762;&#x5411;&#x85AA;&#x8D44;&#x7F16;&#x7A0B;&#xFF0C;&#x5B66;&#x4E60;&#x5B9E;&#x9645;&#x5DE5;&#x4F5C;&#x8981;&#x7528;&#x7684;&#x6280;&#x672F;&#xFF0C;&#x5E76;&#x80FD; <strong>&#x72EC;&#x7ACB;</strong> &#x505A;&#x51FA;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x5B8C;&#x6574;&#x529F;&#x80FD;&#x7684; Java Web &#x9879;&#x76EE;&#x3002;</p>
+<h3 id="MySQL-&#x6570;&#x636E;&#x5E93;&#xFF08;7-&#x5929;&#xFF09;"><a href="#MySQL-&#x6570;&#x636E;&#x5E93;&#xFF08;7-&#x5929;&#xFF09;" class="headerlink" title="MySQL &#x6570;&#x636E;&#x5E93;&#xFF08;7 &#x5929;&#xFF09;"></a>MySQL &#x6570;&#x636E;&#x5E93;&#xFF08;7 &#x5929;&#xFF09;</h3><p>&#x4F01;&#x4E1A;&#x4E2D;&#x5927;&#x90E8;&#x5206;&#x4E1A;&#x52A1;&#x6570;&#x636E;&#x90FD;&#x662F;&#x7528;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x5B58;&#x50A8;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x6570;&#x636E;&#x5E93;&#x662F;&#x540E;&#x53F0;&#x5F00;&#x53D1;&#x540C;&#x5B66;&#x7684;&#x5FC5;&#x5907;&#x6280;&#x80FD;&#xFF0C;&#x5176;&#x4E2D; MySQL &#x6570;&#x636E;&#x5E93;&#x662F;&#x76EE;&#x524D;&#x7684;&#x4E3B;&#x6D41;&#xFF0C;&#x4E5F;&#x662F;&#x9762;&#x8BD5;&#x65F6;&#x7684;&#x91CD;&#x70B9;&#x3002;</p>
+<ul>
+<li><p>&#x77E5;&#x8BC6;</p>
+<ul>
+<li>&#x57FA;&#x672C;&#x6982;&#x5FF5;</li>
+<li>MySQL &#x642D;&#x5EFA;</li>
+<li>SQL &#x8BED;&#x53E5;&#x7F16;&#x5199;</li>
+<li>&#x7EA6;&#x675F;</li>
+<li>&#x7D22;&#x5F15;</li>
+<li>&#x4E8B;&#x52A1;</li>
+<li>&#x8BBE;&#x8BA1;&#x6570;&#x636E;&#x5E93;&#x8868;</li>
+<li>&#x6027;&#x80FD;&#x4F18;&#x5316;</li>
+</ul>
+</li>
+<li><p>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</p>
+<p>&#x5176;&#x4E2D;&#xFF0C;<strong>SQL &#x8BED;&#x53E5;&#x7F16;&#x5199;</strong> &#x548C; <strong>&#x8BBE;&#x8BA1;&#x6570;&#x636E;&#x5E93;&#x8868;</strong> &#x8FD9;&#x4E24;&#x4E2A;&#x80FD;&#x529B;&#x4E00;&#x5B9A;&#x8981;&#x6709;&#xFF01;</p>
+<p>&#x6BD4;&#x5982;&#x8BA9;&#x4F60;&#x505A;&#x4E00;&#x4E2A;&#x5B66;&#x751F;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#xFF0C;&#x4F60;&#x8981;&#x80FD;&#x60F3;&#x5230;&#x9700;&#x8981;&#x54EA;&#x4E9B;&#x8868;&#xFF0C;&#x6BD4;&#x5982;&#x5B66;&#x751F;&#x8868;&#x3001;&#x73ED;&#x7EA7;&#x8868;&#xFF1B;&#x6BCF;&#x4E2A;&#x8868;&#x9700;&#x8981;&#x54EA;&#x4E9B;&#x5B57;&#x6BB5;&#x3001;&#x5B57;&#x6BB5;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x8FD9;&#x5C31;&#x8981;&#x6C42;&#x5927;&#x5BB6;&#x591A;&#x5199; SQL&#x3001;&#x591A;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x7684;&#x4E1A;&#x52A1;&#x573A;&#x666F;&#x53BB;&#x7EC3;&#x4E60;&#x8BBE;&#x8BA1;&#x80FD;&#x529B;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x8D44;&#x6E90;</p>
+<ul>
+<li><p>&#x89C6;&#x9891;</p>
+<ul>
+<li>&#x2B50; &#x8001;&#x675C; - mysql&#x5165;&#x95E8;&#x57FA;&#x7840; + &#x6570;&#x636E;&#x5E93;&#x5B9E;&#x6218;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Vy4y1z7EX&#xFF08;&#x8F83;&#x65B0;&#x3001;&#x5185;&#x5BB9;&#x76F8;&#x5BF9;&#x7CBE;&#x70BC;&#xFF0C;&#x6709;&#x4E60;&#x9898;&#xFF09;">https://www.bilibili.com/video/BV1Vy4y1z7EX&#xFF08;&#x8F83;&#x65B0;&#x3001;&#x5185;&#x5BB9;&#x76F8;&#x5BF9;&#x7CBE;&#x70BC;&#xFF0C;&#x6709;&#x4E60;&#x9898;&#xFF09;</a></li>
+<li>&#x5C1A;&#x7845;&#x8C37; - MySQL&#x57FA;&#x7840;&#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1xW411u7ax&#xFF08;&#x5C0F;&#x59D0;&#x59D0;&#x8BB2;&#x8BFE;&#xFF0C;&#x4F46;&#x611F;&#x89C9;&#x97F3;&#x8D28;&#x4E00;&#x822C;&#xFF09;">https://www.bilibili.com/video/BV1xW411u7ax&#xFF08;&#x5C0F;&#x59D0;&#x59D0;&#x8BB2;&#x8BFE;&#xFF0C;&#x4F46;&#x611F;&#x89C9;&#x97F3;&#x8D28;&#x4E00;&#x822C;&#xFF09;</a></li>
+</ul>
+</li>
+<li><p>&#x5728;&#x7EBF;&#x7EC3;&#x4E60;</p>
+<ul>
+<li>&#x2B50; SQL &#x81EA;&#x5B66;&#x7F51;&#xFF1A;<a target="_blank" rel="noopener" href="http://xuesql.cn/">http://xuesql.cn/</a></li>
+<li>&#x2B50; SQL &#x5728;&#x7EBF;&#x8FD0;&#x884C;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bejson.com/runcode/sql/">https://www.bejson.com/runcode/sql/</a></li>
+</ul>
+</li>
+<li><p>&#x6587;&#x6863;</p>
+<ul>
+<li>SQL - &#x83DC;&#x9E1F;&#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.runoob.com/sql/sql-tutorial.html">https://www.runoob.com/sql/sql-tutorial.html</a></li>
+<li>MySQL - &#x83DC;&#x9E1F;&#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.runoob.com/mysql/mysql-tutorial.html">https://www.runoob.com/mysql/mysql-tutorial.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x5F00;&#x53D1;&#x6846;&#x67B6;&#xFF08;60-&#x5929;&#xFF09;"><a href="#&#x5F00;&#x53D1;&#x6846;&#x67B6;&#xFF08;60-&#x5929;&#xFF09;" class="headerlink" title="&#x5F00;&#x53D1;&#x6846;&#x67B6;&#xFF08;60 &#x5929;&#xFF09;"></a>&#x5F00;&#x53D1;&#x6846;&#x67B6;&#xFF08;60 &#x5929;&#xFF09;</h3><p>Java &#x4E4B;&#x6240;&#x4EE5;&#x80FD;&#x6210;&#x4E3A;&#x4E3B;&#x6D41;&#x7684;&#x4F01;&#x4E1A;&#x5F00;&#x53D1;&#x8BED;&#x8A00;&#xFF0C;&#x5F88;&#x5927;&#x4E00;&#x90E8;&#x5206;&#x539F;&#x56E0;&#x662F;&#x5B83;&#x5B8C;&#x5584;&#x7684;&#x6846;&#x67B6;&#x751F;&#x6001;&#xFF0C;&#x7528;&#x597D;&#x6846;&#x67B6;&#xFF0C;&#x4E0D;&#x4EC5;&#x80FD;&#x591F;&#x5927;&#x5927;&#x63D0;&#x5347;&#x5F00;&#x53D1;&#x6548;&#x7387;&#xFF0C;&#x8FD8;&#x80FD;&#x63D0;&#x9AD8;&#x9879;&#x76EE;&#x7684;&#x7A33;&#x5B9A;&#x6027;&#x3001;&#x51CF;&#x5C11;&#x7EF4;&#x62A4;&#x6210;&#x672C;&#x3002;</p>
+<p>&#x5F00;&#x53D1;&#x6846;&#x67B6;&#x662F;&#x540E;&#x53F0;&#x5F00;&#x53D1;&#x5DE5;&#x4F5C;&#x4E2D;&#x4E0D;&#x53EF;&#x6216;&#x7F3A;&#x7684;&#xFF0C;&#x4E5F;&#x662F;&#x9762;&#x8BD5;&#x8003;&#x5BDF;&#x7684;&#x91CD;&#x70B9;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x597D;&#x597D;&#x5B66;&#xFF01;</p>
+<p>&#x4E0D;&#x77E5;&#x9053; Java &#x80FD;&#x505A;&#x4EC0;&#x4E48;&#x7684;&#x670B;&#x53CB;&#x4EEC;&#xFF0C;&#x5B66;&#x5B8C;&#x5F00;&#x53D1;&#x6846;&#x67B6;&#xFF0C;&#x5C31;&#x4F1A;&#x6709;&#x7B54;&#x6848;&#x5566;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x7ED9;&#x5927;&#x5BB6;&#x63A8;&#x8350;&#x7684;&#x90FD;&#x662F;&#x4F01;&#x4E1A;&#x4E2D;&#x5E94;&#x7528;&#x6700;&#x591A;&#x7684;&#x4E3B;&#x6D41;&#x5F00;&#x53D1;&#x6846;&#x67B6;&#xFF0C;&#x77E5;&#x8BC6;&#x70B9;&#x6BD4;&#x8F83;&#x96F6;&#x788E;&#xFF0C;&#x5C31;&#x653E;&#x5728;&#x4E00;&#x8D77;&#x8BB2;&#x4E86;&#x3002;</p>
+<ul>
+<li><p>&#x77E5;&#x8BC6;</p>
+<ul>
+<li><p>Java Web</p>
+<ul>
+<li>&#x63CF;&#x8FF0;&#xFF1A;Java &#x7F51;&#x9875;&#x5E94;&#x7528;&#x5F00;&#x53D1;&#x57FA;&#x7840;</li>
+<li>&#x524D;&#x7AEF;&#x57FA;&#x7840;</li>
+<li>XML</li>
+<li>JSON</li>
+<li>Servlet</li>
+<li>Filter</li>
+<li>Listener</li>
+<li>JSP</li>
+<li>JSTL</li>
+<li>Cookie</li>
+<li>Session</li>
+</ul>
+</li>
+<li><p>Spring 5</p>
+<ul>
+<li>&#x63CF;&#x8FF0;&#xFF1A;Java &#x8F7B;&#x91CF;&#x7EA7;&#x5E94;&#x7528;&#x6846;&#x67B6;</li>
+<li>IOC</li>
+<li>AOP</li>
+<li>&#x4E8B;&#x52A1;</li>
+</ul>
+</li>
+<li><p>SpringMVC</p>
+<ul>
+<li>&#x63CF;&#x8FF0;&#xFF1A;Java &#x8F7B;&#x91CF;&#x7EA7; web &#x5F00;&#x53D1;&#x6846;&#x67B6;</li>
+<li>&#x4EC0;&#x4E48;&#x662F; MVC&#xFF1F;</li>
+<li>&#x8BF7;&#x6C42;&#x4E0E;&#x54CD;&#x5E94;</li>
+<li>Restful API</li>
+<li>&#x62E6;&#x622A;&#x5668;</li>
+<li>&#x914D;&#x7F6E;</li>
+<li>&#x6267;&#x884C;&#x8FC7;&#x7A0B;</li>
+</ul>
+</li>
+<li><p>MyBatis</p>
+<ul>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x6570;&#x636E;&#x8BBF;&#x95EE;&#x6846;&#x67B6;&#xFF0C;&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;&#x8FDB;&#x884C;&#x589E;&#x5220;&#x6539;&#x67E5;&#x7B49;&#x64CD;&#x4F5C;</li>
+<li>&#x589E;&#x5220;&#x6539;&#x67E5;</li>
+<li>&#x5168;&#x5C40;&#x914D;&#x7F6E;</li>
+<li>&#x52A8;&#x6001; SQL</li>
+<li>&#x7F13;&#x5B58;</li>
+<li>&#x548C;&#x5176;&#x4ED6;&#x6846;&#x67B6;&#x7684;&#x6574;&#x5408;</li>
+<li>&#x9006;&#x5411;&#x5DE5;&#x7A0B;</li>
+</ul>
+</li>
+<li><p>MyBatis Plus</p>
+<ul>
+<li>&#x63CF;&#x8FF0;&#xFF1A;Mybatis &#x7684;&#x589E;&#x5F3A;&#x5DE5;&#x5177;&#xFF0C;&#x80FD;&#x591F;&#x7B80;&#x5316;&#x5F00;&#x53D1;&#x3001;&#x63D0;&#x9AD8;&#x6548;&#x7387;</li>
+<li>&#x5F15;&#x5165;</li>
+<li>&#x901A;&#x7528; CRUD</li>
+<li>&#x6761;&#x4EF6;&#x6784;&#x9020;&#x5668;</li>
+<li>&#x4EE3;&#x7801;&#x751F;&#x6210;&#x5668;</li>
+<li>&#x63D2;&#x4EF6;&#x6269;&#x5C55;</li>
+<li>&#x81EA;&#x5B9A;&#x4E49;&#x5168;&#x5C40;&#x64CD;&#x4F5C;</li>
+</ul>
+</li>
+<li><p>SpringBoot 2</p>
+<ul>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x7B80;&#x5316; Spring &#x5E94;&#x7528;&#x7684;&#x521D;&#x59CB;&#x642D;&#x5EFA;&#x4EE5;&#x53CA;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#xFF0C;&#x63D0;&#x9AD8;&#x6548;&#x7387;</li>
+<li>&#x5E38;&#x7528;&#x6CE8;&#x89E3;</li>
+<li>&#x8D44;&#x6E90;&#x6574;&#x5408;</li>
+<li>&#x9AD8;&#x7EA7;&#x7279;&#x6027;</li>
+<li>&#x672C;&#x5730;&#x70ED;&#x90E8;&#x7F72;</li>
+</ul>
+</li>
+<li><p>Spring Security</p>
+<ul>
+<li>&#x63CF;&#x8FF0;&#xFF1A;Spring &#x7684;&#x5B89;&#x5168;&#x7BA1;&#x7406;&#x6846;&#x67B6;</li>
+<li>&#x7528;&#x6237;&#x8BA4;&#x8BC1;</li>
+<li>&#x6743;&#x9650;&#x7BA1;&#x7406;</li>
+</ul>
+</li>
+<li><p>Maven / Gradle</p>
+<ul>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x9879;&#x76EE;&#x7BA1;&#x7406;&#x5DE5;&#x5177;</li>
+<li>&#x6784;&#x5EFA;</li>
+<li>&#x4F9D;&#x8D56;&#x7BA1;&#x7406;</li>
+<li>&#x63D2;&#x4EF6;</li>
+<li>&#x914D;&#x7F6E;</li>
+<li>&#x5B50;&#x7236;&#x5DE5;&#x7A0B;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</p>
+<p>&#x7531;&#x4E8E;&#x6280;&#x672F;&#x8F83;&#x591A;&#xFF0C;&#x4E14;&#x6846;&#x67B6;&#x4E4B;&#x95F4;&#x5B58;&#x5728;&#x4E00;&#x5B9A;&#x7684;&#x8054;&#x7CFB;&#xFF0C;&#x56E0;&#x6B64;&#x5EFA;&#x8BAE;&#x5927;&#x5BB6;&#x770B;&#x540C;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x89C6;&#x9891;&#x6559;&#x7A0B;&#xFF08;&#x5C1A;&#x7845;&#x8C37;&#x3001;&#x72C2;&#x795E;&#x8BF4;&#x7B49;&#x7B49;&#x90FD;&#x53EF;&#x4EE5;&#xFF09;&#xFF0C;&#x4EE5;&#x4FDD;&#x8BC1;&#x5B66;&#x4E60;&#x5185;&#x5BB9;&#x7684;&#x8FDE;&#x7EED;&#x4EE5;&#x53CA;&#x4F53;&#x9A8C;&#x4E0A;&#x7684;&#x4E00;&#x81F4;&#x3002;</p>
+<p>&#x5B66;&#x8FD9;&#x4E9B;&#x6280;&#x672F;&#x7684;&#x65F6;&#x5019;&#xFF0C;<strong>&#x5343;&#x4E07;&#x4E0D;&#x80FD;&#x61D2;</strong> &#xFF01;&#x4E00;&#x5B9A;&#x8981;&#x591A;&#x8BB0;&#x7B14;&#x8BB0;&#xFF0C;&#x5E76;&#x4E14;&#x8DDF;&#x7740;&#x8001;&#x5E08;&#x5199;&#x4EE3;&#x7801;&#x3002;&#x539F;&#x7406;&#x90E8;&#x5206;&#x4E0D;&#x8981;&#x592A;&#x8FC7;&#x7EA0;&#x7ED3;&#xFF0C;&#x5148;&#x4EE5;&#x80FD;&#x8DDF;&#x7740;&#x6572;&#x51FA;&#x4EE3;&#x7801;&#x3001;&#x5199;&#x51FA;&#x53EF;&#x8FD0;&#x884C;&#x7684;&#x9879;&#x76EE;&#x4E3A;&#x4E3B;&#xFF0C;&#x6709;&#x4E9B;&#x4E1C;&#x897F;&#x505A;&#x51FA;&#x6765;&#x4E5F;&#x80FD;&#x5E2E;&#x52A9;&#x4F60;&#x66F4;&#x597D;&#x5730;&#x7406;&#x89E3;&#x7406;&#x8BBA;&#x3002;</p>
+<p>&#x5B66;&#x4E60;&#x987A;&#x5E8F;&#x633A;&#x91CD;&#x8981;&#x7684;&#xFF0C;&#x5EFA;&#x8BAE;&#x6309;&#x6211;&#x63A8;&#x8350;&#x7684;&#x987A;&#x5E8F;&#x5B66;&#xFF0C;&#x4E0D;&#x8981;&#x4E00;&#x4E0A;&#x624B;&#x5C31;&#x5B66; SpringBoot&#x3002;&#x53EA;&#x6709;&#x5148;&#x5B66;&#x4E60;&#x4E0B;&#x81EA;&#x5DF1;&#x6574;&#x5408;&#x6846;&#x67B6;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x624D;&#x80FD;&#x5E2E;&#x4F60;&#x7406;&#x89E3; SpringBoot &#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x611F;&#x53D7;&#x5230;&#x5B83;&#x7684;&#x65B9;&#x4FBF;&#x548C;&#x9AD8;&#x6548;&#x3002;</p>
+<p>Maven / Gradle &#x5F53;&#x5DE5;&#x5177;&#x7528;&#x5C31;&#x597D;&#xFF0C;&#x9762;&#x8BD5;&#x57FA;&#x672C;&#x4E0D;&#x95EE;&#xFF0C;&#x8DDF;&#x7740;&#x6846;&#x67B6;&#x6559;&#x7A0B;&#x53BB;&#x7528;&#x5C31;&#x884C;&#x4E86;&#xFF0C;&#x5148;&#x4E0D;&#x7528;&#x82B1;&#x592A;&#x591A;&#x65F6;&#x95F4;&#x53BB;&#x6DF1;&#x5165;&#x5B66;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x8D44;&#x6E90;</p>
+<ul>
+<li><p>&#x89C6;&#x9891;&#xFF08;&#x6309;&#x987A;&#x5E8F;&#x770B;&#xFF09;</p>
+<ul>
+<li>&#x2B50; &#x5C1A;&#x7845;&#x8C37;&#x6700;&#x65B0;&#x7248; JavaWeb &#x5168;&#x5957;&#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Y7411K7zz&#xFF08;&#x524D;&#x7AEF;&#x90E8;&#x5206;&#x6700;&#x597D;&#x4E5F;&#x770B;&#x4E0B;&#xFF09;">https://www.bilibili.com/video/BV1Y7411K7zz&#xFF08;&#x524D;&#x7AEF;&#x90E8;&#x5206;&#x6700;&#x597D;&#x4E5F;&#x770B;&#x4E0B;&#xFF09;</a></li>
+<li>&#x2B50; &#x5C1A;&#x7845;&#x8C37; - Spring 5 &#x6846;&#x67B6;&#x6700;&#x65B0;&#x7248;&#x6559;&#x7A0B;&#xFF08;idea&#x7248;&#xFF09;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Vf4y127N5">https://www.bilibili.com/video/BV1Vf4y127N5</a></li>
+<li>&#x2B50; &#x5C1A;&#x7845;&#x8C37; - SpringMVC 2021 &#x6700;&#x65B0;&#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Ry4y1574R">https://www.bilibili.com/video/BV1Ry4y1574R</a></li>
+<li>&#x2B50; &#x5C1A;&#x7845;&#x8C37; - MyBatis &#x5B9E;&#x6218;&#x6559;&#x7A0B;&#x5168;&#x5957;&#x5B8C;&#x6574;&#x7248;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1mW411M737">https://www.bilibili.com/video/BV1mW411M737</a></li>
+<li>&#x2B50; &#x5C1A;&#x7845;&#x8C37; - MyBatisPlus &#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Ds411E76Y">https://www.bilibili.com/video/BV1Ds411E76Y</a></li>
+<li>Maven &#x96F6;&#x57FA;&#x7840;&#x5165;&#x95E8;&#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1TW411g7hP&#xFF08;&#x641E;&#x4E0D;&#x61C2;">https://www.bilibili.com/video/BV1TW411g7hP&#xFF08;&#x641E;&#x4E0D;&#x61C2;</a> Maven &#x53EF;&#x4EE5;&#x770B;&#x770B;&#xFF09;</li>
+<li>&#x2B50; &#x96F7;&#x4E30;&#x9633; 2021 &#x7248; SpringBoot2 &#x96F6;&#x57FA;&#x7840;&#x5165;&#x95E8;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV19K4y1L7MT">https://www.bilibili.com/video/BV19K4y1L7MT</a></li>
+<li>&#x5C1A;&#x7845;&#x8C37; - SpringSecurity &#x6846;&#x67B6;&#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV15a411A7kP">https://www.bilibili.com/video/BV15a411A7kP</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x5F00;&#x53D1;&#x89C4;&#x8303;&#xFF08;3-&#x5929;&#xFF09;"><a href="#&#x5F00;&#x53D1;&#x89C4;&#x8303;&#xFF08;3-&#x5929;&#xFF09;" class="headerlink" title="&#x5F00;&#x53D1;&#x89C4;&#x8303;&#xFF08;3 &#x5929;&#xFF09;"></a>&#x5F00;&#x53D1;&#x89C4;&#x8303;&#xFF08;3 &#x5929;&#xFF09;</h3><p>&#x5F00;&#x53D1;&#x4E0D;&#x89C4;&#x8303;&#xFF0C;&#x540C;&#x4E8B;&#x4E24;&#x884C;&#x6CEA;&#x3002;</p>
+<p>&#x5F00;&#x53D1;&#x89C4;&#x8303;&#x662F;&#x56E2;&#x961F;&#x5F00;&#x53D1;&#x4E2D;&#x5FC5;&#x987B;&#x9075;&#x5B88;&#x7684;&#xFF0C;&#x6709;&#x5229;&#x4E8E;&#x63D0;&#x9AD8;&#x9879;&#x76EE;&#x7684;&#x5F00;&#x53D1;&#x6548;&#x7387;&#x3001;&#x964D;&#x4F4E;&#x7EF4;&#x62A4;&#x6210;&#x672C;&#x3002;</p>
+<ul>
+<li><p>&#x77E5;&#x8BC6;</p>
+<ul>
+<li><p>&#x4EE3;&#x7801;&#x89C4;&#x8303;</p>
+<ul>
+<li>&#x4EE3;&#x7801;&#x98CE;&#x683C;</li>
+<li>&#x547D;&#x540D;</li>
+<li>&#x5176;&#x4ED6;&#x89C4;&#x5219;</li>
+</ul>
+</li>
+<li><p>&#x63D0;&#x4EA4;&#x89C4;&#x8303;</p>
+</li>
+</ul>
+</li>
+<li><p>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</p>
+<p>&#x7B80;&#x5355;&#x8FC7;&#x4E00;&#x904D;&#x5927;&#x5382;&#x56E2;&#x961F;&#x7684;&#x89C4;&#x8303;&#x624B;&#x518C;&#x5C31;&#x597D;&#x4E86;&#xFF0C;&#x4EE5;&#x540E;&#x505A;&#x9879;&#x76EE;&#x7684;&#x65F6;&#x5019;&#x80FD;&#x60F3;&#x8D77;&#x6765;&#x7684;&#x8BDD;&#x5C31;&#x53BB;&#x4F7F;&#x7528;&#xFF0C;&#x6216;&#x8005;&#x4ECE;&#x4E66;&#x4E2D;&#x3001;&#x7F51;&#x4E0A;&#x67E5;&#x89C4;&#x8303;&#xFF0C;&#x518D;&#x53BB;&#x9075;&#x5B88;&#x3002;</p>
+<p>&#x9879;&#x76EE;&#x505A;&#x5F97;&#x591A;&#x4E86;&#xFF0C;&#x81EA;&#x7136;&#x4F1A;&#x517B;&#x6210;&#x597D;&#x7684;&#x4E60;&#x60EF;&#xFF0C;&#x4E0D;&#x7528;&#x523B;&#x610F;&#x53BB;&#x8BB0;&#xFF08;&#x6BD5;&#x7ADF;&#x6BCF;&#x4E2A;&#x56E2;&#x961F;&#x89C4;&#x8303;&#x4E5F;&#x4E0D;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#xFF0C;&#x80CC;&#x4E86;&#x4E5F;&#x6CA1;&#x7528;&#xFF09;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x8D44;&#x6E90;</p>
+<ul>
+<li><p>&#x4E66;&#x7C4D;</p>
+<ul>
+<li>&#x2B50; &#x963F;&#x91CC;&#x5DF4;&#x5DF4; Java &#x5F00;&#x53D1;&#x624B;&#x518C;&#xFF1A;<a target="_blank" rel="noopener" href="https://developer.aliyun.com/graph/java&#xFF08;&#x641C;&#x7D22;&#x300A;Java&#x5F00;&#x53D1;&#x624B;&#x518C;&#x300B;&#xFF09;">https://developer.aliyun.com/graph/java&#xFF08;&#x641C;&#x7D22;&#x300A;Java&#x5F00;&#x53D1;&#x624B;&#x518C;&#x300B;&#xFF09;</a></li>
+</ul>
+</li>
+<li><p>&#x89C6;&#x9891;</p>
+<ul>
+<li>&#x534E;&#x5C71;&#x7248;&#x300A;Java&#x5F00;&#x53D1;&#x624B;&#x518C;&#x300B;&#x72EC;&#x5BB6;&#x8BB2;&#x89E3;&#xFF1A;<a target="_blank" rel="noopener" href="https://developer.aliyun.com/live/1201">https://developer.aliyun.com/live/1201</a></li>
+</ul>
+</li>
+<li><p>&#x6587;&#x6863;</p>
+<ul>
+<li>Google Java Style Guide&#xFF1A;<a target="_blank" rel="noopener" href="https://google.github.io/styleguide/javaguide.html&#xFF08;&#x8C37;&#x6B4C;">https://google.github.io/styleguide/javaguide.html&#xFF08;&#x8C37;&#x6B4C;</a> Java &#x4EE3;&#x7801;&#x89C4;&#x8303;&#xFF09;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Git&#xFF08;3-&#x5929;&#xFF09;"><a href="#Git&#xFF08;3-&#x5929;&#xFF09;" class="headerlink" title="Git&#xFF08;3 &#x5929;&#xFF09;"></a>Git&#xFF08;3 &#x5929;&#xFF09;</h3><p>&#x6B64;&#x524D;&#x5927;&#x5BB6;&#x53EF;&#x80FD;&#x542C;&#x8BF4;&#x8FC7; GitHub&#xFF0C;&#x4E00;&#x6D41;&#x7684;&#x4EE3;&#x7801;&#x5F00;&#x6E90;&#x6258;&#x7BA1;&#x5E73;&#x53F0;&#x3002;</p>
+<p>Git &#x548C;&#x5B83;&#x53EF;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#x63A7;&#x5236;&#x5DE5;&#x5177;&#xFF0C;&#x53EF;&#x4EE5;&#x66F4;&#x597D;&#x5730;&#x7BA1;&#x7406;&#x548C;&#x5171;&#x4EAB;&#x9879;&#x76EE;&#x4EE3;&#x7801;&#xFF0C;&#x6BD4;&#x5982;&#x628A;&#x81EA;&#x5DF1;&#x7684;&#x4EE3;&#x7801;&#x4F20;&#x5230; GitHub &#x4E0A;&#x3001;&#x6216;&#x8005;&#x4ECE;&#x8FDC;&#x7A0B;&#x4E0B;&#x8F7D;&#x3002;</p>
+<p>&#x65E0;&#x8BBA;&#x81EA;&#x5DF1;&#x505A;&#x9879;&#x76EE;&#x3001;&#x8FD8;&#x662F;&#x56E2;&#x961F;&#x5F00;&#x53D1;&#xFF0C;Git &#x90FD;&#x662F;&#x73B0;&#x5728;&#x4E0D;&#x53EF;&#x6216;&#x7F3A;&#x7684;&#x795E;&#x5668;&#x3002;</p>
+<ul>
+<li><p>&#x77E5;&#x8BC6;</p>
+<ul>
+<li>&#x5DE5;&#x4F5C;&#x533A;</li>
+<li>&#x5206;&#x652F;</li>
+<li>&#x4EE3;&#x7801;&#x63D0;&#x4EA4;&#x3001;&#x63A8;&#x9001;&#x3001;&#x62C9;&#x53D6;&#x3001;&#x56DE;&#x9000;&#x3001;&#x91CD;&#x7F6E;</li>
+<li>&#x5206;&#x652F;&#x64CD;&#x4F5C;</li>
+<li>&#x4EE3;&#x7801;&#x5408;&#x5E76;&#x3001;&#x89E3;&#x51B3;&#x51B2;&#x7A81;</li>
+<li>&#x6807;&#x7B7E;</li>
+<li>cherry-pick</li>
+</ul>
+</li>
+<li><p>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</p>
+<p>&#x6BCF;&#x4E2A;&#x547D;&#x4EE4;&#x8DDF;&#x7740;&#x6572;&#x4E00;&#x904D;&#xFF0C;&#x6709;&#x4E2A;&#x5927;&#x81F4;&#x7684;&#x5370;&#x8C61;&#xFF0C;&#x4F1A;&#x7528;&#x5373;&#x53EF;&#xFF0C;&#x7528;&#x7684;&#x591A;&#x4E86;&#x81EA;&#x7136;&#x719F;&#x6089;&#x4E86;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x8D44;&#x6E90;</p>
+<ul>
+<li><p>&#x89C6;&#x9891;</p>
+<ul>
+<li>&#x2B50;&#x3010;&#x5C1A;&#x7845;&#x8C37;&#x3011;5h&#x6253;&#x901A;Git&#x5168;&#x5957;&#x6559;&#x7A0B;&#x4E28;2021&#x6700;&#x65B0;IDEA&#x7248; <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1vy4y1s7k6">https://www.bilibili.com/video/BV1vy4y1s7k6</a></li>
+</ul>
+</li>
+<li><p>&#x4E66;&#x7C4D;</p>
+<ul>
+<li>&#x7334;&#x5B50;&#x90FD;&#x80FD;&#x61C2;&#x7684; Git &#x5165;&#x95E8; <a target="_blank" rel="noopener" href="https://backlog.com/git-tutorial/cn/">https://backlog.com/git-tutorial/cn/</a></li>
+<li>&#x2B50; GitHub &#x6F2B;&#x6E38;&#x6307;&#x5357; <a target="_blank" rel="noopener" href="https://github.phodal.com/">https://github.phodal.com/</a></li>
+</ul>
+</li>
+<li><p>&#x6587;&#x6863;</p>
+<ul>
+<li>GitHub &#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF1A;<a target="_blank" rel="noopener" href="https://docs.github.com/cn">https://docs.github.com/cn</a></li>
+</ul>
+</li>
+<li><p>&#x6E38;&#x620F;</p>
+<ul>
+<li>Learning Git Branching&#xFF1A;<a target="_blank" rel="noopener" href="https://learngitbranching.js.org/?locale=zh_CN">https://learngitbranching.js.org/?locale=zh_CN</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Linux&#xFF08;10-&#x5929;&#xFF09;"><a href="#Linux&#xFF08;10-&#x5929;&#xFF09;" class="headerlink" title="Linux&#xFF08;10 &#x5929;&#xFF09;"></a>Linux&#xFF08;10 &#x5929;&#xFF09;</h3><p>&#x4F01;&#x4E1A;&#x4E2D;&#x7684;&#x5F88;&#x591A;&#x524D;&#x540E;&#x53F0;&#x9879;&#x76EE;&#x90FD;&#x662F;&#x90E8;&#x7F72;&#x5728; Linux &#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x5F88;&#x6709;&#x5FC5;&#x8981;&#x719F;&#x6089; Linux &#x7684;&#x64CD;&#x4F5C;&#x548C;&#x811A;&#x672C;&#x7684;&#x7F16;&#x5199;&#x3002;</p>
+<p>&#x540E;&#x9762;&#x5B66;&#x5FAE;&#x670D;&#x52A1;&#x3001;&#x5B66;&#x67B6;&#x6784;&#x90FD;&#x662F;&#x5728;&#x591A;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x719F;&#x6089; Linux&#xFF0C;&#x4F1A;&#x6709;&#x70B9;&#x5403;&#x529B;&#x3002;</p>
+<ul>
+<li><p>&#x77E5;&#x8BC6;</p>
+<ul>
+<li>Linux &#x7CFB;&#x7EDF;&#x5B89;&#x88C5;</li>
+<li>&#x73AF;&#x5883;&#x53D8;&#x91CF;</li>
+<li>&#x6587;&#x4EF6;&#x7BA1;&#x7406;</li>
+<li>&#x7528;&#x6237;&#x7BA1;&#x7406;</li>
+<li>&#x5185;&#x5B58;&#x7BA1;&#x7406;</li>
+<li>&#x78C1;&#x76D8;&#x7BA1;&#x7406;</li>
+<li>&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;</li>
+<li>&#x7F51;&#x7EDC;&#x7BA1;&#x7406;</li>
+<li>&#x8F6F;&#x4EF6;&#x5305;&#x7BA1;&#x7406;</li>
+<li>&#x670D;&#x52A1;&#x7BA1;&#x7406;</li>
+<li>&#x65E5;&#x5FD7;&#x7BA1;&#x7406;</li>
+<li>Linux &#x5185;&#x6838;</li>
+<li><strong>&#x5E38;&#x7528;&#x547D;&#x4EE4;</strong></li>
+<li><strong>&#x5E38;&#x7528;&#x73AF;&#x5883;&#x642D;&#x5EFA;</strong></li>
+<li><strong>Shell &#x811A;&#x672C;&#x7F16;&#x7A0B;</strong></li>
+<li><strong>VIM &#x7684;&#x4F7F;&#x7528;</strong></li>
+</ul>
+</li>
+<li><p>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</p>
+<p>&#x591A;&#x52A8;&#x624B;&#x5B9E;&#x8DF5;&#xFF0C;&#x5EFA;&#x8BAE;&#x81EA;&#x5DF1;&#x8D2D;&#x4E70;&#x4E00;&#x53F0;&#x4E91;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x672C;&#x5730;&#x642D;&#x5EFA; Linux &#x865A;&#x62DF;&#x673A;&#x73AF;&#x5883;&#x3002;</p>
+<p>&#x4E00;&#x5B9A;&#x8981;&#x81EA;&#x5DF1;&#x4ECE; 0 &#x5F00;&#x59CB;&#x624B;&#x6572;&#x547D;&#x4EE4;&#x5B89;&#x88C5;&#x8F6F;&#x4EF6;&#x3001;&#x90E8;&#x7F72;&#x670D;&#x52A1;&#xFF0C;&#x719F;&#x6089;&#x6574;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x4E0A;&#x7EBF;&#x6D41;&#x7A0B;&#x3002;</p>
+<p>&#x6BCF;&#x4E2A;&#x547D;&#x4EE4;&#x81F3;&#x5C11;&#x8981;&#x8DDF;&#x7740;&#x6572;&#x4E00;&#x904D;&#xFF0C;&#x4E86;&#x89E3;&#x5B83;&#x4EEC;&#x7684;&#x4F5C;&#x7528;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x81EA;&#x7136;&#x5730;&#x7EC3;&#x4E60;&#xFF0C;&#x719F;&#x6089;&#x5E38;&#x7528;&#x7684; Linux &#x547D;&#x4EE4;&#x3002;</p>
+<p>&#x8BB0;&#x4E0D;&#x4F4F;&#x6CA1;&#x5173;&#x7CFB;&#xFF0C;&#x7528;&#x6587;&#x6863;&#x67E5;&#x5C31;&#x884C;&#x4E86;&#x3002;</p>
+<p>&#x5148;&#x4F1A;&#x7528;&#xFF0C;&#x518D;&#x7406;&#x89E3;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x8D44;&#x6E90;</p>
+<ul>
+<li><p>&#x89C6;&#x9891;</p>
+<ul>
+<li>&#x2B50; 2021 &#x97E9;&#x987A;&#x5E73; &#x4E00;&#x5468;&#x5B66;&#x4F1A;Linux <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Sv411r7vd&#xFF08;&#x57FA;&#x4E8E;">https://www.bilibili.com/video/BV1Sv411r7vd&#xFF08;&#x57FA;&#x4E8E;</a> CentOS 7.6 &#x7248;&#x672C;&#x8F83;&#x65B0;&#xFF09;</li>
+</ul>
+</li>
+<li><p>&#x4E66;&#x7C4D;</p>
+<ul>
+<li>&#x300A;&#x9E1F;&#x54E5;&#x7684; Linux &#x79C1;&#x623F;&#x83DC; &#x2014;&#x2014; &#x57FA;&#x7840;&#x7BC7;&#x300B;<a target="_blank" rel="noopener" href="http://cn.linux.vbird.org/linux_basic/linux_basic.php&#xFF08;&#x7ECF;&#x5178;&#xFF09;">http://cn.linux.vbird.org/linux_basic/linux_basic.php&#xFF08;&#x7ECF;&#x5178;&#xFF09;</a></li>
+</ul>
+</li>
+<li><p>&#x6587;&#x6863;</p>
+<ul>
+<li>Linux &#x5DE5;&#x5177;&#x5FEB;&#x901F;&#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://linuxtools-rst.readthedocs.io&#xFF08;&#x57FA;&#x7840;&#x3001;&#x5DE5;&#x5177;&#x8FDB;&#x9636;&#x3001;&#x5DE5;&#x5177;&#x53C2;&#x8003;&#xFF09;">https://linuxtools-rst.readthedocs.io&#xFF08;&#x57FA;&#x7840;&#x3001;&#x5DE5;&#x5177;&#x8FDB;&#x9636;&#x3001;&#x5DE5;&#x5177;&#x53C2;&#x8003;&#xFF09;</a></li>
+</ul>
+</li>
+<li><p>&#x5B9E;&#x6218;</p>
+<ul>
+<li>&#x2B50; &#x84DD;&#x6865;&#x4E91;&#x8BFE; Linux &#x57FA;&#x7840;&#x5165;&#x95E8;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.lanqiao.cn/courses/1">https://www.lanqiao.cn/courses/1</a></li>
+<li>&#x817E;&#x8BAF;&#x4E91;&#x52A8;&#x624B;&#x5B9E;&#x9A8C;&#x5BA4;&#xFF1A;<a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/labs">https://cloud.tencent.com/developer/labs</a></li>
+<li>&#x963F;&#x91CC;&#x4E91;&#x4F53;&#x9A8C;&#x5B9E;&#x9A8C;&#x5BA4;&#xFF1A;<a target="_blank" rel="noopener" href="https://developer.aliyun.com/adc/labs/">https://developer.aliyun.com/adc/labs/</a></li>
+<li>&#x963F;&#x91CC;&#x4E91;&#x77E5;&#x884C;&#x5B9E;&#x9A8C;&#x5BA4;&#xFF1A;<a target="_blank" rel="noopener" href="https://start.aliyun.com/">https://start.aliyun.com/</a></li>
+<li>&#x534E;&#x4E3A;&#x4E91;&#x6C99;&#x7BB1;&#x5B9E;&#x9A8C;&#x5BA4;&#xFF1A;<a target="_blank" rel="noopener" href="https://lab.huaweicloud.com/">https://lab.huaweicloud.com/</a></li>
+</ul>
+</li>
+<li><p>&#x793E;&#x533A;</p>
+<ul>
+<li>Linux &#x4E2D;&#x56FD;&#xFF1A;<a target="_blank" rel="noopener" href="https://linux.cn/">https://linux.cn/</a></li>
+</ul>
+</li>
+<li><p>&#x5DE5;&#x5177;</p>
+<ul>
+<li>&#x2B50; Linux &#x547D;&#x4EE4;&#x641C;&#x7D22;&#xFF1A;<a target="_blank" rel="noopener" href="https://wangchujiang.com/linux-command">https://wangchujiang.com/linux-command</a></li>
+<li>Linux &#x547D;&#x4EE4;&#x5927;&#x5168;&#x624B;&#x518C;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.linuxcool.com/">https://www.linuxcool.com/</a></li>
+<li>Linux &#x547D;&#x4EE4;&#x793A;&#x4F8B;&#xFF1A;<a target="_blank" rel="noopener" href="http://linux-commands-examples.com/">http://linux-commands-examples.com/</a></li>
+<li>&#x5B9D;&#x5854; Linux &#x9762;&#x677F;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bt.cn/">https://www.bt.cn/</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x524D;&#x7AEF;&#x57FA;&#x7840;&#xFF08;14-&#x5929;&#xFF09;"><a href="#&#x524D;&#x7AEF;&#x57FA;&#x7840;&#xFF08;14-&#x5929;&#xFF09;" class="headerlink" title="&#x524D;&#x7AEF;&#x57FA;&#x7840;&#xFF08;14 &#x5929;&#xFF09;"></a>&#x524D;&#x7AEF;&#x57FA;&#x7840;&#xFF08;14 &#x5929;&#xFF09;</h3><p>&#x867D;&#x7136; Java &#x7A0B;&#x5E8F;&#x5458;&#x9762;&#x8BD5;&#x65F6;&#x57FA;&#x672C;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x524D;&#x7AEF;&#x76F8;&#x5173;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x4F01;&#x4E1A;&#x4E2D;&#xFF0C;&#x5F80;&#x5F80;&#x9700;&#x8981;&#x524D;&#x540E;&#x7AEF;&#x7A0B;&#x5E8F;&#x5458;&#x914D;&#x5408;&#x5B8C;&#x6210;&#x5DE5;&#x4F5C;&#x3002;&#x4F1A;&#x4E00;&#x4E9B;&#x524D;&#x7AEF;&#xFF0C;&#x4E0D;&#x4EC5;&#x53EF;&#x4EE5;&#x63D0;&#x9AD8;&#x4F60;&#x4EEC;&#x7684;&#x534F;&#x4F5C;&#x6548;&#x7387;&#xFF0C;&#x8FD8;&#x80FD;&#x63D0;&#x9AD8;&#x81EA;&#x5DF1;&#x5BF9;&#x6574;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x4E86;&#x89E3;&#x548C;&#x638C;&#x63A7;&#x529B;&#xFF0C;&#x751A;&#x81F3;&#x80FD;&#x72EC;&#x7ACB;&#x5F00;&#x53D1;&#x51FA;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x9879;&#x76EE;&#xFF01;&#x8FD9;&#x70B9;&#x4E5F;&#x662F;&#x80FD;&#x7ED9;&#x9762;&#x8BD5;&#x52A0;&#x5206;&#x7684;&#x3002;</p>
+<ul>
+<li><p>&#x77E5;&#x8BC6;</p>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li><p>JavaScript</p>
+<ul>
+<li>Ajax</li>
+</ul>
+</li>
+<li><p>Vue</p>
+</li>
+</ul>
+</li>
+<li><p>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</p>
+<p>&#x4E0D;&#x9700;&#x8981;&#x5B66;&#x4E60;&#x592A;&#x591A;&#x7684;&#x524D;&#x7AEF;&#x6280;&#x672F;&#xFF0C;&#x719F;&#x6089;&#x4E0B;&#x57FA;&#x7840;&#x7684;&#x524D;&#x7AEF;&#x4E09;&#x4EF6;&#x5957;&#xFF0C;&#x4E86;&#x89E3;&#x524D;&#x7AEF;&#x662F;&#x5982;&#x4F55;&#x5411;&#x540E;&#x7AEF;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x6765;&#x505A;&#x6570;&#x636E;&#x4EA4;&#x4E92;&#x7684;&#x4E00;&#x822C;&#x5C31;&#x591F;&#x4E86;&#x3002;&#x6709;&#x65F6;&#x95F4;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x5B66;&#x4E0B; Vue &#xFF0C;&#x662F;&#x6BD4;&#x8F83;&#x5BB9;&#x6613;&#x4E0A;&#x624B;&#x7684;&#x4E3B;&#x6D41;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x6846;&#x67B6;&#xFF0C;Vue + SpringBoot &#x8FD8;&#x662F;&#x5F88;&#x9999;&#x7684;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x8D44;&#x6E90;</p>
+<p>&#x53C2;&#x89C1;&#x9C7C;&#x76AE;&#x539F;&#x521B;&#x7684;&#x524D;&#x7AEF;&#x5B66;&#x4E60;&#x8DEF;&#x7EBF;&#xFF1A;<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/HbzLEt6NOP9Is9F3GOnbUQ">https://mp.weixin.qq.com/s/HbzLEt6NOP9Is9F3GOnbUQ</a></p>
+</li>
+</ul>
+<h2 id="&#x9636;&#x6BB5;-4&#xFF1A;Java-&#x4F01;&#x4E1A;&#x5F00;&#x53D1;&#x8FDB;&#x9636;"><a href="#&#x9636;&#x6BB5;-4&#xFF1A;Java-&#x4F01;&#x4E1A;&#x5F00;&#x53D1;&#x8FDB;&#x9636;" class="headerlink" title="&#x9636;&#x6BB5; 4&#xFF1A;Java &#x4F01;&#x4E1A;&#x5F00;&#x53D1;&#x8FDB;&#x9636;"></a>&#x9636;&#x6BB5; 4&#xFF1A;Java &#x4F01;&#x4E1A;&#x5F00;&#x53D1;&#x8FDB;&#x9636;</h2><h3 id="&#x76EE;&#x6807;-3"><a href="#&#x76EE;&#x6807;-3" class="headerlink" title="&#x76EE;&#x6807;"></a>&#x76EE;&#x6807;</h3><p>&#x5B66;&#x4E60;&#x66F4;&#x591A;&#x4F01;&#x4E1A;&#x7EA7;&#x5F00;&#x53D1;&#x6280;&#x672F;&#x548C;&#x7F16;&#x7A0B;&#x601D;&#x60F3;&#xFF0C;&#x80FD;&#x591F;&#x7ED3;&#x5408;&#x591A;&#x79CD;&#x6280;&#x672F;&#xFF0C;&#x72EC;&#x7ACB;&#x5F00;&#x53D1;&#x51FA;&#x67B6;&#x6784;&#x5408;&#x7406;&#x7684;&#x5B8C;&#x6574;&#x7CFB;&#x7EDF;&#xFF0C;<strong>&#x89E3;&#x51B3;&#x5B9E;&#x9645;&#x95EE;&#x9898;</strong> &#x3002;</p>
+<p>&#x8981;&#x4E86;&#x89E3;&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x8FD9;&#x4E2A;&#x6280;&#x672F;&#xFF1F;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x7528;&#x54EA;&#x4E9B;&#x6280;&#x672F;&#xFF1F;</p>
+<h3 id="&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF08;21-&#x5929;&#xFF09;"><a href="#&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF08;21-&#x5929;&#xFF09;" class="headerlink" title="&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF08;21 &#x5929;&#xFF09;"></a>&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF08;21 &#x5929;&#xFF09;</h3><p>&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x662F;&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x4E2D;&#x89E3;&#x51B3;&#x4E00;&#x7C7B;&#x95EE;&#x9898;&#x7684;&#x901A;&#x7528;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x80FD;&#x8BA9;&#x4F60;&#x5199;&#x51FA;&#x66F4;&#x4F18;&#x96C5;&#x3001;&#x53EF;&#x7EF4;&#x62A4;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4E5F;&#x6B63;&#x56E0;&#x5982;&#x6B64;&#xFF0C;&#x5F88;&#x591A;&#x6846;&#x67B6;&#x6E90;&#x7801;&#x90FD;&#x7528;&#x5230;&#x4E86;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF0C;&#x4F60;&#x4E0D;&#x5B66;&#x5F88;&#x96BE;&#x770B;&#x61C2;&#x3002;</p>
+<ul>
+<li><p>&#x77E5;&#x8BC6;</p>
+<ul>
+<li><p>&#x521B;&#x5EFA;&#x578B;&#x6A21;&#x5F0F;&#xFF1A;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x6A21;&#x5F0F;&#xFF0C;&#x521B;&#x5EFA;&#x578B;&#x6A21;&#x5F0F;&#x7528;&#x4E8E;&#x89E3;&#x8026;&#x5BF9;&#x8C61;&#x7684;&#x5B9E;&#x4F8B;&#x5316;&#x8FC7;&#x7A0B;</p>
+<ul>
+<li>&#x5355;&#x4F8B;&#x6A21;&#x5F0F;</li>
+<li>&#x5DE5;&#x5382;&#x65B9;&#x6CD5;&#x6A21;&#x5F0F;</li>
+<li>&#x62BD;&#x8C61;&#x5DE5;&#x5382;</li>
+<li>&#x5EFA;&#x9020;&#x8005;&#x6A21;&#x5F0F;</li>
+<li>&#x539F;&#x578B;&#x6A21;&#x5F0F;</li>
+</ul>
+</li>
+<li><p>&#x7ED3;&#x6784;&#x578B;&#x6A21;&#x5F0F;&#xFF1A;&#x628A;&#x7C7B;&#x6216;&#x5BF9;&#x8C61;&#x7ED3;&#x5408;&#x5728;&#x4E00;&#x8D77;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x66F4;&#x5927;&#x7684;&#x7ED3;&#x6784;</p>
+<ul>
+<li>&#x9002;&#x914D;&#x5668;&#x6A21;&#x5F0F;</li>
+<li>&#x7EC4;&#x5408;&#x6A21;&#x5F0F;</li>
+<li>&#x88C5;&#x9970;&#x5668;&#x6A21;&#x5F0F;</li>
+<li>&#x4EE3;&#x7406;&#x6A21;&#x5F0F;</li>
+<li>&#x4EAB;&#x5143;&#x6A21;&#x5F0F;</li>
+<li>&#x5916;&#x89C2;&#x6A21;&#x5F0F;</li>
+<li>&#x6865;&#x63A5;&#x6A21;&#x5F0F;</li>
+</ul>
+</li>
+<li><p>&#x884C;&#x4E3A;&#x578B;&#x6A21;&#x5F0F;&#xFF1A;&#x7C7B;&#x548C;&#x5BF9;&#x8C61;&#x5982;&#x4F55;&#x4EA4;&#x4E92;&#xFF0C;&#x53CA;&#x5212;&#x5206;&#x8D23;&#x4EFB;&#x548C;&#x7B97;&#x6CD5;</p>
+<ul>
+<li>&#x8FED;&#x4EE3;&#x5668;&#x6A21;&#x5F0F;</li>
+<li>&#x6A21;&#x677F;&#x65B9;&#x6CD5;&#x6A21;&#x5F0F;</li>
+<li>&#x7B56;&#x7565;&#x6A21;&#x5F0F;</li>
+<li>&#x547D;&#x4EE4;&#x6A21;&#x5F0F;</li>
+<li>&#x72B6;&#x6001;&#x6A21;&#x5F0F;</li>
+<li>&#x8D23;&#x4EFB;&#x94FE;&#x6A21;&#x5F0F;</li>
+<li>&#x5907;&#x5FD8;&#x5F55;&#x6A21;&#x5F0F;</li>
+<li>&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;</li>
+<li>&#x8BBF;&#x95EE;&#x8005;&#x6A21;&#x5F0F;</li>
+<li>&#x4E2D;&#x4ECB;&#x8005;&#x6A21;&#x5F0F;</li>
+<li>&#x89E3;&#x91CA;&#x5668;&#x6A21;&#x5F0F;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</p>
+<p>&#x5148;&#x7406;&#x89E3;&#x6982;&#x5FF5;&#xFF0C;&#x4E86;&#x89E3;&#x6BCF;&#x4E2A;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7684;&#x7279;&#x70B9;&#x548C;&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF0C;&#x518D;&#x591A;&#x52A0;&#x7EC3;&#x4E60;&#xFF0C;&#x8FD0;&#x7528;&#x5230;&#x5B9E;&#x9645;&#x9879;&#x76EE;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x8D44;&#x6E90;</p>
+<ul>
+<li><p>&#x4E66;&#x7C4D;</p>
+<ul>
+<li>&#x2B50;&#x300A;&#x56FE;&#x89E3;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x300B;&#xFF08;&#x5F3A;&#x70C8;&#x63A8;&#x8350;&#x8FD9;&#x672C;&#x4E66;&#xFF0C;&#x6B63;&#x662F;&#x7528; Java &#x8BED;&#x8A00;&#x5B9E;&#x73B0;&#xFF0C;&#x56FE;&#x591A;&#x3001;&#x6709;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x3001;&#x6709;&#x4E60;&#x9898;&#x548C;&#x7B54;&#x6848;&#xFF0C;&#x5F88;&#x4E0D;&#x9519;&#xFF09;</li>
+<li>&#x300A;Head First &#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x300B;</li>
+<li>&#x300A;&#x5927;&#x8BDD;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x300B;</li>
+<li>&#x300A;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF1A;&#x53EF;&#x590D;&#x7528;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x8F6F;&#x4EF6;&#x7684;&#x57FA;&#x7840;&#x300B;&#xFF08;&#x5927;&#x9ED1;&#x4E66;&#xFF0C;&#x6709;&#x80FD;&#x529B;&#x7684;&#x8BDD;&#x4E5F;&#x53EF;&#x4EE5;&#x53BB;&#x8BFB;&#xFF09;</li>
+</ul>
+</li>
+<li><p>&#x89C6;&#x9891;</p>
+<ul>
+<li>&#x5C1A;&#x7845;&#x8C37;&#x56FE;&#x89E3; Java &#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1G4411c7N4">https://www.bilibili.com/video/BV1G4411c7N4</a></li>
+</ul>
+</li>
+<li><p>&#x6587;&#x6863;</p>
+<ul>
+<li>&#x83DC;&#x9E1F;&#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.runoob.com/design-pattern/design-pattern-tutorial.html">https://www.runoob.com/design-pattern/design-pattern-tutorial.html</a></li>
+<li>&#x56FE;&#x8BF4;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF1A;<a target="_blank" rel="noopener" href="https://design-patterns.readthedocs.io/zh_CN/latest/">https://design-patterns.readthedocs.io/zh_CN/latest/</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x4E2D;&#x95F4;&#x4EF6;&#xFF08;14-&#x5929;&#xFF09;"><a href="#&#x4E2D;&#x95F4;&#x4EF6;&#xFF08;14-&#x5929;&#xFF09;" class="headerlink" title="&#x4E2D;&#x95F4;&#x4EF6;&#xFF08;14 &#x5929;&#xFF09;"></a>&#x4E2D;&#x95F4;&#x4EF6;&#xFF08;14 &#x5929;&#xFF09;</h3><p>&#x9664;&#x4E86;&#x6846;&#x67B6;&#x5916;&#xFF0C;&#x4F01;&#x4E1A;&#x9879;&#x76EE;&#x5F00;&#x53D1;&#x4E5F;&#x4F1A;&#x7528;&#x5230;&#x5927;&#x91CF;&#x72EC;&#x7ACB;&#x7684;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x4EE5;&#x89E3;&#x51B3;&#x67D0;&#x4E9B;&#x5B9E;&#x9645;&#x95EE;&#x9898;&#xFF0C;&#x6BD4;&#x5982;&#x63D0;&#x9AD8;&#x9879;&#x76EE;&#x7684;&#x6027;&#x80FD;&#x3001;&#x63D0;&#x9AD8;&#x9879;&#x76EE;&#x7684;&#x7A33;&#x5B9A;&#x6027;&#x548C;&#x53EF;&#x9760;&#x6027;&#x7B49;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x5206;&#x4EAB;&#x51E0;&#x4E2A;&#x6700;&#x5E38;&#x7528;&#x7684;&#x4E3B;&#x6D41;&#x4E2D;&#x95F4;&#x4EF6;&#x3002;</p>
+<ul>
+<li><p>&#x77E5;&#x8BC6;</p>
+<ul>
+<li><p>Redis &#x7F13;&#x5B58;</p>
+<ul>
+<li>&#x6570;&#x636E;&#x7C7B;&#x578B;</li>
+<li>&#x5E38;&#x7528;&#x64CD;&#x4F5C;</li>
+<li>Java &#x64CD;&#x4F5C; Redis</li>
+<li>&#x4E3B;&#x4ECE;&#x6A21;&#x578B;&#x642D;&#x5EFA;</li>
+<li>&#x54E8;&#x5175;&#x96C6;&#x7FA4;&#x642D;&#x5EFA;</li>
+<li>&#x65E5;&#x5FD7;&#x6301;&#x4E45;&#x5316;</li>
+<li>&#x5E94;&#x7528;&#x573A;&#x666F;</li>
+</ul>
+</li>
+<li><p>RabbitMQ &#x6D88;&#x606F;&#x961F;&#x5217;</p>
+<ul>
+<li>&#x6D88;&#x606F;&#x961F;&#x5217;&#x7684;&#x4F5C;&#x7528;</li>
+<li>&#x751F;&#x4EA7;&#x6D88;&#x8D39;&#x6A21;&#x578B;</li>
+<li>&#x4EA4;&#x6362;&#x673A;&#x6A21;&#x578B;</li>
+<li>&#x6B7B;&#x4FE1;&#x961F;&#x5217;</li>
+<li>&#x5EF6;&#x8FDF;&#x961F;&#x5217;</li>
+<li>&#x6D88;&#x606F;&#x6301;&#x4E45;&#x5316;</li>
+<li>Java &#x64CD;&#x4F5C;</li>
+<li>&#x96C6;&#x7FA4;&#x642D;&#x5EFA;</li>
+</ul>
+</li>
+<li><p>Nginx &#x7F51;&#x5173;</p>
+<ul>
+<li>Nginx &#x4F5C;&#x7528;</li>
+<li>&#x6B63;&#x5411;&#x4EE3;&#x7406;</li>
+<li>&#x53CD;&#x5411;&#x4EE3;&#x7406;&#xFF08;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#xFF09;</li>
+<li>&#x5E38;&#x7528;&#x547D;&#x4EE4;</li>
+<li>&#x914D;&#x7F6E;</li>
+<li>&#x52A8;&#x9759;&#x5206;&#x79BB;&#xFF08;&#x7F51;&#x7AD9;&#x90E8;&#x7F72;&#xFF09;</li>
+<li>&#x96C6;&#x7FA4;&#x642D;&#x5EFA;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</p>
+<p>&#x5B66;&#x4F1A;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x4E2D;&#x95F4;&#x4EF6;&#x5E76;&#x4E0D;&#x96BE;&#xFF0C;&#x5148;&#x80FD;&#x591F;&#x72EC;&#x7ACB;&#x4F7F;&#x7528;&#xFF0C;&#x4E86;&#x89E3;&#x4ED6;&#x4EEC;&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF1B;&#x518D;&#x7528; Java &#x6765;&#x64CD;&#x4F5C;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x548C;&#x9879;&#x76EE;&#x76F8;&#x7ED3;&#x5408;&#x3002;</p>
+<p>&#x8DDF;&#x7740;&#x89C6;&#x9891;&#x6559;&#x7A0B;&#x5B9E;&#x64CD;&#x4E00;&#x904D;&#x5373;&#x53EF;&#xFF0C;&#x53EF;&#x4EE5;&#x7B49;&#x5230;&#x9762;&#x8BD5;&#x524D;&#x518D;&#x53BB;&#x6DF1;&#x5165;&#x4E86;&#x89E3;&#x539F;&#x7406;&#x548C;&#x9AD8;&#x7EA7;&#x7279;&#x6027;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x8D44;&#x6E90;</p>
+<ul>
+<li><p>&#x89C6;&#x9891;</p>
+<ul>
+<li>&#x2B50; &#x5C1A;&#x7845;&#x8C37; - 2021 &#x6700;&#x65B0; Redis 6 &#x5165;&#x95E8;&#x5230;&#x7CBE;&#x901A;&#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Rv41177Af&#xFF08;&#x57FA;&#x4E8E;">https://www.bilibili.com/video/BV1Rv41177Af&#xFF08;&#x57FA;&#x4E8E;</a> Redis 6 &#x7684;&#xFF0C;&#x63A8;&#x8350;&#xFF09;</li>
+<li>&#x2B50; &#x5C1A;&#x7845;&#x8C37; - 2021 &#x6700;&#x65B0; RabbitMQ &#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1cb4y1o7zz&#xFF08;&#x5F88;&#x65B0;&#x5F88;&#x5168;&#x9762;&#xFF09;">https://www.bilibili.com/video/BV1cb4y1o7zz&#xFF08;&#x5F88;&#x65B0;&#x5F88;&#x5168;&#x9762;&#xFF09;</a></li>
+<li>&#x2B50; &#x5C1A;&#x7845;&#x8C37; - Nginx &#x6559;&#x7A0B;&#x7531;&#x6D45;&#x5165;&#x6DF1;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1zJ411w7SV&#xFF08;&#x8BB2;&#x7684;&#x6BD4;&#x8F83;&#x5168;&#x9762;&#xFF09;">https://www.bilibili.com/video/BV1zJ411w7SV&#xFF08;&#x8BB2;&#x7684;&#x6BD4;&#x8F83;&#x5168;&#x9762;&#xFF09;</a></li>
+<li>&#x2B50; Nginx &#x9C7C;&#x76AE; - &#x624B;&#x628A;&#x624B;&#x5E26;&#x4F60;&#x4ECE;0&#x642D;&#x5EFA;&#x4E2A;&#x4EBA;&#x7F51;&#x7AD9;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1rU4y1J785/">https://www.bilibili.com/video/BV1rU4y1J785/</a> &#xFF08;&#x7B80;&#x5355;&#x6F14;&#x793A; Nginx &#x90E8;&#x7F72;&#x7F51;&#x7AD9;&#xFF09;</li>
+</ul>
+</li>
+<li><p>&#x6587;&#x6863;</p>
+<ul>
+<li>Redis &#x547D;&#x4EE4;&#x53C2;&#x8003;&#xFF1A;<a target="_blank" rel="noopener" href="http://redisdoc.com/">http://redisdoc.com/</a></li>
+<li>Redis &#x9762;&#x8BD5;&#x9898;&#x6574;&#x7406;&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/lokles/Web-Development-Interview-With-Java/blob/main/Redis%E9%97%AE%E9%A2%98.md">https://github.com/lokles/Web-Development-Interview-With-Java/blob/main/Redis%E9%97%AE%E9%A2%98.md</a></li>
+<li>RabbitMQ &#x4E2D;&#x6587;&#x6587;&#x6863;&#xFF1A;<a target="_blank" rel="noopener" href="http://rabbitmq.mr-ping.com/">http://rabbitmq.mr-ping.com/</a></li>
+<li>Nginx &#x4E2D;&#x6587;&#x6587;&#x6863;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.nginx.cn/doc/index.html">https://www.nginx.cn/doc/index.html</a></li>
+</ul>
+</li>
+<li><p>&#x4E66;&#x7C4D;</p>
+<ul>
+<li>&#x300A;Redis &#x5B9E;&#x6218;&#x300B;&#xFF08;&#x7ECF;&#x5178;&#xFF09;</li>
+<li>&#x300A;RabbitMQ &#x5B9E;&#x6218;&#xFF1A;&#x9AD8;&#x6548;&#x90E8;&#x7F72;&#x5206;&#x5E03;&#x5F0F;&#x6D88;&#x606F;&#x961F;&#x5217;&#x300B;&#xFF08;&#x7ECF;&#x5178;&#xFF09;</li>
+</ul>
+</li>
+<li><p>&#x5DE5;&#x5177;</p>
+<ul>
+<li>&#x2B50; Redis &#x5728;&#x7EBF;&#x7EC3;&#x4E60;&#xFF1A;<a target="_blank" rel="noopener" href="https://try.redis.io/&#xFF08;&#x5F3A;&#x70C8;&#x63A8;&#x8350;&#xFF09;">https://try.redis.io/&#xFF08;&#x5F3A;&#x70C8;&#x63A8;&#x8350;&#xFF09;</a></li>
+<li>&#x2B50; RabbitMQ &#x5728;&#x7EBF;&#x6A21;&#x62DF;&#x5668;&#xFF1A;<a target="_blank" rel="noopener" href="http://tryrabbitmq.com/">http://tryrabbitmq.com/</a></li>
+<li>Nginx &#x914D;&#x7F6E;&#x5728;&#x7EBF;&#x751F;&#x6210;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.digitalocean.com/community/tools/nginx?global.app.lang=zhCN">https://www.digitalocean.com/community/tools/nginx?global.app.lang=zhCN</a></li>
+</ul>
+</li>
+<li><p>&#x76F8;&#x5173;&#x6280;&#x672F;</p>
+<ul>
+<li>&#x7F13;&#x5B58;&#xFF1A;Memcached&#x3001;Ehcache</li>
+<li>&#x961F;&#x5217;&#xFF1A;Kafka&#x3001;ActiveMQ&#x3001;TubeMQ&#x3001;RocketMQ</li>
+<li>&#x7F51;&#x5173;&#xFF1A;HAProxy</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Netty-&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#xFF08;14-&#x5929;&#xFF09;"><a href="#Netty-&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#xFF08;14-&#x5929;&#xFF09;" class="headerlink" title="Netty &#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#xFF08;14 &#x5929;&#xFF09;"></a>Netty &#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#xFF08;14 &#x5929;&#xFF09;</h3><p>&#x5F00;&#x6E90;&#x7684; Java &#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x6846;&#x67B6;&#xFF0C;&#x7528;&#x4E8E;&#x5F00;&#x53D1;&#x9AD8;&#x6027;&#x80FD;&#xFF08;&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x3001;&#x5F02;&#x6B65;&#x975E;&#x963B;&#x585E;&#xFF09;&#x3001;&#x9AD8;&#x53EF;&#x9760;&#x7684;&#x7F51;&#x7EDC;&#x670D;&#x52A1;&#x5668;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x7A0B;&#x5E8F;&#x3002;</p>
+<p>&#x5F88;&#x591A;&#x7F51;&#x7EDC;&#x6846;&#x67B6;&#x548C;&#x670D;&#x52A1;&#x5668;&#x7A0B;&#x5E8F;&#x90FD;&#x7528;&#x5230;&#x4E86; Netty &#x4F5C;&#x4E3A;&#x5E95;&#x5C42;&#xFF0C;&#x5B66;&#x597D; Netty &#x4E0D;&#x4EC5;&#x53EF;&#x4EE5;&#x8BA9;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x9AD8;&#x6027;&#x80FD;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x4E5F;&#x80FD;&#x66F4;&#x597D;&#x5730;&#x7406;&#x89E3;&#x5176;&#x4ED6;&#x7684;&#x6846;&#x67B6;&#x5E94;&#x7528;&#x3001;&#x9605;&#x8BFB;&#x6E90;&#x7801;&#x3002;</p>
+<ul>
+<li><p>&#x77E5;&#x8BC6;</p>
+<ul>
+<li>IO &#x6A21;&#x578B;&#xFF08;BIO / NIO&#xFF09;</li>
+<li>Channel</li>
+<li>Buffer</li>
+<li>Seletor</li>
+<li>Netty &#x6A21;&#x578B;</li>
+<li>WebSocket &#x7F16;&#x7A0B;&#xFF08;&#x52A8;&#x624B;&#x505A;&#x4E2A;&#x804A;&#x5929;&#x5BA4;&#xFF09;</li>
+</ul>
+</li>
+<li><p>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</p>
+<p>&#x4E0D;&#x540C;&#x4E8E;&#x4E4B;&#x524D;&#x5B66;&#x7684; SSM &#x6846;&#x67B6;&#xFF0C;Netty &#x8FD8;&#x662F;&#x9700;&#x8981;&#x4E00;&#x5B9A;&#x5B66;&#x4E60;&#x6210;&#x672C;&#x7684;&#xFF0C;&#x4E00;&#x65B9;&#x9762;&#x662F;&#x56FD;&#x5185;&#x8D44;&#x6E90;&#x592A;&#x7F3A;&#x4E4F;&#xFF0C;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#x5F88;&#x591A;&#x91CD;&#x8981;&#x7684;&#x6982;&#x5FF5;&#xFF08;&#x6BD4;&#x5982; NIO&#xFF09;&#x8FD8;&#x662F;&#x8981;&#x591A;&#x52A8;&#x624B;&#x5199;&#x4EE3;&#x7801;&#x8C03;&#x8BD5;&#x624D;&#x80FD;&#x7406;&#x89E3;&#x3002;</p>
+<p>&#x8FD8;&#x662F;&#x5EFA;&#x8BAE;&#x5148;&#x4ECE;&#x89C6;&#x9891;&#x5165;&#x95E8;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x5EFA;&#x8BAE;&#x5728; Netty &#x4E0A;&#x82B1;&#x592A;&#x591A;&#x65F6;&#x95F4;&#xFF0C;&#x9762;&#x8BD5;&#x7684;&#x65F6;&#x5019;&#x4E00;&#x822C;&#x4E5F;&#x5C31;&#x8003;&#x5BDF;&#x4E00;&#x4E9B; Netty &#x601D;&#x60F3;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x8D44;&#x6E90;</p>
+<ul>
+<li><p>&#x89C6;&#x9891;</p>
+<ul>
+<li>&#x2B50; &#x5C1A;&#x7845;&#x8C37;Netty&#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1DJ411m7NR">https://www.bilibili.com/video/BV1DJ411m7NR</a></li>
+<li>Netty &#x6280;&#x672F;&#x6F14;&#x8BB2;&#xFF08;&#x4E2D;&#x6587;&#x5B57;&#x5E55;&#x7248;&#xFF09;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=I8yy2Cy7dDI">https://www.youtube.com/watch?v=I8yy2Cy7dDI</a></li>
+</ul>
+</li>
+<li><p>&#x6587;&#x6863;</p>
+<ul>
+<li>Netty 4 &#x7528;&#x6237;&#x6307;&#x5357;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.w3cschool.cn/netty_4_user_guide/">https://www.w3cschool.cn/netty_4_user_guide/</a></li>
+</ul>
+</li>
+<li><p>&#x4E66;&#x7C4D;</p>
+<ul>
+<li>&#x300A;Netty &#x5B9E;&#x6218;&#x300B;</li>
+</ul>
+</li>
+<li><p>&#x76F8;&#x5173;&#x6280;&#x672F;</p>
+<ul>
+<li>Vertx&#xFF1A;<a target="_blank" rel="noopener" href="http://vertxchina.github.io/vertx-translation-chinese/&#xFF08;&#x6BD4;">http://vertxchina.github.io/vertx-translation-chinese/&#xFF08;&#x6BD4;</a> Netty &#x7B80;&#x5355;&#x591A;&#x4E86;&#xFF0C;&#x5B9E;&#x5728;&#x770B;&#x4E0D;&#x61C2; Netty &#x4E5F;&#x53EF;&#x4EE5;&#x5B66;&#x4E60;&#x4E0B;&#x8FD9;&#x4E2A;&#xFF09;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x5FAE;&#x670D;&#x52A1;&#xFF08;60-&#x5929;&#xFF09;"><a href="#&#x5FAE;&#x670D;&#x52A1;&#xFF08;60-&#x5929;&#xFF09;" class="headerlink" title="&#x5FAE;&#x670D;&#x52A1;&#xFF08;60 &#x5929;&#xFF09;"></a>&#x5FAE;&#x670D;&#x52A1;&#xFF08;60 &#x5929;&#xFF09;</h3><p>&#x968F;&#x7740;&#x4E92;&#x8054;&#x7F51;&#x7684;&#x53D1;&#x5C55;&#xFF0C;&#x9879;&#x76EE;&#x8D8A;&#x6765;&#x8D8A;&#x590D;&#x6742;&#xFF0C;&#x5355;&#x673A;&#x4E14;&#x5E9E;&#x5927;&#x7684;&#x5DE8;&#x77F3;&#x9879;&#x76EE;&#x5DF2;&#x65E0;&#x6CD5;&#x6EE1;&#x8DB3;&#x5F00;&#x53D1;&#x3001;&#x8FD0;&#x7EF4;&#x3001;&#x5E76;&#x53D1;&#x3001;&#x53EF;&#x9760;&#x6027;&#x7B49;&#x9700;&#x6C42;&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x540E;&#x53F0;&#x67B6;&#x6784;&#x4E0D;&#x65AD;&#x6F14;&#x8FDB;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x5E9E;&#x5927;&#x7684;&#x9879;&#x76EE;&#x62C6;&#x5206;&#x6210;&#x4E00;&#x4E2A;&#x4E2A;&#x804C;&#x8D23;&#x660E;&#x786E;&#x3001;&#x529F;&#x80FD;&#x72EC;&#x7ACB;&#x7684;&#x7EC6;&#x5C0F;&#x6A21;&#x5757;&#xFF0C;&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x90E8;&#x7F72;&#x5728;&#x591A;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#xFF0C;&#x76F8;&#x4E92;&#x914D;&#x5408;&#x534F;&#x4F5C;&#xFF0C;&#x63D0;&#x4F9B;&#x5B8C;&#x6574;&#x7684;&#x7CFB;&#x7EDF;&#x80FD;&#x529B;&#x3002;</p>
+<p>&#x6362;&#x8A00;&#x4E4B;&#xFF0C;&#x60F3;&#x505A;&#x5927;&#x578B;&#x9879;&#x76EE;&#xFF0C;&#x8FD9;&#x5757;&#x513F;&#x4E00;&#x5B9A;&#x8981;&#x597D;&#x597D;&#x5B66;&#xFF01;</p>
+<ul>
+<li><p>&#x77E5;&#x8BC6;</p>
+<ul>
+<li><p>Dubbo</p>
+<ul>
+<li>&#x67B6;&#x6784;&#x6F14;&#x8FDB;</li>
+<li>RPC</li>
+<li>Zookeeper</li>
+<li>&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x8005;</li>
+<li>&#x670D;&#x52A1;&#x6D88;&#x8D39;&#x8005;</li>
+<li>&#x9879;&#x76EE;&#x642D;&#x5EFA;</li>
+</ul>
+</li>
+<li><p>&#x5FAE;&#x670D;&#x52A1;</p>
+<ul>
+<li>&#x5FAE;&#x670D;&#x52A1;&#x6982;&#x5FF5;</li>
+<li><p>Spring Cloud &#x6846;&#x67B6;</p>
+<ul>
+<li>&#x5B50;&#x7236;&#x5DE5;&#x7A0B;</li>
+<li>&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x4E0E;&#x53D1;&#x73B0;</li>
+<li>&#x6CE8;&#x518C;&#x4E2D;&#x5FC3; Eureka&#x3001;Zookeeper&#x3001;Consul</li>
+<li>Ribbon &#x8D1F;&#x8F7D;&#x5747;&#x8861;</li>
+<li>Feign &#x670D;&#x52A1;&#x8C03;&#x7528;</li>
+<li>Hystrix &#x670D;&#x52A1;&#x9650;&#x6D41;&#x3001;&#x964D;&#x7EA7;&#x3001;&#x7194;&#x65AD;</li>
+<li>Resilience4j &#x670D;&#x52A1;&#x5BB9;&#x9519;</li>
+<li>Gateway&#xFF08;Zuul&#xFF09;&#x5FAE;&#x670D;&#x52A1;&#x7F51;&#x5173;</li>
+<li>Config &#x5206;&#x5E03;&#x5F0F;&#x914D;&#x7F6E;&#x4E2D;&#x5FC3;</li>
+<li>&#x5206;&#x5E03;&#x5F0F;&#x670D;&#x52A1;&#x603B;&#x7EBF;</li>
+<li>&#x5206;&#x5E03;&#x5F0F;&#x94FE;&#x8DEF;&#x8FFD;&#x8E2A;</li>
+</ul>
+</li>
+<li><p>Spring Cloud Alibaba</p>
+<ul>
+<li>Nacos &#x6CE8;&#x518C;&#x3001;&#x914D;&#x7F6E;&#x4E2D;&#x5FC3;</li>
+<li>OpenFeign &#x670D;&#x52A1;&#x8C03;&#x7528;</li>
+<li>Sentinel &#x6D41;&#x63A7;</li>
+<li>Seata &#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x63A5;&#x53E3;&#x7BA1;&#x7406;</p>
+<ul>
+<li>Swagger &#x63A5;&#x53E3;&#x6587;&#x6863;</li>
+<li>Postman &#x63A5;&#x53E3;&#x6D4B;&#x8BD5;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</p>
+<p>&#x65F6;&#x95F4;&#x4E0D;&#x6025;&#x7684;&#x8BDD;&#xFF0C;&#x5EFA;&#x8BAE;&#x5148;&#x4ECE; Dubbo &#x5B66;&#x8D77;&#xFF0C;&#x5BF9;&#x5206;&#x5E03;&#x5F0F;&#x3001;RPC&#x3001;&#x5FAE;&#x670D;&#x52A1;&#x6709;&#x4E9B;&#x57FA;&#x672C;&#x7684;&#x4E86;&#x89E3;&#xFF0C;&#x518D;&#x53BB;&#x98DF;&#x7528; Spring Cloud &#x5168;&#x5BB6;&#x6876;&#x4F1A;&#x66F4;&#x9999;&#x3002;</p>
+<p>&#x8FD9;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#x7684;&#x5B66;&#x4E60;&#xFF0C;&#x539F;&#x7406; + &#x5B9E;&#x8DF5;&#x90FD;&#x5F88;&#x91CD;&#x8981;&#xFF0C;&#x4E5F;&#x4E0D;&#x8981;&#x88AB;&#x5404;&#x79CD;&#x9AD8;&#x5927;&#x4E0A;&#x7684;&#x8BCD;&#x6C47;&#x552C;&#x4F4F;&#x4E86;&#xFF0C;&#x90FD;&#x662F;&#x4E0A;&#x5C42;&#xFF08;&#x5E94;&#x7528;&#x5C42;&#xFF09;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x57FA;&#x672C;&#x6CA1;&#x6709;&#x4EC0;&#x4E48;&#x7B97;&#x6CD5;&#xFF0C;&#x8DDF;&#x7740;&#x89C6;&#x9891;&#x6559;&#x7A0B;&#x5B66;&#xFF0C;&#x5176;&#x5B9E;&#x8FD8;&#x662F;&#x5F88;&#x597D;&#x7406;&#x89E3;&#x7684;&#x3002;</p>
+<p>&#x5206;&#x5E03;&#x5F0F;&#x76F8;&#x5173;&#x77E5;&#x8BC6;&#x975E;&#x5E38;&#x591A;&#xFF0C;&#x4F46;&#x8FD9;&#x91CC;&#x4E0D;&#x7528;&#x523B;&#x610F;&#x53BB;&#x80CC;&#xFF0C;&#x5148;&#x901A;&#x8FC7;&#x89C6;&#x9891;&#x6559;&#x7A0B;&#x5B9E;&#x6218;&#x4F7F;&#x7528;&#x4E00;&#x4E9B;&#x5FAE;&#x670D;&#x52A1;&#x6846;&#x67B6;&#xFF0C;&#x4E5F;&#x80FD;&#x5BF9;&#x5176;&#x4E2D;&#x7684;&#x6982;&#x5FF5;&#x6709;&#x57FA;&#x672C;&#x7684;&#x4E86;&#x89E3;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x8D44;&#x6E90;</p>
+<ul>
+<li><p>&#x89C6;&#x9891;</p>
+<ul>
+<li>&#x2B50; &#x5C1A;&#x7845;&#x8C37; Dubbo &#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ns411c7jV">https://www.bilibili.com/video/BV1ns411c7jV</a></li>
+<li>&#x2B50; &#x5C1A;&#x7845;&#x8C37; SpringCloud&#xFF08;H&#x7248;&amp;alibaba&#xFF09;&#x6846;&#x67B6;&#x5F00;&#x53D1;&#x6559;&#x7A0B;&#xFF08;&#x5FAE;&#x670D;&#x52A1;&#x5206;&#x5E03;&#x5F0F;&#x67B6;&#x6784;&#xFF09;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV18E411x7eT&#xFF08;&#x628A;&#x56FD;&#x5916;&#x7684;">https://www.bilibili.com/video/BV18E411x7eT&#xFF08;&#x628A;&#x56FD;&#x5916;&#x7684;</a> Spring Cloud &#x548C;&#x56FD;&#x5185;&#x7684; Spring Cloud Alibaba &#x7ED3;&#x5408;&#x5728;&#x4E00;&#x8D77;&#x5BF9;&#x6BD4;&#x7740;&#x53BB;&#x8BB2;&#xFF0C;&#x4E3B;&#x6D41;&#x6280;&#x672F;&#x6808;&#x3001;&#x77E5;&#x8BC6;&#x70B9;&#x90FD;&#x8BB2;&#x5230;&#x4E86;&#xFF0C;&#x771F;&#x5FC3;&#x4E0D;&#x9519;&#xFF01;&#xFF09;</li>
+</ul>
+</li>
+<li><p>&#x6587;&#x6863;</p>
+<ul>
+<li>Apache Dubbo &#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF1A;<a target="_blank" rel="noopener" href="https://dubbo.apache.org/zh/">https://dubbo.apache.org/zh/</a></li>
+<li>Spring Cloud Alibaba &#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/alibaba/spring-cloud-alibaba/blob/master/README-zh.md">https://github.com/alibaba/spring-cloud-alibaba/blob/master/README-zh.md</a></li>
+<li>&#x2B50; Swagger &#x6559;&#x5B66;&#x6587;&#x6863;&#xFF1A;<a target="_blank" rel="noopener" href="https://doc.xiaominfo.com/&#xFF08;&#x8DDF;&#x7740;&#x5FEB;&#x901F;&#x5F00;&#x59CB;&#x76F4;&#x63A5;&#x7528;&#x5C31;&#x597D;&#x4E86;&#xFF09;">https://doc.xiaominfo.com/&#xFF08;&#x8DDF;&#x7740;&#x5FEB;&#x901F;&#x5F00;&#x59CB;&#x76F4;&#x63A5;&#x7528;&#x5C31;&#x597D;&#x4E86;&#xFF09;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x5BB9;&#x5668;&#xFF08;7-&#x5929;&#xFF09;"><a href="#&#x5BB9;&#x5668;&#xFF08;7-&#x5929;&#xFF09;" class="headerlink" title="&#x5BB9;&#x5668;&#xFF08;7 &#x5929;&#xFF09;"></a>&#x5BB9;&#x5668;&#xFF08;7 &#x5929;&#xFF09;</h3><p>&#x5C06;&#x5E94;&#x7528;&#x548C;&#x73AF;&#x5883;&#x8FDB;&#x884C;&#x5C01;&#x88C5;&#xFF0C;&#x76F8;&#x4E92;&#x9694;&#x79BB;&#x3001;&#x72EC;&#x7ACB;&#x90E8;&#x7F72;&#x3001;&#x4FBF;&#x4E8E;&#x79FB;&#x690D;&#xFF0C;&#x63D0;&#x9AD8;&#x5B89;&#x5168;&#x6027;&#x3001;&#x63D0;&#x9AD8;&#x5F00;&#x53D1;&#x548C;&#x7EF4;&#x62A4;&#x6548;&#x7387;&#x3002;</p>
+<p>&#x4FBF;&#x4E8E;&#x5B9E;&#x73B0;&#x5FAE;&#x670D;&#x52A1;&#x3001;&#x6301;&#x7EED;&#x96C6;&#x6210;&#x548C;&#x4EA4;&#x4ED8;&#x3002;</p>
+<ul>
+<li><p>&#x77E5;&#x8BC6;</p>
+<ul>
+<li><p>Docker</p>
+<ul>
+<li>&#x5BB9;&#x5668;&#x6982;&#x5FF5;</li>
+<li>&#x955C;&#x50CF;</li>
+<li>&#x90E8;&#x7F72;&#x670D;&#x52A1;</li>
+<li>Dockerfile</li>
+</ul>
+</li>
+<li><p>K8S&#xFF08;Kubernetes&#xFF09;</p>
+<ul>
+<li>&#x67B6;&#x6784;</li>
+<li>&#x90E8;&#x7F72;&#x5E94;&#x7528;</li>
+<li>&#x66B4;&#x9732;&#x670D;&#x52A1;</li>
+<li>&#x52A8;&#x6001;&#x6269;&#x7F29;&#x5BB9;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</p>
+<p>&#x4F1A;&#x7528; Docker / K8S &#x90E8;&#x7F72;&#x9879;&#x76EE;&#x548C;&#x670D;&#x52A1;&#x5C31;&#x884C;&#xFF0C;&#x4F01;&#x4E1A;&#x4E00;&#x822C;&#x90FD;&#x6709;&#x73B0;&#x6210;&#x7684;&#x5E73;&#x53F0;&#x76F4;&#x63A5;&#x7528;&#xFF0C;&#x9762;&#x8BD5;&#x8003;&#x5BDF;&#x4E0D;&#x591A;&#xFF0C;&#x4E0D;&#x7528;&#x82B1;&#x592A;&#x591A;&#x65F6;&#x95F4;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x8D44;&#x6E90;</p>
+<ul>
+<li><p>&#x89C6;&#x9891;</p>
+<ul>
+<li>&#x2B50;&#x3010;&#x72C2;&#x795E;&#x8BF4;&#x3011;Docker &#x6700;&#x65B0;&#x8D85;&#x8BE6;&#x7EC6;&#x7248;&#x6559;&#x7A0B;&#x901A;&#x4FD7;&#x6613;&#x61C2;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1og4y1q7M4">https://www.bilibili.com/video/BV1og4y1q7M4</a></li>
+<li>K8S &#x89C6;&#x9891;&#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1K5411N7j8">https://www.bilibili.com/video/BV1K5411N7j8</a></li>
+</ul>
+</li>
+<li><p>&#x4E66;&#x7C4D;</p>
+<ul>
+<li>&#x300A;&#x6DF1;&#x5165;&#x6D45;&#x51FA; Docker&#x300B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.zhihu.com/pub/reader/119632192">https://www.zhihu.com/pub/reader/119632192</a></li>
+</ul>
+</li>
+<li><p>&#x6587;&#x6863;</p>
+<ul>
+<li>Docker &#x2014; &#x4ECE;&#x5165;&#x95E8;&#x5230;&#x5B9E;&#x8DF5;&#xFF1A;<a target="_blank" rel="noopener" href="https://vuepress.mirror.docker-practice.com/">https://vuepress.mirror.docker-practice.com/</a></li>
+<li>&#x83DC;&#x9E1F;&#x6559;&#x7A0B; Docker&#xFF1A;<a target="_blank" rel="noopener" href="https://www.runoob.com/docker/docker-tutorial.html">https://www.runoob.com/docker/docker-tutorial.html</a></li>
+<li>&#x56FD;&#x5916; Docker &#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF1A;<a target="_blank" rel="noopener" href="https://docs.docker.com/get-started/">https://docs.docker.com/get-started/</a></li>
+</ul>
+</li>
+<li><p>&#x7F51;&#x7AD9;</p>
+<ul>
+<li>Docker &#x4E2D;&#x6587;&#x793E;&#x533A;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.docker.org.cn/&#xFF08;&#x5F3A;&#x70C8;&#x63A8;&#x8350;&#xFF0C;&#x6709;&#x5F88;&#x591A;">https://www.docker.org.cn/&#xFF08;&#x5F3A;&#x70C8;&#x63A8;&#x8350;&#xFF0C;&#x6709;&#x5F88;&#x591A;</a> Docker &#x6280;&#x672F;&#x6587;&#x7AE0;&#x548C;&#x5B66;&#x4E60;&#x7B14;&#x8BB0;&#xFF09;</li>
+<li>Docker Blog&#xFF1A;<a target="_blank" rel="noopener" href="https://www.docker.com/blog/&#xFF08;&#x56FD;&#x5916;">https://www.docker.com/blog/&#xFF08;&#x56FD;&#x5916;</a> Docker &#x6280;&#x672F;&#x535A;&#x5BA2;&#xFF09;</li>
+</ul>
+</li>
+<li><p>&#x955C;&#x50CF;&#x6E90;</p>
+<ul>
+<li>Docker Hub&#xFF1A;<a target="_blank" rel="noopener" href="https://hub.docker.com">https://hub.docker.com</a></li>
+<li>&#x817E;&#x8BAF;&#x8F6F;&#x4EF6;&#x6E90;&#xFF1A;<a target="_blank" rel="noopener" href="http://mirrors.tencent.com/#/index">http://mirrors.tencent.com/#/index</a></li>
+<li>&#x963F;&#x91CC;&#x4E91; Docker &#x4ED3;&#x5E93;&#xFF1A;<a target="_blank" rel="noopener" href="https://cr.console.aliyun.com/">https://cr.console.aliyun.com/</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="CI-CD&#xFF08;3-&#x5929;&#xFF09;"><a href="#CI-CD&#xFF08;3-&#x5929;&#xFF09;" class="headerlink" title="CI / CD&#xFF08;3 &#x5929;&#xFF09;"></a>CI / CD&#xFF08;3 &#x5929;&#xFF09;</h3><p>&#x6301;&#x7EED;&#x96C6;&#x6210; / &#x6301;&#x7EED;&#x4EA4;&#x4ED8;&#xFF0C;&#x8D2F;&#x7A7F;&#x6574;&#x4E2A;&#x7814;&#x53D1;&#x5230;&#x9879;&#x76EE;&#x4E0A;&#x7EBF;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x63D0;&#x9AD8;&#x6548;&#x7387;&#x3002;</p>
+<p>&#x5927;&#x516C;&#x53F8;&#x4E00;&#x822C;&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684; CI / CD &#x5E73;&#x53F0;&#x3002;</p>
+<ul>
+<li><p>&#x77E5;&#x8BC6;</p>
+<ul>
+<li>&#x4EC0;&#x4E48;&#x662F; CI / CD</li>
+<li>CI / CD &#x6709;&#x4EC0;&#x4E48;&#x597D;&#x5904;</li>
+<li>&#x4F7F;&#x7528;&#x4EFB;&#x4E00; CI / CD &#x5E73;&#x53F0;</li>
+</ul>
+</li>
+<li><p>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</p>
+<p>&#x4E86;&#x89E3;&#x5B83;&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x5E76;&#x4E14;&#x5B9E;&#x6218;&#x4F7F;&#x7528;&#x4EFB;&#x4E00; CI / CD &#x5E73;&#x53F0;&#xFF0C;&#x611F;&#x53D7;&#x5B83;&#x548C;&#x4F20;&#x7EDF;&#x5F00;&#x53D1;&#x8FD0;&#x7EF4;&#x5230;&#x5E95;&#x6709;&#x4EC0;&#x4E48;&#x4E0D;&#x540C;&#xFF0C;&#x5C31;&#x8DB3;&#x591F;&#x4E86;&#x3002;&#x5176;&#x5B9E;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x4E0D;&#x8981;&#x82B1;&#x592A;&#x591A;&#x65F6;&#x95F4;&#x3002;</p>
+<p>&#x771F;&#x6B63;&#x8981;&#x81EA;&#x5DF1;&#x53BB;&#x642D;&#x5EFA;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8DDF;&#x7740;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x6765;&#x5C31;&#x884C;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x8D44;&#x6E90;</p>
+<ul>
+<li><p>&#x89C6;&#x9891;</p>
+<ul>
+<li>&#x2B50;&#x3010;&#x72C2;&#x795E;&#x8BF4;&#x3011;CI/CD&#x5230;&#x5E95;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x5341;&#x5206;&#x949F;&#x7406;&#x89E3;&#x4F01;&#x4E1A;&#x7EA7;DevOps&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1zf4y127vu&#xFF08;&#x8BB2;&#x7684;&#x975E;&#x5E38;&#x68D2;&#xFF01;&#x5E26;&#x4F60;&#x5FEB;&#x901F;&#x7406;&#x89E3;">https://www.bilibili.com/video/BV1zf4y127vu&#xFF08;&#x8BB2;&#x7684;&#x975E;&#x5E38;&#x68D2;&#xFF01;&#x5E26;&#x4F60;&#x5FEB;&#x901F;&#x7406;&#x89E3;</a> CI / CD &#x7684;&#x4F5C;&#x7528;&#x548C;&#x90E8;&#x5206;&#x539F;&#x7406;&#xFF09;</li>
+<li>&#x5C1A;&#x7845;&#x8C37; - Jenkins &#x6301;&#x7EED;&#x96C6;&#x6210;&#x5DE5;&#x5177;&#x6559;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1GW411w7pn&#xFF08;&#x5B9E;&#x5728;&#x8981;&#x7528;&#x5230;">https://www.bilibili.com/video/BV1GW411w7pn&#xFF08;&#x5B9E;&#x5728;&#x8981;&#x7528;&#x5230;</a> Jenkins &#x518D;&#x53BB;&#x5B66;&#xFF09;</li>
+</ul>
+</li>
+<li><p>&#x6587;&#x6863;</p>
+<ul>
+<li>Jenkins &#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.jenkins.io/zh/">https://www.jenkins.io/zh/</a> &#xFF08;&#x6709;&#x5F88;&#x591A;&#x6848;&#x4F8B;&#xFF0C;&#x8981;&#x7528;&#x7684;&#x65F6;&#x5019;&#x67E5;&#x4E00;&#x4E0B;&#x5C31;&#x884C;&#x4E86;&#xFF09;</li>
+</ul>
+</li>
+<li><p>&#x5B9E;&#x6218;&#x5E73;&#x53F0;</p>
+<ul>
+<li>&#x2B50; &#x5FAE;&#x4FE1;&#x4E91;&#x6258;&#x7BA1;&#xFF1A;<a target="_blank" rel="noopener" href="https://cloud.weixin.qq.com/cloudrun&#xFF08;&#x76F4;&#x64AD;&#x6F14;&#x793A;&#x8FC7;&#xFF0C;&#x9C7C;&#x76AE;&#x540E;&#x9762;&#x4F1A;&#x7ED9;&#x5927;&#x5BB6;&#x51FA;&#x89C6;&#x9891;&#x6559;&#x7A0B;&#xFF09;">https://cloud.weixin.qq.com/cloudrun&#xFF08;&#x76F4;&#x64AD;&#x6F14;&#x793A;&#x8FC7;&#xFF0C;&#x9C7C;&#x76AE;&#x540E;&#x9762;&#x4F1A;&#x7ED9;&#x5927;&#x5BB6;&#x51FA;&#x89C6;&#x9891;&#x6559;&#x7A0B;&#xFF09;</a></li>
+<li>&#x524D;&#x7AEF;&#x6258;&#x7BA1; Webify&#xFF1A;<a target="_blank" rel="noopener" href="https://cloud.tencent.com/product/webify&#xFF08;&#x9C7C;&#x76AE;&#x7ED9;&#x5927;&#x5BB6;&#x51FA;&#x8FC7;&#x89C6;&#x9891;&#x6559;&#x7A0B;&#x7684;">https://cloud.tencent.com/product/webify&#xFF08;&#x9C7C;&#x76AE;&#x7ED9;&#x5927;&#x5BB6;&#x51FA;&#x8FC7;&#x89C6;&#x9891;&#x6559;&#x7A0B;&#x7684;</a> <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV11V411p7vf/&#xFF09;">https://www.bilibili.com/video/BV11V411p7vf/&#xFF09;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x9636;&#x6BB5;-5&#xFF1A;&#x9879;&#x76EE;&#x5B9E;&#x6218;"><a href="#&#x9636;&#x6BB5;-5&#xFF1A;&#x9879;&#x76EE;&#x5B9E;&#x6218;" class="headerlink" title="&#x9636;&#x6BB5; 5&#xFF1A;&#x9879;&#x76EE;&#x5B9E;&#x6218;"></a>&#x9636;&#x6BB5; 5&#xFF1A;&#x9879;&#x76EE;&#x5B9E;&#x6218;</h2><h3 id="&#x76EE;&#x6807;-4"><a href="#&#x76EE;&#x6807;-4" class="headerlink" title="&#x76EE;&#x6807;"></a>&#x76EE;&#x6807;</h3><p>&#x7EFC;&#x5408;&#x6240;&#x5B66;&#x6280;&#x672F;&#x4ECE; 0 &#x5230; 1 &#x5F00;&#x53D1;&#x548C;&#x4E0A;&#x7EBF;&#x4E00;&#x4E2A;&#x5168;&#x9762;&#x3001;&#x6709;&#x7279;&#x8272;&#x7684;&#x3001;&#x53EF;&#x4EE5;&#x5199;&#x8FDB;&#x7B80;&#x5386;&#x7684;&#x4E2A;&#x4EBA;&#x9879;&#x76EE;&#x3002;</p>
+<h3 id="&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;"><a href="#&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;" class="headerlink" title="&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;"></a>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</h3><p>&#x5176;&#x5B9E;&#x5728;&#x4E4B;&#x524D;&#x7684;&#x6846;&#x67B6;&#x5B66;&#x4E60;&#x89C6;&#x9891;&#x4E2D;&#x5E94;&#x8BE5;&#x5C31;&#x505A;&#x8FC7;&#x51E0;&#x4E2A;&#x9879;&#x76EE;&#x4E86;&#xFF0C;&#x4F46;&#x76F8;&#x5BF9;&#x4E0D;&#x591F;&#x5B8C;&#x6574;&#x548C;&#x4F53;&#x7CFB;&#x5316;&#x3002;</p>
+<p>&#x6709;&#x60F3;&#x6CD5;&#x7684;&#x540C;&#x5B66;&#x53EF;&#x4EE5;&#x505A;&#x4EFB;&#x4F55;&#x81EA;&#x5DF1;&#x60F3;&#x505A;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x63A8;&#x8350;&#x53C2;&#x52A0;&#x4E00;&#x4E9B;&#x4F5C;&#x54C1;&#x7C7B;&#x7ADE;&#x8D5B;&#xFF0C;&#x7EC3;&#x624B;&#x3001;&#x62FF;&#x5956;&#x3001;&#x6536;&#x83B7;&#x9879;&#x76EE;&#x7ECF;&#x5386;&#x4E00;&#x4E3E;&#x4E09;&#x5F97;&#x3002;</p>
+<p>&#x6682;&#x65F6;&#x6CA1;&#x60F3;&#x6CD5;&#x7684;&#x670B;&#x53CB;&#xFF0C;&#x5EFA;&#x8BAE;&#x5148;&#x8DDF;&#x7740;&#x4E13;&#x95E8;&#x5E26;&#x505A;&#x9879;&#x76EE;&#x7684;&#x89C6;&#x9891;&#x6559;&#x7A0B;&#x505A; 1 - 2 &#x5957; Java &#x5B8C;&#x6574;&#x9879;&#x76EE;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x4ECE; 0 &#x5230; 1 &#x81EA;&#x5DF1;&#x624B;&#x5199;&#xFF01;</p>
+<p>&#x6709;&#x80FD;&#x529B;&#x7684;&#x670B;&#x53CB;&#x4E5F;&#x53EF;&#x4EE5;&#x8BD5;&#x7740;&#x7528; GitHub &#x4E0A;&#x7684;&#x6E90;&#x7801;&#x6765;&#x5B66;&#x4E60;&#x5566;~</p>
+<p>&#x505A;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x9879;&#x76EE;&#x7684;&#x786E;&#x5F88;&#x4E0D;&#x5BB9;&#x6613;&#xFF0C;&#x5EFA;&#x8BAE;&#x5927;&#x5BB6;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684; <strong>&#x65F6;&#x95F4;&#x3001;&#x5174;&#x8DA3;</strong> &#x9009;&#x62E9; <strong>&#x8F83;&#x65B0;&#x7684;</strong>&#x3001;<strong>&#x6709;&#x914D;&#x5957;&#x6E90;&#x7801;&#x7684;</strong> &#x6559;&#x7A0B;&#xFF0C;&#x4FDD;&#x6301;&#x8010;&#x5FC3;&#x3002;</p>
+<p>&#x5982;&#x4F55;&#x9009;&#x62E9;&#x7F16;&#x7A0B;&#x5B66;&#x4E60;&#x8D44;&#x6E90;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x4E0B;&#x6211;&#x7684;&#x539F;&#x521B;&#x6587;&#x7AE0;&#xFF1A;<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/mlMql9RJCd7THt6rpGb8UA">https://mp.weixin.qq.com/s/mlMql9RJCd7THt6rpGb8UA</a></p>
+<p>&#x4E0B;&#x9762;&#x63A8;&#x8350;&#x4E00;&#x4E9B;&#x4F18;&#x8D28;&#x7684;&#x3001;&#x8F83;&#x65B0;&#x7684;&#x9879;&#x76EE;&#x5B9E;&#x6218;&#x89C6;&#x9891;&#x6559;&#x7A0B; + 50 &#x5957;&#x9879;&#x76EE;&#x6E90;&#x7801;&#x3002;</p>
+<h3 id="&#x89C6;&#x9891;&#x6559;&#x7A0B;"><a href="#&#x89C6;&#x9891;&#x6559;&#x7A0B;" class="headerlink" title="&#x89C6;&#x9891;&#x6559;&#x7A0B;"></a>&#x89C6;&#x9891;&#x6559;&#x7A0B;</h3><ul>
+<li>&#x5C1A;&#x7845;&#x8C37; - &#x8C37;&#x7C92;&#x5B66;&#x9662; - &#x5FAE;&#x670D;&#x52A1; + &#x5168;&#x6808; - &#x5728;&#x7EBF;&#x6559;&#x80B2;&#x5B9E;&#x6218;&#x9879;&#x76EE;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1dQ4y1A75e&#xFF08;&#x5168;&#x6808;&#x9879;&#x76EE;&#xFF0C;&#x524D;&#x540E;&#x7AEF;&#x8BB2;&#x5F97;&#x90FD;&#x5F88;&#x5168;&#x9762;&#xFF09;">https://www.bilibili.com/video/BV1dQ4y1A75e&#xFF08;&#x5168;&#x6808;&#x9879;&#x76EE;&#xFF0C;&#x524D;&#x540E;&#x7AEF;&#x8BB2;&#x5F97;&#x90FD;&#x5F88;&#x5168;&#x9762;&#xFF09;</a></li>
+<li>&#x5C1A;&#x7845;&#x8C37; - &#x5C1A;&#x7B79;&#x7F51; - Java&#x9879;&#x76EE;&#x5B9E;&#x6218;&#x5F00;&#x53D1;&#x6559;&#x7A0B; - SSM &#x6846;&#x67B6; + &#x5FAE;&#x670D;&#x52A1;&#x67B6;&#x6784;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1bE411T7oZ&#xFF08;500">https://www.bilibili.com/video/BV1bE411T7oZ&#xFF08;500</a> &#x591A;&#x96C6;&#xFF0C;&#x5305;&#x542B;&#x5B8C;&#x6574;&#x7684;&#x7528;&#x6237;&#x6743;&#x9650;&#x7BA1;&#x7406;&#xFF0C;&#x529F;&#x80FD;&#x4E30;&#x5BCC;&#x3001;&#x8BB2;&#x5F97;&#x5F88;&#x7EC6;&#x81F4;&#x5168;&#x9762;&#xFF09;</li>
+<li>&#x9ED1;&#x9A6C; - 24 &#x5C0F;&#x65F6;&#x641E;&#x5B9A; Java &#x6BD5;&#x8BBE;&#x7535;&#x5546;&#x9879;&#x76EE;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV13f4y1r7fS">https://www.bilibili.com/video/BV13f4y1r7fS</a></li>
+<li>&#x9ED1;&#x9A6C;&#x7A0B;&#x5E8F;&#x5458; Java &#x9879;&#x76EE;&#x300A;&#x4F20;&#x667A;&#x5065;&#x5EB7;&#x300B;&#xFF0C;&#x8D85;&#x5B8C;&#x6574;&#x7684;&#x4F01;&#x4E1A;&#x7EA7;&#x533B;&#x7597;&#x884C;&#x4E1A;&#x9879;&#x76EE;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Bo4y117zV">https://www.bilibili.com/video/BV1Bo4y117zV</a></li>
+<li>&#x9ED1;&#x9A6C;&#x7A0B;&#x5E8F;&#x5458; Java &#x9879;&#x76EE;&#x300A;&#x4E07;&#x4FE1;&#x91D1;&#x878D;&#x300B;&#x4F01;&#x4E1A;&#x7EA7;&#x5F00;&#x53D1;&#x5B9E;&#x6218;&#xFF0C;&#x4E92;&#x8054;&#x7F51;&#x91D1;&#x878D;&#x884C;&#x4E1A;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Ub4y1f7rk">https://www.bilibili.com/video/BV1Ub4y1f7rk</a></li>
+<li>&#x9ED1;&#x9A6C;&#x7A0B;&#x5E8F;&#x5458; Java &#x9879;&#x76EE; SaaS &#x79FB;&#x52A8;&#x529E;&#x516C;&#x5B8C;&#x6574;&#x7248;&#x300A;iHRM &#x4EBA;&#x529B;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x300B;&#xFF0C;&#x8DE8;&#x884C;&#x4E1A; SaaS &#x529E;&#x516C;&#x6574;&#x5408;&#x6027;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV18A411L7UX">https://www.bilibili.com/video/BV18A411L7UX</a></li>
+<li>&#x9ED1;&#x9A6C;&#x7A0B;&#x5E8F;&#x5458; Java &#x5927;&#x578B;&#x5206;&#x5E03;&#x5F0F;&#x5FAE;&#x670D;&#x52A1;&#x95EA;&#x805A;&#x652F;&#x4ED8;&#x9879;&#x76EE;&#xFF0C;Java &#x79FB;&#x52A8;&#x652F;&#x4ED8;&#x5168;&#x751F;&#x6001;&#x7CFB;&#x7EDF;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV17v411V79c">https://www.bilibili.com/video/BV17v411V79c</a></li>
+<li>&#x9ED1;&#x9A6C;&#x7A0B;&#x5E8F;&#x5458; Java &#x9879;&#x76EE;&#x300A;&#x597D;&#x5BA2;&#x79DF;&#x623F;&#x300B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1sZ4y1F7PD">https://www.bilibili.com/video/BV1sZ4y1F7PD</a></li>
+</ul>
+<h3 id="&#x9879;&#x76EE;&#x6E90;&#x7801;&#xFF08;50-&#x5957;&#xFF09;"><a href="#&#x9879;&#x76EE;&#x6E90;&#x7801;&#xFF08;50-&#x5957;&#xFF09;" class="headerlink" title="&#x9879;&#x76EE;&#x6E90;&#x7801;&#xFF08;50 &#x5957;&#xFF09;"></a>&#x9879;&#x76EE;&#x6E90;&#x7801;&#xFF08;50 &#x5957;&#xFF09;</h3><ul>
+<li><p>&#x7535;&#x5546;&#x79D2;&#x6740;</p>
+<ul>
+<li>&#x5929;&#x732B;&#x6574;&#x7AD9; J2EE&#xFF1A;<a target="_blank" rel="noopener" href="https://how2j.cn/module/115.htm">https://how2j.cn/module/115.htm</a></li>
+<li>&#x5929;&#x732B;&#x6574;&#x7AD9; SSM&#xFF1A;<a target="_blank" rel="noopener" href="https://how2j.cn/module/134.html">https://how2j.cn/module/134.html</a></li>
+<li>&#x5929;&#x732B;&#x6574;&#x7AD9; Springboot&#xFF1A;<a target="_blank" rel="noopener" href="https://how2j.cn/module/156.html">https://how2j.cn/module/156.html</a></li>
+<li>mall-learning&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/macrozheng/mall-learningmall&#xFF08;&#x5B66;&#x4E60;&#x6559;&#x7A0B;&#xFF0C;&#x67B6;&#x6784;&#x3001;&#x4E1A;&#x52A1;&#x3001;&#x6280;&#x672F;&#x8981;&#x70B9;&#x5168;&#x65B9;&#x4F4D;&#x89E3;&#x6790;&#xFF09;">https://github.com/macrozheng/mall-learningmall&#xFF08;&#x5B66;&#x4E60;&#x6559;&#x7A0B;&#xFF0C;&#x67B6;&#x6784;&#x3001;&#x4E1A;&#x52A1;&#x3001;&#x6280;&#x672F;&#x8981;&#x70B9;&#x5168;&#x65B9;&#x4F4D;&#x89E3;&#x6790;&#xFF09;</a></li>
+<li>SpringBoot &#x7535;&#x5546;&#x5546;&#x57CE;&#x7CFB;&#x7EDF; Mall4j&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/gz-yami/mall4j">https://github.com/gz-yami/mall4j</a></li>
+<li>SpringBoot &#x5B8C;&#x6574;&#x7535;&#x5546;&#x7CFB;&#x7EDF; Mall&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/macrozheng/mall&#xFF08;&#x5305;&#x62EC;&#x524D;&#x53F0;&#x5546;&#x57CE;&#x7CFB;&#x7EDF;&#x53CA;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#xFF0C;&#x57FA;&#x4E8E;">https://github.com/macrozheng/mall&#xFF08;&#x5305;&#x62EC;&#x524D;&#x53F0;&#x5546;&#x57CE;&#x7CFB;&#x7EDF;&#x53CA;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#xFF0C;&#x57FA;&#x4E8E;</a> SpringBoot+MyBatis &#x5B9E;&#x73B0;&#xFF09;</li>
+<li>newbee-mall&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/newbee-ltd/newbee-mall">https://github.com/newbee-ltd/newbee-mall</a> &#xFF08;&#x4E00;&#x5957;&#x7535;&#x5546;&#x7CFB;&#x7EDF;&#xFF0C;&#x5305;&#x62EC; newbee-mall &#x5546;&#x57CE;&#x7CFB;&#x7EDF;&#x53CA; newbee-mall-admin &#x5546;&#x57CE;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#xFF0C;&#x57FA;&#x4E8E; Spring Boot 2.X &#x53CA;&#x76F8;&#x5173;&#x6280;&#x672F;&#x6808;&#x5F00;&#x53D1;&#xFF09;</li>
+<li>paascloud-master&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/paascloud/paascloud-master&#xFF08;&#x57FA;&#x4E8E;">https://github.com/paascloud/paascloud-master&#xFF08;&#x57FA;&#x4E8E;</a> spring cloud + vue + oAuth2.0&#xFF0C;&#x524D;&#x540E;&#x7AEF;&#x5206;&#x79BB;&#x5546;&#x57CE;&#x7CFB;&#x7EDF;&#xFF09;</li>
+<li>mall-swarm&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/macrozheng/mall-swarm&#xFF08;&#x4E00;&#x5957;&#x5FAE;&#x670D;&#x52A1;&#x5546;&#x57CE;&#x7CFB;&#x7EDF;&#xFF0C;&#x91C7;&#x7528;&#x4E86;">https://github.com/macrozheng/mall-swarm&#xFF08;&#x4E00;&#x5957;&#x5FAE;&#x670D;&#x52A1;&#x5546;&#x57CE;&#x7CFB;&#x7EDF;&#xFF0C;&#x91C7;&#x7528;&#x4E86;</a> Spring Cloud Greenwich&#x3001;Spring Boot 2&#x3001;MyBatis&#x3001;Docker&#x3001;Elasticsearch &#x7B49;&#x6838;&#x5FC3;&#x6280;&#x672F;&#xFF0C;&#x540C;&#x65F6;&#x63D0;&#x4F9B;&#x4E86;&#x57FA;&#x4E8E; Vue &#x7684;&#x7BA1;&#x7406;&#x540E;&#x53F0;&#x65B9;&#x4FBF;&#x5FEB;&#x901F;&#x642D;&#x5EFA;&#x7CFB;&#x7EDF;&#xFF09;</li>
+<li>onemall&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/YunaiV/onemall&#xFF08;mall">https://github.com/YunaiV/onemall&#xFF08;mall</a> &#x5546;&#x57CE;&#xFF0C;&#x57FA;&#x4E8E;&#x5FAE;&#x670D;&#x52A1;&#x7684;&#x601D;&#x60F3;&#xFF0C;&#x6784;&#x5EFA;&#x5728; B2C &#x7535;&#x5546;&#x573A;&#x666F;&#x4E0B;&#x7684;&#x9879;&#x76EE;&#x5B9E;&#x6218;&#x3002;&#x6838;&#x5FC3;&#x6280;&#x672F;&#x6808;&#xFF0C;&#x662F; Spring Boot + Dubbo &#x3002;&#x672A;&#x6765;&#xFF0C;&#x4F1A;&#x91CD;&#x6784;&#x6210; Spring Cloud Alibaba&#xFF09;</li>
+<li>litemall&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/linlinjava/litemall&#xFF08;&#x53C8;&#x4E00;&#x4E2A;&#x5C0F;&#x5546;&#x57CE;&#xFF0C;litemall">https://github.com/linlinjava/litemall&#xFF08;&#x53C8;&#x4E00;&#x4E2A;&#x5C0F;&#x5546;&#x57CE;&#xFF0C;litemall</a> = Spring Boot &#x540E;&#x7AEF; + Vue &#x7BA1;&#x7406;&#x5458;&#x524D;&#x7AEF; + &#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;&#x7528;&#x6237;&#x524D;&#x7AEF; + Vue &#x7528;&#x6237;&#x79FB;&#x52A8;&#x7AEF;&#xFF09;</li>
+<li>xmall&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/Exrick/xmall">https://github.com/Exrick/xmall</a> &#xFF08;&#x57FA;&#x4E8E;SOA&#x67B6;&#x6784;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x7535;&#x5546;&#x8D2D;&#x7269;&#x5546;&#x57CE; &#x524D;&#x540E;&#x7AEF;&#x5206;&#x79BB; &#x524D;&#x53F0;&#x5546;&#x57CE;:Vue&#x5168;&#x5BB6;&#x6876; &#x540E;&#x53F0;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#xFF09;</li>
+<li>miaosha&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/qiurunze123/miaosha">https://github.com/qiurunze123/miaosha</a> &#xFF08;&#x79D2;&#x6740;&#x7CFB;&#x7EDF;&#x8BBE;&#x8BA1;&#x4E0E;&#x5B9E;&#x73B0;&#xFF09;</li>
+<li>SecKill&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/hfbin/Seckill&#xFF08;&#x57FA;&#x4E8E;">https://github.com/hfbin/Seckill&#xFF08;&#x57FA;&#x4E8E;</a> SpringBoot+Mybatis+Redis+RabbitMQ &#x79D2;&#x6740;&#x7CFB;&#x7EDF;&#xFF09;</li>
+</ul>
+</li>
+<li><p>&#x535A;&#x5BA2;&#x8BBA;&#x575B;</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/langhsu/mblog">Mblog</a>&#xFF1A;&#x5F00;&#x6E90; Java &#x535A;&#x5BA2;&#x7CFB;&#x7EDF;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/halo-dev/halo">halo</a>&#xFF1A;&#x4E00;&#x4E2A;&#x4F18;&#x79C0;&#x7684;&#x5F00;&#x6E90;&#x535A;&#x5BA2;&#x53D1;&#x5E03;&#x5E94;&#x7528;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Qbian61/forum-java">forum-java</a>&#xFF1A;&#x4E00;&#x6B3E;&#x7528; Java&#xFF08;spring boot&#xFF09; &#x5B9E;&#x73B0;&#x7684;&#x73B0;&#x4EE3;&#x5316;&#x793E;&#x533A;&#xFF08;&#x8BBA;&#x575B;/&#x95EE;&#x7B54;/BBS/&#x793E;&#x4EA4;&#x7F51;&#x7EDC;/&#x535A;&#x5BA2;&#xFF09;&#x7CFB;&#x7EDF;&#x5E73;&#x53F0;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/lenve/vhr">vhr</a>&#xFF1A;&#x5FAE;&#x4EBA;&#x4E8B;&#x662F;&#x4E00;&#x4E2A;&#x524D;&#x540E;&#x7AEF;&#x5206;&#x79BB;&#x7684;&#x4EBA;&#x529B;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#xFF0C;&#x9879;&#x76EE;&#x91C7;&#x7528; SpringBoot+Vue &#x5F00;&#x53D1;&#x3002;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/cloudfavorites/favorites-web">favorites-web</a>:&#x4E91;&#x6536;&#x85CF; Spring Boot 2.X &#x5F00;&#x6E90;&#x9879;&#x76EE;&#x3002;&#x4E91;&#x6536;&#x85CF;&#x662F;&#x4E00;&#x4E2A;&#x4F7F;&#x7528; Spring Boot &#x6784;&#x5EFA;&#x7684;&#x5F00;&#x6E90;&#x7F51;&#x7AD9;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x7528;&#x6237;&#x5728;&#x7EBF;&#x968F;&#x65F6;&#x968F;&#x5730;&#x6536;&#x85CF;&#x7684;&#x4E00;&#x4E2A;&#x7F51;&#x7AD9;&#xFF0C;&#x5728;&#x7F51;&#x7AD9;&#x4E0A;&#x5206;&#x7C7B;&#x6574;&#x7406;&#x6536;&#x85CF;&#x7684;&#x7F51;&#x7AD9;&#x6216;&#x8005;&#x6587;&#x7AE0;&#x3002;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/codedrinker/community">community</a>&#xFF1A;&#x7801;&#x95EE;&#xFF0C;&#x5F00;&#x6E90;&#x8BBA;&#x575B;&#x3001;&#x95EE;&#x7B54;&#x7CFB;&#x7EDF;&#xFF0C;&#x73B0;&#x6709;&#x529F;&#x80FD;&#x63D0;&#x95EE;&#x3001;&#x56DE;&#x590D;&#x3001;&#x901A;&#x77E5;&#x3001;&#x6700;&#x65B0;&#x3001;&#x6700;&#x70ED;&#x3001;&#x6D88;&#x9664;&#x96F6;&#x56DE;&#x590D;&#x529F;&#x80FD;&#x3002;&#x6280;&#x672F;&#x6808; Spring&#x3001;Spring Boot&#x3001;MyBatis&#x3001;MySQL/H2&#x3001;Bootstrap</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/yourkevin/NiterForum">NiterForum</a>&#xFF1A;&#x5C3C;&#x7279;&#x793E;&#x533A;-NiterForum-&#x4E00;&#x4E2A;&#x8BBA;&#x575B;/&#x793E;&#x533A;&#x7A0B;&#x5E8F;&#x3002;&#x540E;&#x7AEF;Springboot/MyBatis/Maven/MySQL&#xFF0C;&#x524D;&#x7AEF;Thymeleaf/Layui&#x3002;&#x53EF;&#x4F9B;&#x521D;&#x5B66;&#x8005;&#xFF0C;&#x5B66;&#x4E60;&#x3001;&#x4EA4;&#x6D41;&#x4F7F;&#x7528;&#x3002;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/lenve/VBlog">VBlog</a>&#xFF1A;V&#x90E8;&#x843D;&#xFF0C;Vue+SpringBoot&#x5B9E;&#x73B0;&#x7684;&#x591A;&#x7528;&#x6237;&#x535A;&#x5BA2;&#x7BA1;&#x7406;&#x5E73;&#x53F0;!</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/damoqiongqiu/NiceFish">NiceFish</a>&#xFF1A;SpringBoot/SpringCloud &#x524D;&#x540E;&#x7AEF;&#x5206;&#x79BB;&#x9879;&#x76EE;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ZHENFENG13/My-Blog">My-Blog</a>&#xFF1A; My Blog &#x662F;&#x7531; SpringBoot + Mybatis + Thymeleaf &#x7B49;&#x6280;&#x672F;&#x5B9E;&#x73B0;&#x7684; Java &#x535A;&#x5BA2;&#x7CFB;&#x7EDF;&#xFF0C;&#x9875;&#x9762;&#x7F8E;&#x89C2;&#x3001;&#x529F;&#x80FD;&#x9F50;&#x5168;&#x3001;&#x90E8;&#x7F72;&#x7B80;&#x5355;&#x53CA;&#x5B8C;&#x5584;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4E00;&#x5B9A;&#x4F1A;&#x7ED9;&#x4F7F;&#x7528;&#x8005;&#x65E0;&#x4E0E;&#x4F26;&#x6BD4;&#x7684;&#x4F53;&#x9A8C;&#x3002;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ZHENFENG13/My-Blog-layui">My-Blog-layui</a>&#xFF1A;layui &#x7248;&#x672C;&#x7684; My-Blog : A simple &amp; beautiful blogging system implemented with spring-boot &amp; layui &amp; thymeleaf &amp; mybatis My Blog &#x662F;&#x7531;  SpringBoot + Layui + Mybatis + Thymeleaf &#x7B49;&#x6280;&#x672F;&#x5B9E;&#x73B0;&#x7684; Java  &#x535A;&#x5BA2;&#x7CFB;&#x7EDF;&#xFF0C;&#x9875;&#x9762;&#x7F8E;&#x89C2;&#x3001;&#x529F;&#x80FD;&#x9F50;&#x5168;&#x3001;&#x90E8;&#x7F72;&#x7B80;&#x5355;&#x53CA;&#x5B8C;&#x5584;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4E00;&#x5B9A;&#x4F1A;&#x7ED9;&#x4F7F;&#x7528;&#x8005;&#x65E0;&#x4E0E;&#x4F26;&#x6BD4;&#x7684;&#x4F53;&#x9A8C;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/88250/symphony">symphony</a>&#xFF1A;Java &#x5B9E;&#x73B0;&#x7684;&#x73B0;&#x4EE3;&#x5316;&#x793E;&#x533A;</li>
+</ul>
+</li>
+<li><p>&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/wxiaoqi/Spring-Cloud-Admin">Spring-Cloud-Admin</a>&#xFF1A;Cloud-Admin &#x662F;&#x56FD;&#x5185;&#x9996;&#x4E2A;&#x57FA;&#x4E8E; Spring Cloud &#x5FAE;&#x670D;&#x52A1;&#x5316;&#x5F00;&#x53D1;&#x5E73;&#x53F0;&#xFF0C;&#x5177;&#x6709;&#x7EDF;&#x4E00;&#x6388;&#x6743;&#x3001;&#x8BA4;&#x8BC1;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x5177;&#x5907;&#x7528;&#x6237;&#x7BA1;&#x7406;&#x3001;&#x8D44;&#x6E90;&#x6743;&#x9650;&#x7BA1;&#x7406;&#x3001;&#x7F51;&#x5173; API &#x7BA1;&#x7406;&#x7B49;&#x591A;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x652F;&#x6301;&#x591A;&#x4E1A;&#x52A1;&#x7CFB;&#x7EDF;&#x5E76;&#x884C;&#x5F00;&#x53D1;&#xFF0C;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x540E;&#x7AEF;&#x670D;&#x52A1;&#x7684;&#x5F00;&#x53D1;&#x811A;&#x624B;&#x67B6;&#x3002;&#x4EE3;&#x7801;&#x7B80;&#x6D01;&#xFF0C;&#x67B6;&#x6784;&#x6E05;&#x6670;&#xFF0C;&#x9002;&#x5408;&#x5B66;&#x4E60;&#x548C;&#x76F4;&#x63A5;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;&#x3002;&#x6838;&#x5FC3;&#x6280;&#x672F;&#x91C7;&#x7528; Spring Boot2 &#x4EE5;&#x53CA; Spring Cloud Gateway &#x76F8;&#x5173;&#x6838;&#x5FC3;&#x7EC4;&#x4EF6;&#xFF0C;&#x524D;&#x7AEF;&#x91C7;&#x7528; vue-element-admin &#x7EC4;&#x4EF6;&#x3002;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/tomsun28/bootshiro">bootshiro</a>&#xFF1A;&#x57FA;&#x4E8E; springboot+shiro+jwt &#x7684;&#x8D44;&#x6E90;&#x65E0;&#x72B6;&#x6001;&#x8BA4;&#x8BC1;&#x6743;&#x9650;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x540E;&#x7AEF;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/72crm/72crm-java">&#x609F;&#x7A7A;CRM</a>&#xFF1A;&#x57FA;&#x4E8E;jfinal+vue+ElementUI&#x7684;&#x524D;&#x540E;&#x7AEF;&#x5206;&#x79BB;CRM&#x7CFB;&#x7EDF;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/elunez/eladmin">EL-ADMIN</a>&#xFF1A;&#x57FA;&#x4E8E; SpringBoot &#x7684;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;</li>
+<li><a target="_blank" rel="noopener" href="https://gitee.com/log4j/pig">pig</a>&#xFF1A;&#x57FA;&#x4E8E; Spring Boot 2.2&#x3001; Spring Cloud Hoxton &amp; Alibaba&#x3001; OAuth2 &#x7684; RBAC &#x6743;&#x9650;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x3002;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/wuyouzhuguli/FEBS-Shiro">FEBS-Shiro</a>&#xFF1A;Spring Boot 2.1.3&#xFF0C;Shiro1.4.0 &amp; Layui 2.5.4 &#x6743;&#x9650;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x3002;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Heeexy/SpringBoot-Shiro-Vue">Spring Boot-Shiro-Vue</a>&#xFF1A;&#x57FA;&#x4E8E;Spring Boot-Shiro-Vue &#x7684;&#x6743;&#x9650;&#x7BA1;&#x7406;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ZeroWdd/studentmanager">studentmanager</a>&#xFF1A;&#x57FA;&#x4E8E;springboot+mybatis&#x5B66;&#x751F;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/jishenghua/jshERP">jshERP</a>&#xFF1A;&#x534E;&#x590F;ERP&#x57FA;&#x4E8E;SpringBoot&#x6846;&#x67B6;&#x548C;SaaS&#x6A21;&#x5F0F;&#xFF0C;&#x7ACB;&#x5FD7;&#x4E3A;&#x4E2D;&#x5C0F;&#x4F01;&#x4E1A;&#x63D0;&#x4F9B;&#x5F00;&#x6E90;&#x597D;&#x7528;&#x7684;ERP&#x8F6F;&#x4EF6;&#xFF0C;&#x76EE;&#x524D;&#x4E13;&#x6CE8;&#x8FDB;&#x9500;&#x5B58;+&#x8D22;&#x52A1;&#x529F;&#x80FD;&#x3002;&#x4E3B;&#x8981;&#x6A21;&#x5757;&#x6709;&#x96F6;&#x552E;&#x7BA1;&#x7406;&#x3001;&#x91C7;&#x8D2D;&#x7BA1;&#x7406;&#x3001;&#x9500;&#x552E;&#x7BA1;&#x7406;&#x3001;&#x4ED3;&#x5E93;&#x7BA1;&#x7406;&#x3001;&#x8D22;&#x52A1;&#x7BA1;&#x7406;&#x3001;&#x62A5;&#x8868;&#x67E5;&#x8BE2;&#x3001;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x7B49;&#x3002;&#x652F;&#x6301;&#x9884;&#x4ED8;&#x6B3E;&#x3001;&#x6536;&#x5165;&#x652F;&#x51FA;&#x3001;&#x4ED3;&#x5E93;&#x8C03;&#x62E8;&#x3001;&#x7EC4;&#x88C5;&#x62C6;&#x5378;&#x3001;&#x8BA2;&#x5355;&#x7B49;&#x7279;&#x8272;&#x529F;&#x80FD;&#x3002;&#x62E5;&#x6709;&#x5E93;&#x5B58;&#x72B6;&#x51B5;&#x3001;&#x51FA;&#x5165;&#x5E93;&#x7EDF;&#x8BA1;&#x7B49;&#x62A5;&#x8868;&#x3002;&#x540C;&#x65F6;&#x5BF9;&#x89D2;&#x8272;&#x548C;&#x6743;&#x9650;&#x8FDB;&#x884C;&#x4E86;&#x7EC6;&#x81F4;&#x5168;&#x9762;&#x63A7;&#x5236;&#xFF0C;&#x7CBE;&#x786E;&#x5230;&#x6BCF;&#x4E2A;&#x6309;&#x94AE;&#x548C;&#x83DC;&#x5355;&#x3002;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/misterchaos/HotelSystem">HotelSystem</a>&#xFF1A;&#x9152;&#x5E97;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF; Java,tomcat,mysql,servlet,jsp&#x5B9E;&#x73B0;&#xFF0C;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x6846;&#x67B6;</li>
+</ul>
+</li>
+<li><p>&#x5F00;&#x53D1;&#x5E73;&#x53F0;</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/2014shijina2014/open-capacity-platform">open-capacity-platform</a>&#xFF1A;&#x5FAE;&#x670D;&#x52A1;&#x80FD;&#x529B;&#x5F00;&#x53D1;&#x5E73;&#x53F0;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/zhangdaiscott/jeecg-boot">jeecg-boot</a>&#xFF1A;JeecgBoot&#x662F;&#x4E00;&#x6B3E;&#x57FA;&#x4E8E;BPM&#x7684;&#x4F4E;&#x4EE3;&#x7801;&#x5E73;&#x53F0;&#xFF01;&#x524D;&#x540E;&#x7AEF;&#x5206;&#x79BB;&#x67B6;&#x6784; SpringBoot 2.x&#xFF0C;SpringCloud&#xFF0C;Ant  Design&amp;Vue&#xFF0C;Mybatis-plus&#xFF0C;Shiro&#xFF0C;JWT&#xFF0C;&#x652F;&#x6301;&#x5FAE;&#x670D;&#x52A1;&#x3002;&#x5F3A;&#x5927;&#x7684;&#x4EE3;&#x7801;&#x751F;&#x6210;&#x5668;&#x8BA9;&#x524D;&#x540E;&#x7AEF;&#x4EE3;&#x7801;&#x4E00;&#x952E;&#x751F;&#x6210;&#xFF0C;&#x5B9E;&#x73B0;&#x4F4E;&#x4EE3;&#x7801;&#x5F00;&#x53D1;&#xFF01;</li>
+</ul>
+</li>
+<li><p>&#x5176;&#x4ED6;</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/mindskip/xzs">&#x5B66;&#x4E4B;&#x601D;&#x5728;&#x7EBF;&#x8003;&#x8BD5;&#x7CFB;&#x7EDF;</a>&#xFF1A;&#x4E00;&#x6B3E; java + vue &#x7684;&#x524D;&#x540E;&#x7AEF;&#x5206;&#x79BB;&#x7684;&#x8003;&#x8BD5;&#x7CFB;&#x7EDF;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Jackson0714/PassJava-Platform">PassJava-Platform</a>&#xFF1A;&#x4E00;&#x6B3E;&#x9762;&#x8BD5;&#x5237;&#x9898;&#x7684; Spring Cloud &#x5F00;&#x6E90;&#x7CFB;&#x7EDF;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/kekingcn/kkFileView">kkFileView</a>&#xFF1A;&#x4F7F;&#x7528;spring boot&#x6253;&#x9020;&#x6587;&#x4EF6;&#x6587;&#x6863;&#x5728;&#x7EBF;&#x9884;&#x89C8;&#x9879;&#x76EE;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/baomidou/dynamic-datasource-spring-boot-starter">dynamic-datasource</a>&#xFF1A;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;springboot&#x7684;&#x5FEB;&#x901F;&#x96C6;&#x6210;&#x591A;&#x6570;&#x636E;&#x6E90;&#x7684;&#x542F;&#x52A8;&#x5668;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/373675032/moti-cloud">moti-cloud</a>&#xFF1A;&#x83AB;&#x63D0;&#x7F51;&#x76D8;&#xFF0C;&#x57FA;&#x4E8E; SpringBoot+MyBatis+ThymeLeaf+BootStrap&#xFF0C;&#x9002;&#x5408;&#x521D;&#x5B66;&#x8005;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/qiurunze123/threadandjuc">threadandjuc</a>&#xFF1A;three-high-import &#x9AD8;&#x53EF;&#x7528;\&#x9AD8;&#x53EF;&#x9760;\&#x9AD8;&#x6027;&#x80FD;&#xFF0C;&#x4E09;&#x9AD8;&#x591A;&#x7EBF;&#x7A0B;&#x5BFC;&#x5165;&#x7CFB;&#x7EDF;&#xFF08;&#x8BE5;&#x9879;&#x76EE;&#x610F;&#x4E49;&#x4E3A;&#x7406;&#x8BBA;&#x8D2F;&#x901A;)</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/proxyee-down-org/proxyee-down">proxyee-down</a>&#xFF1A;http&#x4E0B;&#x8F7D;&#x5DE5;&#x5177;&#xFF0C;&#x57FA;&#x4E8E;http&#x4EE3;&#x7406;&#xFF0C;&#x652F;&#x6301;&#x591A;&#x8FDE;&#x63A5;&#x5206;&#x5757;&#x4E0B;&#x8F7D;</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/sfturing/hosp_order">hosp_order</a>&#xFF1A;&#x533B;&#x9662;&#x9884;&#x7EA6;&#x6302;&#x53F7;&#x7CFB;&#x7EDF;&#xFF0C;&#x57FA;&#x4E8E; SSM &#x6846;&#x67B6;</li>
+<li><a target="_blank" rel="noopener" href="https://how2j.cn/module/170.html">&#x8D8B;&#x52BF;&#x6295;&#x8D44; SpringCloud</a></li>
+<li><a target="_blank" rel="noopener" href="https://how2j.cn/module/176.html">DiyTomcat</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x9636;&#x6BB5;-6&#xFF1A;Java-&#x9AD8;&#x7EA7;"><a href="#&#x9636;&#x6BB5;-6&#xFF1A;Java-&#x9AD8;&#x7EA7;" class="headerlink" title="&#x9636;&#x6BB5; 6&#xFF1A;Java &#x9AD8;&#x7EA7;"></a>&#x9636;&#x6BB5; 6&#xFF1A;Java &#x9AD8;&#x7EA7;</h2><h3 id="&#x76EE;&#x6807;-5"><a href="#&#x76EE;&#x6807;-5" class="headerlink" title="&#x76EE;&#x6807;"></a>&#x76EE;&#x6807;</h3><p>&#x4E0D;&#x6EE1;&#x8DB3;&#x4E8E;&#x80FD;&#x505A;&#xFF0C;&#x800C;&#x662F;&#x901A;&#x8FC7;&#x66F4; <strong>&#x6DF1;&#x5165;</strong> &#x548C; <strong>&#x5E7F;&#x6CDB;</strong> &#x7684;&#x5B66;&#x4E60;&#xFF0C;&#x5B9E;&#x73B0;&#x9AD8;&#x8D28;&#x91CF;&#x7684;&#x4EE3;&#x7801;&#x548C;&#x66F4;&#x4F18;&#x79C0;&#x7684;&#x67B6;&#x6784;&#xFF0C;&#x57F9;&#x517B;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x7684;&#x80FD;&#x529B;&#x3002;</p>
+<h3 id="&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#xFF08;21-&#x5929;&#xFF09;"><a href="#&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#xFF08;21-&#x5929;&#xFF09;" class="headerlink" title="&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#xFF08;21 &#x5929;&#xFF09;"></a>&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#xFF08;21 &#x5929;&#xFF09;</h3><p>&#x5BF9; Java &#x540E;&#x7AEF;&#x5F00;&#x53D1;&#x7A0B;&#x5E8F;&#x5458;&#x6765;&#x8BF4;&#xFF0C;&#x61C2;&#x5F97;&#x5982;&#x4F55;&#x5229;&#x7528;&#x6709;&#x9650;&#x7684;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;&#x6765;&#x63D0;&#x9AD8;&#x7CFB;&#x7EDF;&#x7684;&#x6027;&#x80FD;&#x662F;&#x5F88;&#x91CD;&#x8981;&#x7684;&#xFF0C;&#x4E5F;&#x662F;&#x5927;&#x5382;&#x9762;&#x8BD5;&#x8003;&#x5BDF;&#x7684;&#x91CD;&#x70B9;&#xFF0C;&#x56E0;&#x6B64;&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#xFF08;&#x5C24;&#x5176;&#x662F; Java &#x5E76;&#x53D1;&#x5305;&#x7684;&#x4F7F;&#x7528;&#xFF09;&#x8FD9;&#x5757;&#x7684;&#x77E5;&#x8BC6;&#x5F88;&#x91CD;&#x8981;&#x3002;</p>
+<p>&#x628A;&#x5B83;&#x653E;&#x5230;&#x9AD8;&#x7EA7;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x5728;&#x5B66;&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x7F16;&#x7A0B;&#x7ECF;&#x9A8C;&#x3001;&#x4E86;&#x89E3;&#x4E00;&#x5B9A;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x77E5;&#x8BC6;&#x3002;</p>
+<ul>
+<li><p>&#x77E5;&#x8BC6;</p>
+<ul>
+<li>&#x7EBF;&#x7A0B;&#x548C;&#x8FDB;&#x7A0B;</li>
+<li>&#x7EBF;&#x7A0B;&#x72B6;&#x6001;</li>
+<li>&#x5E76;&#x884C;&#x548C;&#x5E76;&#x53D1;</li>
+<li>&#x540C;&#x6B65;&#x548C;&#x5F02;&#x6B65;</li>
+<li>Synchronized</li>
+<li>Volatile &#x5173;&#x952E;&#x5B57;</li>
+<li>Lock &#x9501;</li>
+<li>&#x6B7B;&#x9501;</li>
+<li>&#x53EF;&#x91CD;&#x5165;&#x9501;</li>
+<li>&#x7EBF;&#x7A0B;&#x5B89;&#x5168;</li>
+<li>&#x7EBF;&#x7A0B;&#x6C60;</li>
+<li>JUC &#x7684;&#x4F7F;&#x7528;</li>
+<li>AQS</li>
+<li>Fork Join</li>
+<li>CAS</li>
+</ul>
+</li>
+<li><p>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</p>
+<p>&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x5165;&#x95E8;&#x4E0D;&#x96BE;&#xFF0C;&#x4F9D;&#x7136;&#x662F; <strong>&#x5148;&#x5B66;&#x4F1A;&#x4F7F;&#x7528;</strong> &#x57FA;&#x7840;&#x7684; Java &#x5E76;&#x53D1;&#x5305;&#xFF0C; &#x518D;&#x901A;&#x8FC7;&#x5927;&#x91CF;&#x5730;&#x5B9E;&#x8DF5;&#x548C;&#x6D4B;&#x8BD5;&#xFF0C;&#x4E86;&#x89E3;&#x4E00;&#x4E9B;&#x539F;&#x7406;&#xFF0C;&#x624D;&#x80FD;&#x771F;&#x6B63;&#x638C;&#x63E1;&#x4F55;&#x65F6;&#x4F7F;&#x7528;&#x3001;&#x5982;&#x4F55;&#x66F4;&#x5408;&#x7406;&#x5730;&#x4F7F;&#x7528;&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x8D44;&#x6E90;</p>
+<ul>
+<li><p>&#x89C6;&#x9891;</p>
+<ul>
+<li>&#x2B50;&#x3010;&#x5C1A;&#x7845;&#x8C37;&#x3011;&#x5927;&#x5382;&#x5FC5;&#x5907;&#x6280;&#x672F;&#x4E4B;JUC&#x5E76;&#x53D1;&#x7F16;&#x7A0B;2021&#x6700;&#x65B0;&#x7248;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Kw411Z7dF&#xFF08;&#x7279;&#x70B9;&#x662F;&#x77ED;&#x3001;&#x7CBE;&#x3001;&#x65B0;&#xFF09;">https://www.bilibili.com/video/BV1Kw411Z7dF&#xFF08;&#x7279;&#x70B9;&#x662F;&#x77ED;&#x3001;&#x7CBE;&#x3001;&#x65B0;&#xFF09;</a></li>
+<li>&#x9ED1;&#x9A6C;&#x7A0B;&#x5E8F;&#x5458;&#x5168;&#x9762;&#x6DF1;&#x5165;&#x5B66;&#x4E60;Java&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV16J411h7Rd&#xFF08;&#x8BB2;&#x7684;&#x5F88;&#x7EC6;&#x3001;&#x5168;&#x9762;&#x6DF1;&#x5165;&#xFF09;">https://www.bilibili.com/video/BV16J411h7Rd&#xFF08;&#x8BB2;&#x7684;&#x5F88;&#x7EC6;&#x3001;&#x5168;&#x9762;&#x6DF1;&#x5165;&#xFF09;</a></li>
+</ul>
+</li>
+<li><p>&#x4E66;&#x7C4D;</p>
+<ul>
+<li>&#x2B50;&#x300A;Java&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x5B9E;&#x6218;&#x300B;&#xFF08;&#x56FD;&#x5916;&#x7684;&#x7ECF;&#x5178;&#xFF09;</li>
+<li>&#x2B50;&#x300A;Java &#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x827A;&#x672F;&#x300B;&#xFF08;&#x56FD;&#x4EBA;&#x5199;&#x7684;&#xFF0C;&#x7406;&#x8BBA;&#x601D;&#x60F3;&#x5185;&#x5BB9;&#x8F83;&#x591A;&#xFF0C;&#x6709;&#x65F6;&#x95F4;&#x5EFA;&#x8BAE;&#x53CD;&#x590D;&#x770B;&#xFF09;</li>
+</ul>
+</li>
+<li><p>&#x9879;&#x76EE;</p>
+<ul>
+<li>&#x2B50; Java &#x5E76;&#x53D1;&#x77E5;&#x8BC6;&#x70B9;&#x603B;&#x7ED3;&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/CL0610/Java-concurrency">https://github.com/CL0610/Java-concurrency</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="JVM&#xFF08;30-&#x5929;&#xFF09;"><a href="#JVM&#xFF08;30-&#x5929;&#xFF09;" class="headerlink" title="JVM&#xFF08;30 &#x5929;&#xFF09;"></a>JVM&#xFF08;30 &#x5929;&#xFF09;</h3><p>&#x60F3;&#x8981;&#x6DF1;&#x5165;&#x7406;&#x89E3; Java&#xFF0C;&#x63A2;&#x79D8; Java &#x8DE8;&#x5E73;&#x53F0;&#x7684;&#x5965;&#x79D8;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x4E86;&#x89E3; Java &#x5E95;&#x5C42;&#x7684;&#x865A;&#x62DF;&#x673A;&#x6280;&#x672F;&#x3002;</p>
+<p>&#x4E86;&#x89E3;&#x865A;&#x62DF;&#x673A;&#x3001;&#x638C;&#x63E1;&#x865A;&#x62DF;&#x673A;&#x6027;&#x80FD;&#x8C03;&#x4F18;&#x65B9;&#x6CD5;&#xFF0C;&#x6709;&#x52A9;&#x4E8E;&#x4F60;&#x5199;&#x51FA;&#x66F4;&#x9AD8;&#x6027;&#x80FD;&#x3001;&#x8D44;&#x6E90;&#x5360;&#x7528;&#x66F4;&#x5C0F;&#x7684;&#x4F18;&#x8D28;&#x7A0B;&#x5E8F;&#x3002;</p>
+<p>&#x5728;&#x5B66;&#x4E60; JVM &#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4E5F;&#x80FD;&#x5B66;&#x5230;&#x5F88;&#x591A;&#x7CBE;&#x5999;&#x7684;&#x8BBE;&#x8BA1;&#xFF0C;&#x5F00;&#x62D3;&#x601D;&#x8DEF;&#x3002;</p>
+<ul>
+<li><p>&#x77E5;&#x8BC6;</p>
+<ul>
+<li>JVM &#x5185;&#x5B58;&#x7ED3;&#x6784;</li>
+<li>JVM &#x751F;&#x547D;&#x5468;&#x671F;</li>
+<li>&#x4E3B;&#x6D41;&#x865A;&#x62DF;&#x673A;</li>
+<li>Java &#x4EE3;&#x7801;&#x6267;&#x884C;&#x6D41;&#x7A0B;</li>
+<li><p>&#x7C7B;&#x52A0;&#x8F7D;</p>
+<ul>
+<li>&#x7C7B;&#x52A0;&#x8F7D;&#x5668;</li>
+<li>&#x7C7B;&#x52A0;&#x8F7D;&#x8FC7;&#x7A0B;</li>
+<li>&#x53CC;&#x4EB2;&#x59D4;&#x6D3E;&#x673A;&#x5236;</li>
+</ul>
+</li>
+<li><p>&#x5783;&#x573E;&#x56DE;&#x6536;</p>
+<ul>
+<li>&#x5783;&#x573E;&#x56DE;&#x6536;&#x5668;</li>
+<li>&#x5783;&#x573E;&#x56DE;&#x6536;&#x7B56;&#x7565;</li>
+<li>&#x5783;&#x573E;&#x56DE;&#x6536;&#x7B97;&#x6CD5;</li>
+<li>StopTheWorld</li>
+</ul>
+</li>
+<li><p>&#x5B57;&#x8282;&#x7801;</p>
+</li>
+<li>&#x5185;&#x5B58;&#x5206;&#x914D;&#x548C;&#x56DE;&#x6536;</li>
+<li><p>JVM &#x6027;&#x80FD;&#x8C03;&#x4F18;</p>
+<ul>
+<li>&#x6027;&#x80FD;&#x5206;&#x6790;&#x65B9;&#x6CD5;</li>
+<li>&#x5E38;&#x7528;&#x5DE5;&#x5177;</li>
+<li>&#x53C2;&#x6570;&#x8BBE;&#x7F6E;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</p>
+<p>JVM &#x7684;&#x77E5;&#x8BC6;&#x7565;&#x663E;&#x67AF;&#x71E5;&#xFF0C;&#x5EFA;&#x8BAE;&#x5148;&#x770B;&#x89C6;&#x9891;&#xFF0C;&#x6709;&#x5B9E;&#x64CD;&#x7684;&#x5730;&#x65B9;&#x4E00;&#x5B9A;&#x8981;&#x5B9E;&#x64CD;&#xFF01;&#x81EA;&#x5DF1;&#x591A;&#x53BB;&#x5206;&#x6790;&#x3002;</p>
+<p>&#x7B2C;&#x4E00;&#x904D;&#x4E0D;&#x7406;&#x89E3;&#x6CA1;&#x6709;&#x5173;&#x7CFB;&#xFF0C;&#x53EF;&#x4EE5;&#x518D;&#x770B;&#x4E66;&#x6765;&#x5DE9;&#x56FA;&#xFF0C;&#x60F3;&#x8981;&#x771F;&#x6B63;&#x5B66;&#x597D;&#xFF0C;&#x300A;&#x6DF1;&#x5165;&#x7406;&#x89E3; Java &#x865A;&#x62DF;&#x673A;&#xFF08;&#x7B2C;&#x4E09;&#x7248;&#xFF09;&#x300B;&#x4E00;&#x5B9A;&#x8981;&#x8BFB;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x53EA;&#x662F;&#x4E3A;&#x4E86;&#x901A;&#x8FC7;&#x9762;&#x8BD5;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x770B;&#x66F4;&#x7CBE;&#x7B80;&#x7684;&#x89C6;&#x9891;&#xFF0C;&#x6BD4;&#x5982;&#x72C2;&#x795E;&#x7684;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li><p>&#x8D44;&#x6E90;</p>
+<ul>
+<li><p>&#x89C6;&#x9891;</p>
+<ul>
+<li>&#x2B50; &#x5C1A;&#x7845;&#x8C37;&#x5B8B;&#x7EA2;&#x5EB7; - JVM &#x5168;&#x5957;&#x6559;&#x7A0B;&#x8BE6;&#x89E3;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1PJ411n7xZ&#xFF08;&#x8BB2;&#x5F97;&#x76F8;&#x5F53;&#x5168;&#x9762;&#xFF01;&#x9644;&#x6709;&#x5B9E;&#x64CD;&#xFF09;">https://www.bilibili.com/video/BV1PJ411n7xZ&#xFF08;&#x8BB2;&#x5F97;&#x76F8;&#x5F53;&#x5168;&#x9762;&#xFF01;&#x9644;&#x6709;&#x5B9E;&#x64CD;&#xFF09;</a></li>
+<li>&#x3010;&#x72C2;&#x795E;&#x8BF4;Java&#x3011;JVM&#x5FEB;&#x901F;&#x5165;&#x95E8;&#x7BC7;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1iJ411d7jS&#xFF08;&#x8BB2;&#x5F97;&#x6709;&#x70B9;&#x6D45;&#xFF0C;&#x4F46;&#x90FD;&#x662F;&#x9762;&#x8BD5;&#x91CD;&#x70B9;&#xFF0C;&#x65F6;&#x95F4;&#x7D27;&#x7684;&#x5C0F;&#x4F19;&#x4F34;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x770B;&#x8FD9;&#x4E2A;&#xFF09;">https://www.bilibili.com/video/BV1iJ411d7jS&#xFF08;&#x8BB2;&#x5F97;&#x6709;&#x70B9;&#x6D45;&#xFF0C;&#x4F46;&#x90FD;&#x662F;&#x9762;&#x8BD5;&#x91CD;&#x70B9;&#xFF0C;&#x65F6;&#x95F4;&#x7D27;&#x7684;&#x5C0F;&#x4F19;&#x4F34;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x770B;&#x8FD9;&#x4E2A;&#xFF09;</a></li>
+</ul>
+</li>
+<li><p>&#x4E66;&#x7C4D;</p>
+<ul>
+<li>&#x2B50;&#x300A;&#x6DF1;&#x5165;&#x7406;&#x89E3; Java &#x865A;&#x62DF;&#x673A;&#xFF08;&#x7B2C;&#x4E09;&#x7248;&#xFF09;&#x300B;&#xFF08;&#x6709;&#x7406;&#x8BBA;&#x6709;&#x5B9E;&#x8DF5;&#xFF0C;&#x5185;&#x5BB9;&#x4E30;&#x5BCC;&#xFF0C;&#x4E0D;&#x53EF;&#x591A;&#x5F97;&#x7684; JVM &#x5B66;&#x4E60;&#x795E;&#x4E66;&#xFF0C;&#x5C31;&#x662F;&#x6709;&#x70B9;&#x5E9F;&#x5934;&#x53D1;&#xFF09;</li>
+</ul>
+</li>
+<li><p>&#x9879;&#x76EE;</p>
+<ul>
+<li>&#x2B50; Java &#x865A;&#x62DF;&#x673A;&#x5E95;&#x5C42;&#x539F;&#x7406;&#x77E5;&#x8BC6;&#x603B;&#x7ED3;&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/doocs/jvm">https://github.com/doocs/jvm</a></li>
+</ul>
+</li>
+<li><p>&#x5B9E;&#x6218;</p>
+<ul>
+<li>&#x963F;&#x91CC;&#x4E91; JVM &#x5B9E;&#x6218;&#xFF1A;<a target="_blank" rel="noopener" href="https://developer.aliyun.com/graph/java/point/64">https://developer.aliyun.com/graph/java/point/64</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x67B6;&#x6784;&#x8BBE;&#x8BA1;"><a href="#&#x67B6;&#x6784;&#x8BBE;&#x8BA1;" class="headerlink" title="&#x67B6;&#x6784;&#x8BBE;&#x8BA1;"></a>&#x67B6;&#x6784;&#x8BBE;&#x8BA1;</h3><ul>
+<li><p>&#x5206;&#x5E03;&#x5F0F;</p>
+<ul>
+<li><p>&#x5206;&#x5E03;&#x5F0F;&#x7406;&#x8BBA;</p>
+<ul>
+<li>CAP</li>
+<li>BASE</li>
+</ul>
+</li>
+<li><p>&#x5206;&#x5E03;&#x5F0F;&#x7F13;&#x5B58;</p>
+<ul>
+<li>Redis</li>
+<li>Memcached</li>
+<li>Etcd</li>
+</ul>
+</li>
+<li><p>&#x4E00;&#x81F4;&#x6027;&#x7B97;&#x6CD5;</p>
+<ul>
+<li>Raft</li>
+<li>&#x4E00;&#x81F4;&#x6027;&#x54C8;&#x5E0C;</li>
+</ul>
+</li>
+<li><p>&#x5206;&#x5E03;&#x5F0F;&#x4E8B;&#x52A1;</p>
+</li>
+<li>&#x5206;&#x5E03;&#x5F0F; id &#x751F;&#x6210;</li>
+<li>&#x5206;&#x5E03;&#x5F0F;&#x670D;&#x52A1;&#x8C03;&#x7528;</li>
+<li>&#x5206;&#x5E03;&#x5F0F;&#x5B58;&#x50A8;</li>
+<li>&#x5206;&#x5E03;&#x5F0F;&#x6570;&#x636E;&#x5E93;</li>
+<li>&#x5206;&#x5E03;&#x5F0F;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;</li>
+<li><p>&#x5206;&#x5E03;&#x5F0F;&#x534F;&#x8C03;</p>
+<ul>
+<li>Zookeeper</li>
+</ul>
+</li>
+<li><p>&#x5206;&#x5E03;&#x5F0F;&#x76D1;&#x63A7;</p>
+<ul>
+<li>Prometheus</li>
+</ul>
+</li>
+<li><p>&#x5206;&#x5E03;&#x5F0F;&#x6D88;&#x606F;&#x961F;&#x5217;</p>
+<ul>
+<li>RabbitMQ</li>
+<li>Kafka</li>
+<li>Apache Pulsar</li>
+</ul>
+</li>
+<li><p>&#x5206;&#x5E03;&#x5F0F;&#x65E5;&#x5FD7;&#x6536;&#x96C6;</p>
+<ul>
+<li>Elastic Stack</li>
+<li>Loki</li>
+</ul>
+</li>
+<li><p>&#x5206;&#x5E03;&#x5F0F;&#x641C;&#x7D22;&#x5F15;&#x64CE;</p>
+<ul>
+<li>Elasticsearch</li>
+</ul>
+</li>
+<li><p>&#x5206;&#x5E03;&#x5F0F;&#x94FE;&#x8DEF;&#x8FFD;&#x8E2A;</p>
+<ul>
+<li>Apache SkyWalking</li>
+</ul>
+</li>
+<li><p>&#x5206;&#x5E03;&#x5F0F;&#x914D;&#x7F6E;&#x4E2D;&#x5FC3;</p>
+<ul>
+<li>Apollo</li>
+<li>Nacos</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x9AD8;&#x53EF;&#x7528;</p>
+<ul>
+<li>&#x4E3B;&#x4ECE;</li>
+<li>&#x5F02;&#x5730;&#x591A;&#x6D3B;</li>
+<li>&#x5BB9;&#x707E;&#x5907;&#x4EFD;</li>
+</ul>
+</li>
+<li><p>&#x9AD8;&#x5E76;&#x53D1;</p>
+<ul>
+<li><p>&#x6570;&#x636E;&#x5E93;</p>
+<ul>
+<li>&#x5206;&#x5E93;&#x5206;&#x8868;</li>
+<li>&#x8BFB;&#x5199;&#x5206;&#x79BB;</li>
+</ul>
+</li>
+<li><p>&#x7F13;&#x5B58;</p>
+<ul>
+<li>&#x7F13;&#x5B58;&#x96EA;&#x5D29;</li>
+<li>&#x7F13;&#x5B58;&#x51FB;&#x7A7F;</li>
+<li>&#x7F13;&#x5B58;&#x7A7F;&#x900F;</li>
+</ul>
+</li>
+<li><p>&#x8D1F;&#x8F7D;&#x5747;&#x8861;</p>
+<ul>
+<li>&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7B97;&#x6CD5;</li>
+<li>&#x8F6F;&#x786C;&#x4EF6;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#xFF08;2&#x3001;3&#x3001;4&#x3001;7 &#x5C42;&#xFF09;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x5176;&#x4ED6;</p>
+<ul>
+<li>&#x76D1;&#x63A7;&#x544A;&#x8B66;</li>
+<li>&#x9886;&#x57DF;&#x9A71;&#x52A8;&#x8BBE;&#x8BA1;</li>
+<li>&#x5E94;&#x7528;&#x5B89;&#x5168;</li>
+<li>&#x7EBF;&#x4E0A;&#x6545;&#x969C;&#x5206;&#x6790;</li>
+<li>&#x670D;&#x52A1;&#x7F51;&#x683C;</li>
+<li>Serverless</li>
+<li>&#x4E91;&#x539F;&#x751F;</li>
+</ul>
+</li>
+<li><p>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</p>
+<p>&#x591A;&#x770B;&#x6587;&#x7AE0;&#x591A;&#x601D;&#x8003;</p>
+</li>
+</ul>
+<h2 id="&#x9636;&#x6BB5;-7&#xFF1A;Java-&#x6C42;&#x804C;"><a href="#&#x9636;&#x6BB5;-7&#xFF1A;Java-&#x6C42;&#x804C;" class="headerlink" title="&#x9636;&#x6BB5; 7&#xFF1A;Java &#x6C42;&#x804C;"></a>&#x9636;&#x6BB5; 7&#xFF1A;Java &#x6C42;&#x804C;</h2><h3 id="&#x76EE;&#x6807;-6"><a href="#&#x76EE;&#x6807;-6" class="headerlink" title="&#x76EE;&#x6807;"></a>&#x76EE;&#x6807;</h3><p>&#x627E;&#x5230;&#x597D;&#x5DE5;&#x4F5C;</p>
+<h3 id="&#x5EFA;&#x8BAE;"><a href="#&#x5EFA;&#x8BAE;" class="headerlink" title="&#x5EFA;&#x8BAE;"></a>&#x5EFA;&#x8BAE;</h3><ul>
+<li><ol>
+<li>&#x5C3D;&#x65E9;&#x505A;&#x89C4;&#x5212;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5927;&#x5382;&#x62DB;&#x8058;&#x5B98;&#x7F51;&#x7684;&#x5C97;&#x4F4D;&#x63CF;&#x8FF0;&#x6765;&#x4E86;&#x89E3;&#x5C97;&#x4F4D;&#x7684;&#x8981;&#x6C42;</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x96D5;&#x7422;&#x4E00;&#x4EFD;&#x4F18;&#x79C0;&#x7684;&#x7B80;&#x5386;&#xFF0C;&#x63A8;&#x8350;&#x9605;&#x8BFB;&#xFF1A;<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/wfabzdpOPdq89faFFpZ4NA">https://mp.weixin.qq.com/s/wfabzdpOPdq89faFFpZ4NA</a></li>
+</ol>
+</li>
+<li><ol>
+<li>&#x591A;&#x8BFB;&#x9762;&#x7ECF;&#xFF0C;&#x575A;&#x6301;&#x5237;&#x7B97;&#x6CD5;</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x591A;&#x53C2;&#x4E0E;&#x9762;&#x8BD5;&#xFF0C;&#x6301;&#x7EED;&#x590D;&#x76D8;&#x603B;&#x7ED3;</li>
+</ol>
+</li>
+</ul>
+<h3 id="&#x8D44;&#x6E90;"><a href="#&#x8D44;&#x6E90;" class="headerlink" title="&#x8D44;&#x6E90;"></a>&#x8D44;&#x6E90;</h3><ul>
+<li><p>&#x5C97;&#x4F4D;&#x8981;&#x6C42;</p>
+<ul>
+<li>&#x963F;&#x91CC; Java &#x5F00;&#x53D1;&#xFF1A;<a target="_blank" rel="noopener" href="https://campus.alibaba.com/position.htm?refno=12699">https://campus.alibaba.com/position.htm?refno=12699</a></li>
+<li>&#x817E;&#x8BAF;&#x540E;&#x53F0;&#x5F00;&#x53D1;&#xFF1A;<a target="_blank" rel="noopener" href="https://join.qq.com/post_detail.html?pid=1&amp;id=101&amp;tid=2">https://join.qq.com/post_detail.html?pid=1&amp;id=101&amp;tid=2</a></li>
+<li>&#x817E;&#x8BAF;&#x5168;&#x6808;&#x5F00;&#x53D1;&#xFF1A;<a target="_blank" rel="noopener" href="https://join.qq.com/post_detail.html?pid=1&amp;id=137&amp;tid=2">https://join.qq.com/post_detail.html?pid=1&amp;id=137&amp;tid=2</a></li>
+<li>&#x817E;&#x8BAF;&#x8FD0;&#x8425;&#x5F00;&#x53D1;&#xFF1A;<a target="_blank" rel="noopener" href="https://join.qq.com/post_detail.html?pid=1&amp;id=105&amp;tid=2">https://join.qq.com/post_detail.html?pid=1&amp;id=105&amp;tid=2</a></li>
+<li>&#x7F8E;&#x56E2;&#x540E;&#x7AEF;&#x5F00;&#x53D1;&#xFF1A;<a target="_blank" rel="noopener" href="https://campus.meituan.com/jobs?jobFamily=1&amp;jobId=4005&amp;jobType=1&amp;pageNo=2">https://campus.meituan.com/jobs?jobFamily=1&amp;jobId=4005&amp;jobType=1&amp;pageNo=2</a></li>
+<li>&#x534E;&#x4E3A;&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#xFF1A;<a target="_blank" rel="noopener" href="https://career.huawei.com/reccampportal/portal5/campus-recruitment-detail.html?jobId=176044">https://career.huawei.com/reccampportal/portal5/campus-recruitment-detail.html?jobId=176044</a></li>
+</ul>
+</li>
+<li><p>&#x9C7C;&#x76AE;&#x7ECF;&#x5386;</p>
+<ul>
+<li><p>&#x4ECE; 0 &#x5F00;&#x59CB;&#x7684;&#x7F16;&#x7A0B;&#x5B66;&#x4E60;&#x8FDB;&#x5927;&#x5382;&#x7ECF;&#x5386;</p>
+<ul>
+<li>&#x2B50; &#x6211;&#x5B66;&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x56DB;&#x5E74;&#xFF0C;&#x5171;&#x52C9;&#xFF1A;<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/Nc7Ee2UyrPg6hGseQUCzeg">https://mp.weixin.qq.com/s/Nc7Ee2UyrPg6hGseQUCzeg</a></li>
+</ul>
+</li>
+<li><p>&#x5B9E;&#x4E60;&#x7ECF;&#x5386;</p>
+<ul>
+<li>&#x2B50; &#x6211;&#x7684;&#x7B2C;&#x4E00;&#x4EFD;&#x5B9E;&#x4E60;&#xFF1A;<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/SwGiRzyTkCOOCUXfXPR1Pw">https://mp.weixin.qq.com/s/SwGiRzyTkCOOCUXfXPR1Pw</a></li>
+<li>&#x2B50; &#x6211;&#x7684;&#x7B2C;&#x4E8C;&#x4EFD;&#x5B9E;&#x4E60;&#xFF0C;&#x5B57;&#x8282;&#x8DF3;&#x52A8;&#xFF1A;<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/3q-YIfuZBjPjSnamNwOraw">https://mp.weixin.qq.com/s/3q-YIfuZBjPjSnamNwOraw</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x77E5;&#x8BC6;&#x603B;&#x7ED3;</p>
+<ul>
+<li>&#x2B50; &#x725B;&#x5BA2; Java &#x9762;&#x8BD5;&#x5B9D;&#x5178;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.nowcoder.com/tutorial/94">https://www.nowcoder.com/tutorial/94</a></li>
+<li>&#x2B50; JavaGuide&#xFF1A;<a target="_blank" rel="noopener" href="https://snailclimb.gitee.io/javaguide/#/">https://snailclimb.gitee.io/javaguide/#/</a></li>
+<li>&#x2B50; CS-Notes&#xFF1A;<a target="_blank" rel="noopener" href="http://www.cyc2018.xyz/">http://www.cyc2018.xyz/</a></li>
+<li>&#x963F;&#x91CC; Java &#x6280;&#x672F;&#x56FE;&#x8C31;&#xFF1A;<a target="_blank" rel="noopener" href="https://developer.aliyun.com/graph/java">https://developer.aliyun.com/graph/java</a></li>
+</ul>
+</li>
+<li><p>&#x9762;&#x7ECF;</p>
+<ul>
+<li>&#x2B50; 2021 &#x6700;&#x65B0; Java &#x7B14;&#x8BD5;&#x3001;&#x9762;&#x8BD5;&#x9898;&#x5408;&#x96C6;&#xFF1A;<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1DE4HAu-DS80n7VOaGpU_KQ&#xFF08;&#x5BC6;&#x7801;&#xFF1A;lkw1&#xFF09;">https://pan.baidu.com/s/1DE4HAu-DS80n7VOaGpU_KQ&#xFF08;&#x5BC6;&#x7801;&#xFF1A;lkw1&#xFF09;</a></li>
+<li>&#x2B50; &#x725B;&#x5BA2;&#x9762;&#x7ECF;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/experience?tagId=639">https://www.nowcoder.com/discuss/experience?tagId=639</a></li>
+</ul>
+</li>
+<li><p>&#x89C6;&#x9891;</p>
+<ul>
+<li>&#x2B50; &#x5C1A;&#x7845;&#x8C37; 2021 &#x9006;&#x88AD;&#x7248; Java &#x9762;&#x8BD5;&#x9898;&#x7B2C;&#x4E09;&#x5B63;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Hy4y1B78T">https://www.bilibili.com/video/BV1Hy4y1B78T</a></li>
+<li>&#x2B50; &#x963F;&#x91CC;&#x5927;&#x4F6C;&#x900F;&#x5F7B;&#x8BB2;&#x89E3; Java &#x9762;&#x8BD5; 500 &#x9053;&#x5FC5;&#x8003;&#x9898;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1yU4y1J7Bb">https://www.bilibili.com/video/BV1yU4y1J7Bb</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x9636;&#x6BB5;-8&#xFF1A;&#x6301;&#x7EED;&#x5B66;&#x4E60;"><a href="#&#x9636;&#x6BB5;-8&#xFF1A;&#x6301;&#x7EED;&#x5B66;&#x4E60;" class="headerlink" title="&#x9636;&#x6BB5; 8&#xFF1A;&#x6301;&#x7EED;&#x5B66;&#x4E60;"></a>&#x9636;&#x6BB5; 8&#xFF1A;&#x6301;&#x7EED;&#x5B66;&#x4E60;</h2><h3 id="&#x76EE;&#x6807;-7"><a href="#&#x76EE;&#x6807;-7" class="headerlink" title="&#x76EE;&#x6807;"></a>&#x76EE;&#x6807;</h3><p>&#x6301;&#x7EED;&#x8FFD;&#x6C42;&#x6280;&#x672F;&#x7684;&#x6DF1;&#x5EA6;&#x548C;&#x5E7F;&#x5EA6;&#xFF0C;&#x57F9;&#x517B;&#x81EA;&#x5DF1;&#x7684; <strong>&#x6838;&#x5FC3;&#x7ADE;&#x4E89;&#x529B;</strong> &#x548C; <strong>&#x4E0D;&#x53EF;&#x66FF;&#x4EE3;&#x6027;</strong> &#xFF0C;&#x5B66;&#x65E0;&#x6B62;&#x5883;&#xFF01;</p>
+<h3 id="&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;-1"><a href="#&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;-1" class="headerlink" title="&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;"></a>&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</h3><p>&#x81EA;&#x4E3B;&#x5B66;&#x4E60;&#xFF0C;&#x81EA;&#x4E3B;&#x641C;&#x7D22;&#x6559;&#x7A0B;&#xFF0C;&#x591A;&#x770B;&#x4E66;&#xFF0C;&#x591A;&#x9605;&#x8BFB;&#x6280;&#x672F;&#x535A;&#x5BA2;&#xFF0C;&#x591A;&#x5B9E;&#x8DF5;&#x3002;</p>
+<h3 id="&#x5B66;&#x4E60;&#x65B9;&#x5411;"><a href="#&#x5B66;&#x4E60;&#x65B9;&#x5411;" class="headerlink" title="&#x5B66;&#x4E60;&#x65B9;&#x5411;"></a>&#x5B66;&#x4E60;&#x65B9;&#x5411;</h3><ul>
+<li><p>&#x6846;&#x67B6;&#x6E90;&#x7801;</p>
+<ul>
+<li>Spring</li>
+<li>SpringBoot</li>
+<li>SpringMVC</li>
+<li>MyBatis</li>
+<li>Netty</li>
+<li>Dubbo</li>
+<li>SpringCloud</li>
+</ul>
+</li>
+<li><p>&#x8BA1;&#x7B97;&#x673A;&#x539F;&#x7406;</p>
+<ul>
+<li>&#x300A;&#x7B97;&#x6CD5;&#x5BFC;&#x8BBA;&#x300B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av48922404">https://www.bilibili.com/video/av48922404</a></li>
+<li>&#x300A;&#x73B0;&#x4EE3;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x300B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av9555596">https://www.bilibili.com/video/av9555596</a></li>
+<li>&#x300A;&#x6DF1;&#x5165;&#x7406;&#x89E3;&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;&#x300B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av31289365">https://www.bilibili.com/video/av31289365</a></li>
+<li>&#x300A;&#x7F16;&#x8BD1;&#x539F;&#x7406;&#x300B;&#xFF1A; <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av17649289">https://www.bilibili.com/video/av17649289</a></li>
+<li>&#x300A;&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;&#xFF1A;&#x81EA;&#x9876;&#x5411;&#x4E0B;&#x65B9;&#x6CD5;&#x300B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av41404195">https://www.bilibili.com/video/av41404195</a></li>
+<li>&#x300A;&#x8BA1;&#x7B97;&#x673A;&#x7A0B;&#x5E8F;&#x7684;&#x6784;&#x9020;&#x548C;&#x89E3;&#x91CA;&#x300B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av8515129">https://www.bilibili.com/video/av8515129</a></li>
+<li>&#x300A;&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x6982;&#x5FF5;&#x300B;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av52007695">https://www.bilibili.com/video/av52007695</a></li>
+</ul>
+</li>
+<li><p>&#x6570;&#x636E;&#x5E93; / &#x4E2D;&#x95F4;&#x4EF6; / &#x5206;&#x5E03;&#x5F0F;</p>
+<ul>
+<li><p>&#x6570;&#x636E;&#x5E93;</p>
+<ul>
+<li>MySQL</li>
+<li>PostgreSQL</li>
+</ul>
+</li>
+<li><p>&#x7F13;&#x5B58;</p>
+<ul>
+<li>Redis</li>
+</ul>
+</li>
+<li><p>&#x961F;&#x5217;</p>
+<ul>
+<li>Apache Kafka</li>
+<li>Apache Pulsar</li>
+</ul>
+</li>
+<li><p>&#x641C;&#x7D22;&#x5F15;&#x64CE;</p>
+<ul>
+<li>Elastic Stack</li>
+</ul>
+</li>
+<li><p>&#x5BB9;&#x5668;</p>
+<ul>
+<li>Docker</li>
+<li>K8S</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x89E3;&#x51B3;&#x65B9;&#x6848;</p>
+<ul>
+<li>&#x5E7F;&#x544A;</li>
+<li>&#x7535;&#x5546;</li>
+<li>&#x641C;&#x7D22;</li>
+<li>&#x6E38;&#x620F;</li>
+<li>&#x5373;&#x65F6;&#x901A;&#x8BAF;</li>
+<li>&#x793E;&#x4EA4;</li>
+<li>CMS</li>
+<li>ERP</li>
+<li>OA</li>
+</ul>
+</li>
+<li><p>&#x67B6;&#x6784;</p>
+<ul>
+<li>&#x4EBF;&#x7EA7;&#x6D41;&#x91CF;&#x67B6;&#x6784;</li>
+<li>&#x79D2;&#x6740;&#x7CFB;&#x7EDF;</li>
+<li>&#x67B6;&#x6784;&#x9009;&#x578B;&#x80FD;&#x529B;</li>
+</ul>
+</li>
+<li><p>&#x5927;&#x6570;&#x636E;</p>
+<ul>
+<li>5V &#x7279;&#x70B9;</li>
+<li>Hadoop</li>
+<li>HDFS</li>
+<li>MapReduce</li>
+<li>Spark</li>
+<li>Flink</li>
+<li>Storm</li>
+<li>Hive</li>
+<li>HBase</li>
+<li>Druid</li>
+<li>Kylin</li>
+<li>Pig</li>
+<li>Mahout</li>
+</ul>
+</li>
+<li><p>&#x524D;&#x6CBF;&#x6280;&#x672F;</p>
+<ul>
+<li>&#x4E91;&#x539F;&#x751F;&#xFF1A;<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/a37baa7c3eff">https://www.jianshu.com/p/a37baa7c3eff</a></li>
+<li>Quasar Framework&#xFF1A;<a target="_blank" rel="noopener" href="http://www.quasarchs.com/">http://www.quasarchs.com/</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x81EA;&#x5B66;-Java-&#x4E13;&#x9898;&#x8D44;&#x6E90;"><a href="#&#x81EA;&#x5B66;-Java-&#x4E13;&#x9898;&#x8D44;&#x6E90;" class="headerlink" title="&#x81EA;&#x5B66; Java &#x4E13;&#x9898;&#x8D44;&#x6E90;"></a>&#x81EA;&#x5B66; Java &#x4E13;&#x9898;&#x8D44;&#x6E90;</h3><ul>
+<li>GitHub Java &#x4E13;&#x533A;&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/topics/java">https://github.com/topics/java</a></li>
+<li>GitHub Java &#x5408;&#x96C6;&#xFF1A;<a target="_blank" rel="noopener" href="https://github.com/akullpp/awesome-java">https://github.com/akullpp/awesome-java</a></li>
+<li>StackOverflow&#xFF1A;<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/tagged/java&#xFF08;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x5FC5;&#x5907;&#xFF09;">https://stackoverflow.com/questions/tagged/java&#xFF08;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x5FC5;&#x5907;&#xFF09;</a></li>
+<li>&#x6398;&#x91D1; Java &#x4E13;&#x533A;&#xFF1A;<a target="_blank" rel="noopener" href="https://juejin.cn/tag/Java">https://juejin.cn/tag/Java</a></li>
+<li>&#x7F8E;&#x56E2;&#x6280;&#x672F;&#x56E2;&#x961F;&#xFF1A;<a target="_blank" rel="noopener" href="https://tech.meituan.com/">https://tech.meituan.com/</a></li>
+<li>&#x963F;&#x91CC;&#x6280;&#x672F;&#x56E2;&#x961F;&#xFF1A;<a target="_blank" rel="noopener" href="https://102.alibaba.com/tech/list/">https://102.alibaba.com/tech/list/</a></li>
+<li>&#x6709;&#x8D5E;&#x6280;&#x672F;&#x56E2;&#x961F;&#xFF1A;<a target="_blank" rel="noopener" href="https://tech.youzan.com/tag/back-end/">https://tech.youzan.com/tag/back-end/</a></li>
+</ul>
+<h2 id="&#x5C3E;&#x58F0;-2"><a href="#&#x5C3E;&#x58F0;-2" class="headerlink" title="&#x5C3E;&#x58F0;"></a>&#x5C3E;&#x58F0;</h2><p>&#x4EE5;&#x4E0A;&#x5C31;&#x662F;&#x9C7C;&#x76AE;&#x71AC;&#x4E86;&#x51E0;&#x5929;&#x5927;&#x591C;&#x3001;&#x7ED3;&#x5408;&#x4E2A;&#x4EBA;&#x7ECF;&#x9A8C;&#x3001;&#x5E76;&#x4E14;&#x53C2;&#x8003;&#x4E86;&#x5927;&#x91CF;&#x7F51;&#x4E0A;&#x7684;&#x6587;&#x7AE0;&#x548C;&#x8BC4;&#x8BBA;&#x603B;&#x7ED3;&#x800C;&#x6210;&#x7684;&#x5B66;&#x4E60;&#x8DEF;&#x7EBF;&#xFF0C;&#x771F;&#x7684;&#x662F;&#x975E;&#x5E38;&#x4E0D;&#x5BB9;&#x6613;&#xFF0C;&#x5982;&#x679C;&#x5927;&#x5BB6;&#x89C9;&#x5F97;&#x6EE1;&#x610F;&#x8BF7;&#x52A1;&#x5FC5; <strong>&#x4E09;&#x8FDE;</strong> &#x652F;&#x6301;&#x4E0B;&#xFF0C;&#x8DEF;&#x7EBF;&#x6587;&#x6863;&#x548C;&#x6240;&#x6709;&#x5B66;&#x4E60;&#x8D44;&#x6E90;&#x5728;&#x6211;&#x7684;&#x516C;&#x4F17;&#x53F7;&#x3010;&#x7A0B;&#x5E8F;&#x5458;&#x9C7C;&#x76AE;&#x3011;&#x540E;&#x53F0;&#x56DE;&#x590D;&#x3010;Java &#x8DEF;&#x7EBF;&#x3011;&#x5C31;&#x80FD;&#x83B7;&#x53D6;&#x4E86;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x6211;&#x5F00;&#x53D1;&#x7684;&#x7F16;&#x7A0B;&#x5BFC;&#x822A;&#x7F51;&#x7AD9;&#x641C;&#x7D22;&#x54E6;~</p>
+<p>&#x6211;&#x662F;&#x9C7C;&#x76AE;&#xFF0C;&#x6301;&#x7EED;&#x5206;&#x4EAB;&#x7F16;&#x7A0B;&#x5E72;&#x8D27;&#x7684;&#x7A0B;&#x5E8F;&#x5458;&#xFF0C;&#x6B22;&#x8FCE;&#x5173;&#x6CE8;&#xFF0C;&#x4E0B;&#x671F;&#x518D;&#x89C1;~</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://zqywuxie.github.io">wu xie</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://zqywuxie.github.io/2022/08/18/%E9%B1%BC%E7%9A%AE%20-%20Java%20%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%20%E4%B8%80%E6%9D%A1%E9%BE%99%E7%89%88%E6%9C%AC/">https://zqywuxie.github.io/2022/08/18/鱼皮 - Java 学习路线 一条龙版本/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://zqywuxie.github.io" target="_blank">思无邪</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Java/">Java</a></div><div class="post_share"><div class="social-share" data-image="https://raw.githubusercontent.com/jerryc127/CDN/master/cover/default_bg.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/08/07/python%E6%A8%A1%E5%9E%8B%E5%BB%BA%E7%AB%8B/"><img class="next-cover" src="https://raw.githubusercontent.com/jerryc127/CDN/master/cover/default_bg.png" onerror="onerror=null;src='https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5339/202208041745209.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">python模型建立</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%B6%E6%AE%B5-1%EF%BC%9AJava-%E5%85%A5%E9%97%A8"><span class="toc-number">2.</span> <span class="toc-text">阶段 1：Java 入门</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87"><span class="toc-number">2.1.</span> <span class="toc-text">目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87"><span class="toc-number">2.2.</span> <span class="toc-text">前期准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%EF%BC%8845-%E5%A4%A9%EF%BC%89"><span class="toc-number">2.3.</span> <span class="toc-text">Java 编程基础（45 天）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-8%EF%BC%883-%E5%A4%A9%EF%BC%89"><span class="toc-number">2.4.</span> <span class="toc-text">Java 8（3 天）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%BE%E5%A3%B0"><span class="toc-number">2.5.</span> <span class="toc-text">尾声</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%B6%E6%AE%B5-2%EF%BC%9A%E5%B7%A9%E5%9B%BA%E5%9F%BA%E7%A1%80"><span class="toc-number">3.</span> <span class="toc-text">阶段 2：巩固基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87-1"><span class="toc-number">3.1.</span> <span class="toc-text">目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-%E5%9F%BA%E7%A1%80%EF%BC%8830-%E5%A4%A9%EF%BC%89"><span class="toc-number">3.2.</span> <span class="toc-text">Java 基础（30 天）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95"><span class="toc-number">3.3.</span> <span class="toc-text">数据结构与算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80"><span class="toc-number">3.4.</span> <span class="toc-text">计算机基础</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%BE%E5%A3%B0-1"><span class="toc-number">3.5.</span> <span class="toc-text">尾声</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%B6%E6%AE%B5-3%EF%BC%9AJava-%E4%BC%81%E4%B8%9A%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80"><span class="toc-number">4.</span> <span class="toc-text">阶段 3：Java 企业开发基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87-2"><span class="toc-number">4.1.</span> <span class="toc-text">目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MySQL-%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%887-%E5%A4%A9%EF%BC%89"><span class="toc-number">4.2.</span> <span class="toc-text">MySQL 数据库（7 天）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6%EF%BC%8860-%E5%A4%A9%EF%BC%89"><span class="toc-number">4.3.</span> <span class="toc-text">开发框架（60 天）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83%EF%BC%883-%E5%A4%A9%EF%BC%89"><span class="toc-number">4.4.</span> <span class="toc-text">开发规范（3 天）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Git%EF%BC%883-%E5%A4%A9%EF%BC%89"><span class="toc-number">4.5.</span> <span class="toc-text">Git（3 天）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linux%EF%BC%8810-%E5%A4%A9%EF%BC%89"><span class="toc-number">4.6.</span> <span class="toc-text">Linux（10 天）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%EF%BC%8814-%E5%A4%A9%EF%BC%89"><span class="toc-number">4.7.</span> <span class="toc-text">前端基础（14 天）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%B6%E6%AE%B5-4%EF%BC%9AJava-%E4%BC%81%E4%B8%9A%E5%BC%80%E5%8F%91%E8%BF%9B%E9%98%B6"><span class="toc-number">5.</span> <span class="toc-text">阶段 4：Java 企业开发进阶</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87-3"><span class="toc-number">5.1.</span> <span class="toc-text">目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8821-%E5%A4%A9%EF%BC%89"><span class="toc-number">5.2.</span> <span class="toc-text">设计模式（21 天）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E9%97%B4%E4%BB%B6%EF%BC%8814-%E5%A4%A9%EF%BC%89"><span class="toc-number">5.3.</span> <span class="toc-text">中间件（14 天）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Netty-%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%EF%BC%8814-%E5%A4%A9%EF%BC%89"><span class="toc-number">5.4.</span> <span class="toc-text">Netty 网络编程（14 天）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AE%E6%9C%8D%E5%8A%A1%EF%BC%8860-%E5%A4%A9%EF%BC%89"><span class="toc-number">5.5.</span> <span class="toc-text">微服务（60 天）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%EF%BC%887-%E5%A4%A9%EF%BC%89"><span class="toc-number">5.6.</span> <span class="toc-text">容器（7 天）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CI-CD%EF%BC%883-%E5%A4%A9%EF%BC%89"><span class="toc-number">5.7.</span> <span class="toc-text">CI &#x2F; CD（3 天）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%B6%E6%AE%B5-5%EF%BC%9A%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98"><span class="toc-number">6.</span> <span class="toc-text">阶段 5：项目实战</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87-4"><span class="toc-number">6.1.</span> <span class="toc-text">目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E5%BB%BA%E8%AE%AE"><span class="toc-number">6.2.</span> <span class="toc-text">学习建议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B"><span class="toc-number">6.3.</span> <span class="toc-text">视频教程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81%EF%BC%8850-%E5%A5%97%EF%BC%89"><span class="toc-number">6.4.</span> <span class="toc-text">项目源码（50 套）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%B6%E6%AE%B5-6%EF%BC%9AJava-%E9%AB%98%E7%BA%A7"><span class="toc-number">7.</span> <span class="toc-text">阶段 6：Java 高级</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87-5"><span class="toc-number">7.1.</span> <span class="toc-text">目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%EF%BC%8821-%E5%A4%A9%EF%BC%89"><span class="toc-number">7.2.</span> <span class="toc-text">并发编程（21 天）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JVM%EF%BC%8830-%E5%A4%A9%EF%BC%89"><span class="toc-number">7.3.</span> <span class="toc-text">JVM（30 天）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1"><span class="toc-number">7.4.</span> <span class="toc-text">架构设计</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%B6%E6%AE%B5-7%EF%BC%9AJava-%E6%B1%82%E8%81%8C"><span class="toc-number">8.</span> <span class="toc-text">阶段 7：Java 求职</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87-6"><span class="toc-number">8.1.</span> <span class="toc-text">目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BB%BA%E8%AE%AE"><span class="toc-number">8.2.</span> <span class="toc-text">建议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B5%84%E6%BA%90"><span class="toc-number">8.3.</span> <span class="toc-text">资源</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%B6%E6%AE%B5-8%EF%BC%9A%E6%8C%81%E7%BB%AD%E5%AD%A6%E4%B9%A0"><span class="toc-number">9.</span> <span class="toc-text">阶段 8：持续学习</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87-7"><span class="toc-number">9.1.</span> <span class="toc-text">目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E5%BB%BA%E8%AE%AE-1"><span class="toc-number">9.2.</span> <span class="toc-text">学习建议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E6%96%B9%E5%90%91"><span class="toc-number">9.3.</span> <span class="toc-text">学习方向</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%AD%A6-Java-%E4%B8%93%E9%A2%98%E8%B5%84%E6%BA%90"><span class="toc-number">9.4.</span> <span class="toc-text">自学 Java 专题资源</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%BE%E5%A3%B0-2"><span class="toc-number">10.</span> <span class="toc-text">尾声</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 By wu xie</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="fa-solid fa-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="fa-solid fa-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="fa-solid fa-arrow-rotate-right"></i></div><div class="rightMenu-item" id="menu-home"><i class="fa-solid fa-house"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" href="/archives/"><i class="fa-solid fa-archive"></i><span>文章归档</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="fa-solid fa-folder-open"></i><span>文章分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="fa-solid fa-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuNormal"><div class="rightMenu-item" id="menu-translate"><i class="fa-solid fa-earth-asia"></i><span>繁简切换</span></div><div class="rightMenu-item" id="menu-darkmode"><i class="fa-solid fa-moon"></i><span>切换模式</span></div></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'B1KDcA4PBtvMHHIOctyPFIn1-9Nh9j0Va',
+      appKey: 'iS26quR4dH3v41YNPBud0FYe',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script async data-pjax src="/js/rightMenu.js"></script><script defer src="https://cdn.jsdelivr.net/npm/hexo-theme-volantis@latest/source/js/issues.min.js"></script><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start -->
+  <script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js"></script>
+  <script data-pjax>
+        function GithubCalendarConfig(){
+            var git_githubapiurl ="https://python-github-calendar-api.vercel.app/api?zqywuxie";
+            var git_color =['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f'];
+            var git_user ="zqywuxie";
+            var parent_div_git = document.getElementById('recent-posts');
+            var git_div_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><div id="github_loading" style="width:10%;height:100%;margin:0 auto;display: block"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform></path></svg></div><div id="github_container"></div></div>';
+            if(parent_div_git && location.pathname =='/'){
+                console.log('已挂载github calendar')
+                // parent_div_git.innerHTML=git_div_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",git_div_html) // 有报错，但不影响使用(支持pjax跳转)
+            };
+            GithubCalendar(git_githubapiurl,git_color,git_user)
+        }
+        if(document.getElementById('recent-posts')){
+            GithubCalendarConfig()
+        }
+    </script>
+    <style>#github_container{min-height:280px}@media screen and (max-width:650px) {#github_container{background-image:;min-height:0px}}</style>
+    <style></style><script defer src="https://unpkg.zhimg.com/jquery@latest/dist/jquery.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js"></script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":20,"vOffset":-20},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
